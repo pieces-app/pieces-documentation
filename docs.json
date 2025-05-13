@@ -8,6 +8,7 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+
   "navigation": {
     "tabs": [
       {
@@ -18,11 +19,11 @@
             "pages": [
               "quick-guides/overview",
               "quick-guides/ltm-context",
-              "quick-guides/copilot-with-context/",
+              "quick-guides/copilot-with-context",
               {
                 "group": "Long-Term Memory Prompting Guide",
                 "pages": [
-                  "quick-guides/ltm-prompting/",
+                  "quick-guides/ltm-prompting",
                   "quick-guides/ltm-prompting/examples",
                   "quick-guides/ltm-prompting/tips",
                   "quick-guides/ltm-prompting/workstream-activity"
@@ -30,53 +31,76 @@
               }
             ]
           },
+
           {
             "group": "Pieces | Suite",
             "pages": [
               {
                 "group": "Desktop App",
-                "pages": [ "desktop/" ]
+                "pages": [ "desktop" ]
               },
               {
                 "group": "Core Dependencies",
-                "pages": [ "core-dependencies/" ]
+                "pages": [ "core-dependencies" ]
               }
             ]
           },
+
           {
             "group": "Pieces | MCP",
             "pages": [
-              "mcp/",
+              "mcp",
               "mcp/prompting",
               "mcp/cursor",
               "mcp/github-copilot",
               "mcp/goose"
             ]
           },
+
           {
             "group": "Pieces | IDEs",
             "pages": [
-              { "group": "VS Code Extension",        "pages": [ "extensions-plugins/visual-studio-code/" ] },
-              { "group": "JetBrains Plugin",         "pages": [ "extensions-plugins/jetbrains/" ] },
-              { "group": "Visual Studio Extension",  "pages": [ "extensions-plugins/visual-studio/" ] },
-              { "group": "Sublime Text Plugin",      "pages": [ "extensions-plugins/sublime/" ] },
-              { "group": "JupyterLab Extension",     "pages": [ "extensions-plugins/jupyterlab/" ] },
-              { "group": "Neovim Plugin",            "pages": [ "extensions-plugins/neovim-plugin/" ] }
+              {
+                "group": "VS Code Extension",
+                "pages": [ "extensions-plugins/visual-studio-code" ]
+              },
+              {
+                "group": "JetBrains Plugin",
+                "pages": [ "extensions-plugins/jetbrains" ]
+              },
+              {
+                "group": "Visual Studio Extension",
+                "pages": [ "extensions-plugins/visual-studio" ]
+              },
+              {
+                "group": "Sublime Text Plugin",
+                "pages": [ "extensions-plugins/sublime" ]
+              },
+              {
+                "group": "JupyterLab Extension",
+                "pages": [ "extensions-plugins/jupyterlab" ]
+              },
+              {
+                "group": "Neovim Plugin",
+                "pages": [ "extensions-plugins/neovim-plugin" ]
+              }
             ]
           },
+
           {
             "group": "Pieces | Productivity",
             "pages": [
-              "obsidian/",
-              "web-extension/",
-              "cli/",
-              "raycast/"
+              "obsidian",
+              "web-extension",
+              "cli",
+              "raycast"
             ]
           },
+
           {
             "group": "Pieces | More",
             "pages": [
-              "privacy-security-your-data/",
+              "privacy-security-your-data",
               {
                 "group": "Compatible LLMs",
                 "pages": [
@@ -84,17 +108,19 @@
                   "large-language-models/cloud-models"
                 ]
               },
-              "glossary/"
+              "glossary"
             ]
           },
+
           {
             "group": "Get Help",
             "pages": [
-              "support/"
+              "support"
             ]
           }
         ]
       },
+
       {
         "tab": "API Reference",
         "groups": [
@@ -154,6 +180,7 @@
         ]
       }
     ],
+
     "global": {
       "anchors": [
         {
@@ -177,8 +204,9 @@
 
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark":  "/logo/dark.svg"
   },
+
   "navbar": {
     "links": [
       {
@@ -187,16 +215,16 @@
       }
     ],
     "primary": {
-      "type": "button",
+      "type":  "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href":  "https://dashboard.mintlify.com"
     }
   },
 
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
+      "x":        "https://x.com/mintlify",
+      "github":   "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
