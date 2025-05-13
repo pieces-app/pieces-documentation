@@ -24,14 +24,18 @@
           },
           {
             "group": "Pieces | Suite",
-            "groups": [
+            "pages": [
               {
                 "group": "Desktop App",
-                "autogenerate": { "directory": "desktop" }
+                "pages": [
+                  "desktop/index"
+                ]
               },
               {
                 "group": "Core Dependencies",
-                "autogenerate": { "directory": "core-dependencies" }
+                "pages": [
+                  "core-dependencies/index"
+                ]
               }
             ]
           },
