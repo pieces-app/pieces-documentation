@@ -11,44 +11,6 @@
   "icons": {
     "library": "lucide"
   },
-  "tabs": [
-    {
-      "name": "Getting Started",
-      "url": "meet-pieces"
-    },
-    {
-      "name": "Quick Guides",
-      "url": "quick-guides"
-    },
-    {
-      "name": "Desktop App",
-      "url": "desktop"
-    },
-    {
-      "name": "Core Dependencies",
-      "url": "core-dependencies"
-    },
-    {
-      "name": "MCP",
-      "url": "mcp"
-    },
-    {
-      "name": "Extensions & Plugins",
-      "url": "extensions-plugins"
-    },
-    {
-      "name": "Productivity Tools",
-      "url": "obsidian"
-    },
-    {
-      "name": "More",
-      "url": "privacy-security-your-data"
-    }
-  ],
-  "primaryTab": {
-    "name": "Documentation",
-    "isDefaultHidden": false
-  },
   "navigation": {
     "tabs": [
       {
@@ -438,12 +400,18 @@
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
+  "logo": { "light": "/logo/light.svg", "dark": "/logo/dark.svg" },
+
   "navbar": {
     "links": [
+      {
+        "label": "Products",
+        "href": "https://docs.pieces.app/meet-pieces"
+      },
+      {
+        "label": "API Reference",
+        "href": "https://docs.pieces.app/api-reference"
+      },
       {
         "label": "Community",
         "href": "https://pieces.app/community"
@@ -455,6 +423,7 @@
       "href": "https://pieces.app/start"
     }
   },
+
   "footer": {
     "socials": {
       "x": "https://x.com/getpieces",
