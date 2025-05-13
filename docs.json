@@ -1,33 +1,28 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
-  "name": "Mintlify",
+  "theme": "mint",
+  "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#55D799",
-    "dark": "#0D9373"
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
-  "icons": {
-    "library": "lucide"
-  },
   "navigation": {
-    "dropdowns": [
+    "tabs": [
       {
-        "dropdown": "Products",
-        "icon": "package",
-        "description": "Browse product docs",
+        "tab": "Guides",
         "groups": [
           {
             "group": "Pieces | Quick Guides",
             "pages": [
               "quick-guides/overview",
               "quick-guides/ltm-context",
-              "quick-guides/copilot-with-context/index",
+              "quick-guides/copilot-with-context/",
               {
                 "group": "Long-Term Memory Prompting Guide",
                 "pages": [
-                  "quick-guides/ltm-prompting/index",
+                  "quick-guides/ltm-prompting/",
                   "quick-guides/ltm-prompting/examples",
                   "quick-guides/ltm-prompting/tips",
                   "quick-guides/ltm-prompting/workstream-activity"
@@ -40,18 +35,18 @@
             "pages": [
               {
                 "group": "Desktop App",
-                "pages": ["desktop/index"]
+                "pages": [ "desktop/" ]
               },
               {
                 "group": "Core Dependencies",
-                "pages": ["core-dependencies/index"]
+                "pages": [ "core-dependencies/" ]
               }
             ]
           },
           {
             "group": "Pieces | MCP",
             "pages": [
-              "mcp/index",
+              "mcp/",
               "mcp/prompting",
               "mcp/cursor",
               "mcp/github-copilot",
@@ -61,45 +56,27 @@
           {
             "group": "Pieces | IDEs",
             "pages": [
-              {
-                "group": "VS Code Extension",
-                "pages": ["extensions-plugins/visual-studio-code/index"]
-              },
-              {
-                "group": "JetBrains Plugin",
-                "pages": ["extensions-plugins/jetbrains/index"]
-              },
-              {
-                "group": "Visual Studio Extension",
-                "pages": ["extensions-plugins/visual-studio/index"]
-              },
-              {
-                "group": "Sublime Text Plugin",
-                "pages": ["extensions-plugins/sublime/index"]
-              },
-              {
-                "group": "JupyterLab Extension",
-                "pages": ["extensions-plugins/jupyterlab/index"]
-              },
-              {
-                "group": "Neovim Plugin",
-                "pages": ["extensions-plugins/neovim-plugin/index"]
-              }
+              { "group": "VS Code Extension",        "pages": [ "extensions-plugins/visual-studio-code/" ] },
+              { "group": "JetBrains Plugin",         "pages": [ "extensions-plugins/jetbrains/" ] },
+              { "group": "Visual Studio Extension",  "pages": [ "extensions-plugins/visual-studio/" ] },
+              { "group": "Sublime Text Plugin",      "pages": [ "extensions-plugins/sublime/" ] },
+              { "group": "JupyterLab Extension",     "pages": [ "extensions-plugins/jupyterlab/" ] },
+              { "group": "Neovim Plugin",            "pages": [ "extensions-plugins/neovim-plugin/" ] }
             ]
           },
           {
             "group": "Pieces | Productivity",
             "pages": [
-              "obsidian/index",
-              "web-extension/index",
-              "cli/index",
-              "raycast/index"
+              "obsidian/",
+              "web-extension/",
+              "cli/",
+              "raycast/"
             ]
           },
           {
             "group": "Pieces | More",
             "pages": [
-              "privacy-security-your-data/index",
+              "privacy-security-your-data/",
               {
                 "group": "Compatible LLMs",
                 "pages": [
@@ -107,19 +84,19 @@
                   "large-language-models/cloud-models"
                 ]
               },
-              "glossary/index"
+              "glossary/"
             ]
           },
           {
             "group": "Get Help",
-            "pages": ["support/index"]
+            "pages": [
+              "support/"
+            ]
           }
         ]
       },
       {
-        "dropdown": "API Reference",
-        "icon": "terminal",
-        "description": "All API endpoints",
+        "tab": "API Reference",
         "groups": [
           {
             "group": "User Routes",
@@ -175,134 +152,52 @@
             ]
           }
         ]
-      },
-      {
-        "dropdown": "Changelog",
-        "icon": "history",
-        "description": "Updates and changes",
-        "groups": [
-          {
-            "group": "Changelog",
-            "pages": ["changelog"]
-          }
-        ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://mintlify.com/community",
+          "icon": "slack"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
+        }
+      ]
+    }
   },
 
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
-    "href": "https://mintlify.com"
-  },
-  "api": {
-    "mdx": {
-      "auth": {
-        "method": "bearer"
-      }
-    }
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Community",
-        "href": "https://mintlify.com/community"
+        "label": "Support",
+        "href": "mailto:hi@mintlify.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Get Started",
-      "href": "https://mintlify.com/start"
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
     }
   },
 
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
-      "linkedin": "https://www.linkedin.com/company/mintlify",
       "github": "https://github.com/mintlify",
-      "slack": "https://mintlify.com/community"
-    },
-    "links": [
-      {
-        "header": "Resources",
-        "items": [
-          {
-            "label": "Customers",
-            "href": "https://mintlify.com/customers"
-          },
-          {
-            "label": "Enterprise",
-            "href": "https://mintlify.com/enterprise"
-          },
-          {
-            "label": "Request Preview",
-            "href": "https://mintlify.com/preview"
-          },
-          {
-            "label": "Integrations",
-            "href": "https://mintlify.com/docs/integrations/analytics/overview"
-          },
-          {
-            "label": "Templates",
-            "href": "https://mintlify.com/docs/themes"
-          },
-          {
-            "label": "Wall of Love",
-            "href": "https://mintlify.com/love"
-          }
-        ]
-      },
-      {
-        "header": "Company",
-        "items": [
-          {
-            "label": "Careers",
-            "href": "https://mintlify.com/careers"
-          },
-          {
-            "label": "Blog",
-            "href": "https://mintlify.com/blog"
-          },
-          {
-            "label": "Feature Requests",
-            "href": "https://github.com/orgs/mintlify/discussions/categories/feature-requests"
-          },
-          {
-            "label": "Security",
-            "href": "https://mintlify.com/security/responsible-disclosure"
-          }
-        ]
-      },
-      {
-        "header": "Legal",
-        "items": [
-          {
-            "label": "Privacy Policy",
-            "href": "https://mintlify.com/legal/privacy"
-          },
-          {
-            "label": "Terms of Service",
-            "href": "https://mintlify.com/legal/terms"
-          }
-        ]
-      }
-    ]
-  },
-  "integrations": {
-    "ga4": {
-      "measurementId": "G-RCYWHL7EQ7"
-    },
-    "koala": {
-      "publicApiKey": "pk_76a6caa274e800f3ceff0b2bc6b9b9d82ab8"
+      "linkedin": "https://linkedin.com/company/mintlify"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude"
-    ]
   }
 }
