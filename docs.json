@@ -8,25 +8,55 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+
   "navigation": {
     "tabs": [
       {
         "tab": "Documentation",
-        "autogenerate": { "directory": "" }
+        "groups": [
+          { "group": "👋 Meet Pieces",            "autogenerate": "meet-pieces" },
+          { "group": "Pieces | Quick Guides",     "autogenerate": "quick-guides" },
+          { "group": "Pieces | Suite",            "autogenerate": "desktop" },
+          { "group": "Core Dependencies",         "autogenerate": "core-dependencies" },
+          { "group": "Pieces | MCP",              "autogenerate": "mcp" },
+          { "group": "Extensions & Plugins",      "autogenerate": "extensions-plugins" },
+          { "group": "Glossary",                  "autogenerate": "glossary" },
+          { "group": "Large Language Models",     "autogenerate": "large-language-models" },
+          { "group": "Obsidian",                  "autogenerate": "obsidian" },
+          { "group": "CLI",                       "autogenerate": "cli" },
+          { "group": "Raycast",                   "autogenerate": "raycast" },
+          { "group": "Privacy & Security",        "autogenerate": "privacy-security-your-data" },
+          { "group": "Web Extension",             "autogenerate": "web-extension" },
+          { "group": "Get Help",                  "autogenerate": "support" }
+        ]
       }
     ],
     "global": {
       "anchors": [
-        { "anchor": "Documentation", "href": "https://mintlify.com/docs", "icon": "book-open-cover" },
-        { "anchor": "Community",     "href": "https://mintlify.com/community",   "icon": "slack"         },
-        { "anchor": "Blog",          "href": "https://mintlify.com/blog",        "icon": "newspaper"     }
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://mintlify.com/community",
+          "icon": "slack"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
+        }
       ]
     }
   },
+
   "logo": {
     "light": "/logo/light.svg",
     "dark":  "/logo/dark.svg"
   },
+
   "navbar": {
     "links": [
       { "label": "Support", "href": "mailto:hi@mintlify.com" }
@@ -37,11 +67,12 @@
       "href":  "https://dashboard.mintlify.com"
     }
   },
+
   "footer": {
     "socials": {
-      "x":       "https://x.com/mintlify",
-      "github":  "https://github.com/mintlify",
-      "linkedin":"https://linkedin.com/company/mintlify"
+      "x":        "https://x.com/mintlify",
+      "github":   "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
 }
