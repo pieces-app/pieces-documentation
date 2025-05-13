@@ -8,89 +8,80 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "",
+            "pages": ["index"]
+          },
+          {
+            "group": "Pieces | Quick Guides",
+            "pages": ["meet-pieces"]
+          },
+          {
+            "group": "Pieces | Suite",
+            "pages": ["desktop", "core-dependencies"]
+          },
+          {
+            "group": "Pieces | Productivity",
+            "pages": ["cli", "obsidian", "web-extension", "raycast"]
+          },
+          {
+            "group": "Pieces | More",
+            "pages": ["glossary", "large-language-models"]
+          },
+          {
+            "group": "Get Help",
+            "pages": ["support"]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://mintlify.com/community",
+          "icon": "slack"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
+        }
+      ]
+    }
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "navigation": {
-    "tabs": [
+  "navbar": {
+    "links": [
       {
-        "tab": "Documentation",
-        "groups": [
-          {
-            "group": "",
-            "pages": [
-              "index"
-            ]
-          },
-          {
-            "group": "Pieces | Quick Guides",
-            "pages": [
-              "meet-pieces/overview",
-              "meet-pieces/using-long-term-memory",
-              "meet-pieces/using-pieces-copilot",
-              {
-                "page": "meet-pieces/long-term-memory",
-                "pages": [
-                  "meet-pieces/long-term-memory/getting-started",
-                  "meet-pieces/long-term-memory/best-practices"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Pieces | Suite",
-            "pages": [
-              "suite/desktop-app",
-              "suite/core-dependencies"
-            ]
-          },
-          {
-            "group": "Pieces | MCP",
-            "pages": [
-              "mcp/introducing-pieces-mcp",
-              "mcp/mcp-prompting",
-              "mcp/mcp-cursor",
-              "mcp/mcp-github-copilot",
-              "mcp/mcp-goose"
-            ]
-          },
-          {
-            "group": "Pieces | IDEs",
-            "pages": [
-              "ides/visual-studio-code",
-              "ides/jetbrains-plugin",
-              "ides/visual-studio-extension",
-              "ides/sublime-text-plugin",
-              "ides/jupyterlab-extension",
-              "ides/neovim-plugin"
-            ]
-          },
-          {
-            "group": "Pieces | Productivity",
-            "pages": [
-              "productivity/obsidian-plugin",
-              "productivity/web-extension",
-              "productivity/cli",
-              "productivity/raycast-plugin"
-            ]
-          },
-          {
-            "group": "Pieces | More",
-            "pages": [
-              "privacy-security-your-data",
-              "large-language-models",
-              "glossary"
-            ]
-          },
-          {
-            "group": "Get Help",
-            "pages": [
-              "support"
-            ]
-          }
-        ]
+        "label": "Support",
+        "href": "mailto:hi@mintlify.com"
       }
-    ]
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
+    }
   }
 }
