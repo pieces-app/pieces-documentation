@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Pieces Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -15,172 +15,116 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Pieces | Quick Guides",
-            "pages": [
-              "quick-guides/overview",
-              "quick-guides/ltm-context",
-              "quick-guides/copilot-with-context",
-              {
-                "group": "Long-Term Memory Prompting Guide",
-                "pages": [
-                  "quick-guides/ltm-prompting",
-                  "quick-guides/ltm-prompting/examples",
-                  "quick-guides/ltm-prompting/tips",
-                  "quick-guides/ltm-prompting/workstream-activity"
-                ]
-              }
-            ]
+            "group": "👋 Meet Pieces",
+            "autogenerate": { "directory": "meet-pieces" }
           },
-
+          {
+            "group": "Pieces | Quick Guides",
+            "autogenerate": { "directory": "quick-guides" }
+          },
           {
             "group": "Pieces | Suite",
-            "pages": [
+            "groups": [
               {
                 "group": "Desktop App",
-                "pages": [ "desktop" ]
+                "autogenerate": { "directory": "desktop" }
               },
               {
                 "group": "Core Dependencies",
-                "pages": [ "core-dependencies" ]
+                "autogenerate": { "directory": "core-dependencies" }
               }
             ]
           },
-
           {
             "group": "Pieces | MCP",
-            "pages": [
-              "mcp",
-              "mcp/prompting",
-              "mcp/cursor",
-              "mcp/github-copilot",
-              "mcp/goose"
-            ]
+            "autogenerate": { "directory": "mcp" }
           },
-
           {
             "group": "Pieces | IDEs",
-            "pages": [
+            "groups": [
               {
                 "group": "VS Code Extension",
-                "pages": [ "extensions-plugins/visual-studio-code" ]
+                "autogenerate": { "directory": "extensions-plugins/visual-studio-code" }
               },
               {
                 "group": "JetBrains Plugin",
-                "pages": [ "extensions-plugins/jetbrains" ]
+                "autogenerate": { "directory": "extensions-plugins/jetbrains" }
               },
               {
                 "group": "Visual Studio Extension",
-                "pages": [ "extensions-plugins/visual-studio" ]
+                "autogenerate": { "directory": "extensions-plugins/visual-studio" }
               },
               {
                 "group": "Sublime Text Plugin",
-                "pages": [ "extensions-plugins/sublime" ]
+                "autogenerate": { "directory": "extensions-plugins/sublime" }
               },
               {
                 "group": "JupyterLab Extension",
-                "pages": [ "extensions-plugins/jupyterlab" ]
+                "autogenerate": { "directory": "extensions-plugins/jupyterlab" }
               },
               {
                 "group": "Neovim Plugin",
-                "pages": [ "extensions-plugins/neovim-plugin" ]
+                "autogenerate": { "directory": "extensions-plugins/neovim-plugin" }
               }
             ]
           },
-
           {
             "group": "Pieces | Productivity",
-            "pages": [
-              "obsidian",
-              "web-extension",
-              "cli",
-              "raycast"
-            ]
+            "autogenerate": { "directory": "obsidian" }
           },
-
           {
             "group": "Pieces | More",
-            "pages": [
-              "privacy-security-your-data",
+            "groups": [
+              {
+                "group": "Privacy & Security",
+                "autogenerate": { "directory": "privacy-security-your-data" }
+              },
               {
                 "group": "Compatible LLMs",
-                "pages": [
-                  "large-language-models/local-models",
-                  "large-language-models/cloud-models"
-                ]
+                "autogenerate": { "directory": "large-language-models" }
               },
-              "glossary"
+              {
+                "group": "Glossary",
+                "autogenerate": { "directory": "glossary" }
+              }
             ]
           },
-
           {
             "group": "Get Help",
-            "pages": [
-              "support"
-            ]
+            "autogenerate": { "directory": "support" }
           }
         ]
       },
-
       {
         "tab": "API Reference",
         "groups": [
           {
             "group": "User Routes",
-            "pages": [
-              "api-reference/users/get-users",
-              "api-reference/users/create-user",
-              "api-reference/users/get-user-by-id",
-              "api-reference/users/delete-user-by-id",
-              "api-reference/users/send-verification-token",
-              "api-reference/users/verify-user",
-              "api-reference/users/get-payout-methods",
-              "api-reference/users/add-payout-method",
-              "api-reference/users/add-compliance-information"
-            ]
+            "autogenerate": { "directory": "api-reference/users" }
           },
           {
             "group": "Transfer Routes",
-            "pages": [
-              "api-reference/transfers/get-transfers",
-              "api-reference/transfers/create-transfer",
-              "api-reference/transfers/get-transfer-by-id"
-            ]
+            "autogenerate": { "directory": "api-reference/transfers" }
           },
           {
             "group": "Flow Routes",
-            "pages": [
-              "api-reference/flows/get-flows",
-              "api-reference/flows/create-flow",
-              "api-reference/flows/get-flow-by-id"
-            ]
+            "autogenerate": { "directory": "api-reference/flows" }
           },
           {
             "group": "Payout Link Routes",
-            "pages": [
-              "api-reference/payout-links/get-payout-links",
-              "api-reference/payout-links/create-payout-link",
-              "api-reference/payout-links/get-payout-link-by-id",
-              "api-reference/payout-links/cancel-a-payout-link-by-id"
-            ]
+            "autogenerate": { "directory": "api-reference/payout-links" }
           },
           {
             "group": "Payouts",
-            "pages": [
-              "api-reference/payouts/create-payout",
-              "api-reference/payouts/send-payout"
-            ]
+            "autogenerate": { "directory": "api-reference/payouts" }
           },
           {
             "group": "Transaction Routes",
-            "pages": [
-              "api-reference/transactions/get-transactions",
-              "api-reference/transactions/get-transaction-by-id"
-            ]
+            "autogenerate": { "directory": "api-reference/transactions" }
           }
         ]
       }
     ],
-
     "global": {
       "anchors": [
         {
@@ -204,27 +148,24 @@
 
   "logo": {
     "light": "/logo/light.svg",
-    "dark":  "/logo/dark.svg"
+    "dark": "/logo/dark.svg"
   },
 
   "navbar": {
     "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
+      { "label": "Support", "href": "mailto:hi@mintlify.com" }
     ],
     "primary": {
-      "type":  "button",
+      "type": "button",
       "label": "Dashboard",
-      "href":  "https://dashboard.mintlify.com"
+      "href": "https://dashboard.mintlify.com"
     }
   },
 
   "footer": {
     "socials": {
-      "x":        "https://x.com/mintlify",
-      "github":   "https://github.com/mintlify",
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
