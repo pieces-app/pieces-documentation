@@ -20,65 +20,86 @@
           },
           {
             "group": "Pieces | Quick Guides",
-            "autogenerate": { "directory": "quick-guides" }
+            "pages": [
+              "quick-guides/overview",
+              "quick-guides/ltm-context",
+              "quick-guides/copilot-with-context/index",
+              {
+                "group": "Long-Term Memory Prompting Guide",
+                "pages": [
+                  "quick-guides/ltm-prompting/index",
+                  "quick-guides/ltm-prompting/examples",
+                  "quick-guides/ltm-prompting/tips",
+                  "quick-guides/ltm-prompting/workstream-activity"
+                ]
+              }
+            ]
           },
           {
             "group": "Pieces | Suite",
             "pages": [
               {
                 "group": "Desktop App",
-                "pages": [
-                  "desktop/index"
-                ]
+                "pages": ["desktop/index"]
               },
               {
                 "group": "Core Dependencies",
-                "pages": [
-                  "core-dependencies/index"
-                ]
+                "pages": ["core-dependencies/index"]
               }
             ]
           },
           {
             "group": "Pieces | MCP",
-            "autogenerate": { "directory": "mcp" }
+            "pages": [
+              "mcp/index",
+              "mcp/prompting",
+              "mcp/cursor",
+              "mcp/github-copilot",
+              "mcp/goose"
+            ]
           },
           {
             "group": "Pieces | IDEs",
-            "groups": [
+            "pages": [
               {
                 "group": "VS Code Extension",
-                "autogenerate": { "directory": "extensions-plugins/visual-studio-code" }
+                "pages": ["extensions-plugins/visual-studio-code/index"]
               },
               {
                 "group": "JetBrains Plugin",
-                "autogenerate": { "directory": "extensions-plugins/jetbrains" }
+                "pages": ["extensions-plugins/jetbrains/index"]
               },
               {
                 "group": "Visual Studio Extension",
-                "autogenerate": { "directory": "extensions-plugins/visual-studio" }
+                "pages": ["extensions-plugins/visual-studio/index"]
               },
               {
                 "group": "Sublime Text Plugin",
-                "autogenerate": { "directory": "extensions-plugins/sublime" }
+                "pages": ["extensions-plugins/sublime/index"]
               },
               {
                 "group": "JupyterLab Extension",
-                "autogenerate": { "directory": "extensions-plugins/jupyterlab" }
+                "pages": ["extensions-plugins/jupyterlab/index"]
               },
               {
                 "group": "Neovim Plugin",
-                "autogenerate": { "directory": "extensions-plugins/neovim-plugin" }
+                "pages": ["extensions-plugins/neovim-plugin/index"]
               }
             ]
           },
           {
             "group": "Pieces | Productivity",
-            "autogenerate": { "directory": "obsidian" }
+            "pages": [
+              "obsidian/index",
+              "web-extension/index",
+              "cli/index",
+              "raycast/index"
+            ]
           },
           {
             "group": "Pieces | More",
-            "groups": [
+            "pages": [
+              "privacy-security-your-data/index",
               {
                 "group": "Privacy & Security",
                 "autogenerate": { "directory": "privacy-security-your-data" }
@@ -87,15 +108,12 @@
                 "group": "Compatible LLMs",
                 "autogenerate": { "directory": "large-language-models" }
               },
-              {
-                "group": "Glossary",
-                "autogenerate": { "directory": "glossary" }
-              }
+              "glossary/index"
             ]
           },
           {
             "group": "Get Help",
-            "autogenerate": { "directory": "support" }
+            "pages": ["support/index"]
           }
         ]
       },
@@ -128,49 +146,42 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
-
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-
-  "navbar": {
-    "links": [
-      { "label": "Support", "href": "mailto:hi@mintlify.com" }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+  "anchors": [
+    {
+      "anchor": "Documentation",
+      "href": "https://mintlify.com/docs",
+      "icon": "book-open-cover"
+    },
+    {
+      "anchor": "Community",
+      "href": "https://mintlify.com/community",
+      "icon": "slack"
+    },
+    {
+      "anchor": "Blog",
+      "href": "https://mintlify.com/blog",
+      "icon": "newspaper"
     }
+  ],
+  "topbarLinks": [
+    {
+      "label": "Support",
+      "href": "mailto:hi@mintlify.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "label": "Dashboard",
+    "href": "https://dashboard.mintlify.com"
   },
-
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "footerSocials": {
+    "x": "https://x.com/mintlify",
+    "github": "https://github.com/mintlify",
+    "linkedin": "https://linkedin.com/company/mintlify"
   }
 }
