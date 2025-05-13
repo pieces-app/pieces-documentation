@@ -15,57 +15,47 @@
         "groups": [
           {
             "group": "👋 Meet Pieces",
-            "pages": [
-              { "autogenerate": "meet-pieces" }
-            ]
+            "autogenerate": { "directory": "meet-pieces" }
           },
           {
             "group": "Pieces | Quick Guides",
-            "pages": [
-              { "autogenerate": "quick-guides" }
-            ]
+            "autogenerate": { "directory": "quick-guides" }
           },
           {
             "group": "Pieces | Suite",
             "pages": [
-              { "autogenerate": "desktop" },
-              { "autogenerate": "core-dependencies" }
+              { "autogenerate": { "directory": "desktop" } },
+              { "autogenerate": { "directory": "core-dependencies" } }
             ]
           },
           {
             "group": "Pieces | MCP",
-            "pages": [
-              { "autogenerate": "mcp" }
-            ]
+            "autogenerate": { "directory": "mcp" }
           },
           {
             "group": "Pieces | IDEs",
-            "pages": [
-              { "autogenerate": "extensions-plugins" }
-            ]
+            "autogenerate": { "directory": "extensions-plugins" }
           },
           {
             "group": "Pieces | Productivity",
             "pages": [
-              { "autogenerate": "cli" },
-              { "autogenerate": "obsidian" },
-              { "autogenerate": "web-extension" },
-              { "autogenerate": "raycast" }
+              { "autogenerate": { "directory": "cli" } },
+              { "autogenerate": { "directory": "obsidian" } },
+              { "autogenerate": { "directory": "web-extension" } },
+              { "autogenerate": { "directory": "raycast" } }
             ]
           },
           {
             "group": "Pieces | More",
             "pages": [
-              { "autogenerate": "privacy-security-your-data" },
-              { "autogenerate": "large-language-models" },
-              { "autogenerate": "glossary" }
+              { "autogenerate": { "directory": "privacy-security-your-data" } },
+              { "autogenerate": { "directory": "large-language-models" } },
+              { "autogenerate": { "directory": "glossary" } }
             ]
           },
           {
             "group": "Get Help",
-            "pages": [
-              { "autogenerate": "support" }
-            ]
+            "autogenerate": { "directory": "support" }
           }
         ]
       }
