@@ -13,6 +13,9 @@
     "tabs": [
       {
         "tab": "Documentation",
+        "pages": [
+          "index"
+        ],
         "groups": [
           { "group": "👋 Meet Pieces",        "autogenerate": "meet-pieces" },
           { "group": "Quick Guides",          "autogenerate": "quick-guides" },
