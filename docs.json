@@ -16,7 +16,7 @@
           {
             "group": "CLI",
             "pages": [
-              "cli",
+              "cli/cli",
               "cli/commands",
               "cli/configuration",
               "cli/copilot",
@@ -24,7 +24,7 @@
               "cli/copilot/llms-settings",
               "cli/drive",
               "cli/drive/edit-and-update",
-              "cli/drive/save-snippets",
+              "cli/drive/saving-materials",
               "cli/drive/search-and-reuse",
               "cli/drive/sharing",
               "cli/get-started",
@@ -34,7 +34,8 @@
           {
             "group": "Core Dependencies",
             "pages": [
-              "core-dependencies",
+              "core-dependencies/core-dependencies",
+              "core-dependencies/on-device-storage",
               "core-dependencies/ollama",
               "core-dependencies/ollama/manual-installation",
               "core-dependencies/ollama/supported-models",
@@ -42,14 +43,13 @@
               "core-dependencies/pieces-os",
               "core-dependencies/pieces-os/manual-installation",
               "core-dependencies/pieces-os/quick-menu",
-              "core-dependencies/pieces-os/troubleshooting",
-              "core-dependencies/on-device-storage"
+              "core-dependencies/pieces-os/troubleshooting"
             ]
           },
           {
             "group": "Desktop App",
             "pages": [
-              "desktop",
+              "desktop/desktop",
               "desktop/actions",
               "desktop/actions/keyboard-shortcuts",
               "desktop/actions/power-menu",
@@ -91,6 +91,8 @@
           {
             "group": "Extensions & Plugins",
             "pages": [
+              "extensions-plugins/jupyterlab",
+              "extensions-plugins/neovim-plugin",
               "extensions-plugins/jetbrains",
               "extensions-plugins/jetbrains/commands",
               "extensions-plugins/jetbrains/configuration",
@@ -106,8 +108,6 @@
               "extensions-plugins/jetbrains/drive/search-reuse",
               "extensions-plugins/jetbrains/drive/sharing",
               "extensions-plugins/jetbrains/troubleshooting",
-              "extensions-plugins/jupyterlab",
-              "extensions-plugins/neovim-plugin",
               "extensions-plugins/sublime",
               "extensions-plugins/sublime/commands",
               "extensions-plugins/sublime/configuration",
@@ -140,6 +140,9 @@
               "extensions-plugins/visual-studio-code",
               "extensions-plugins/visual-studio-code/commands",
               "extensions-plugins/visual-studio-code/configuration",
+              "extensions-plugins/visual-studio-code/forks",
+              "extensions-plugins/visual-studio-code/get-started",
+              "extensions-plugins/visual-studio-code/troubleshooting",
               "extensions-plugins/visual-studio-code/copilot",
               "extensions-plugins/visual-studio-code/copilot/chat",
               "extensions-plugins/visual-studio-code/copilot/debugging-errors",
@@ -150,16 +153,31 @@
               "extensions-plugins/visual-studio-code/drive/edit-update",
               "extensions-plugins/visual-studio-code/drive/save-snippets",
               "extensions-plugins/visual-studio-code/drive/search-reuse",
-              "extensions-plugins/visual-studio-code/drive/sharing",
-              "extensions-plugins/visual-studio-code/forks",
-              "extensions-plugins/visual-studio-code/get-started",
-              "extensions-plugins/visual-studio-code/troubleshooting"
+              "extensions-plugins/visual-studio-code/drive/sharing"
+            ]
+          },
+          {
+            "group": "Large-Language Models",
+            "pages": [
+              "large-language-models/large-language-models",
+              "large-language-models/cloud-models",
+              "large-language-models/local-models"
+            ]
+          },
+          {
+            "group": "MCP",
+            "pages": [
+              "mcp/cursor",
+              "mcp/get-started",
+              "mcp/github-copilot",
+              "mcp/goose",
+              "mcp/prompting"
             ]
           },
           {
             "group": "Meet Pieces",
             "pages": [
-              "meet-pieces",
+              "meet-pieces/meet-pieces",
               "meet-pieces/fundamentals",
               "meet-pieces/windows-installation-guide",
               "meet-pieces/macos-installation-guide",
@@ -172,9 +190,9 @@
             ]
           },
           {
-            "group": "Obsidian Plugin",
+            "group": "Obsidian",
             "pages": [
-              "obsidian",
+              "obsidian/obsidian",
               "obsidian/get-started",
               "obsidian/commands",
               "obsidian/configuration",
@@ -190,12 +208,6 @@
             ]
           },
           {
-            "group": "Privacy, Security & Your Data",
-            "pages": [
-              "privacy-security-your-data"
-            ]
-          },
-          {
             "group": "Quick Guides",
             "pages": [
               "quick-guides/overview",
@@ -208,99 +220,20 @@
             ]
           },
           {
-            "group": "Raycast Plugin",
+            "group": "Miscellaneous",
             "pages": [
-              "raycast"
-            ]
-          },
-          {
-            "group": "Support",
-            "pages": [
+              "glossary",
+              "privacy-security-your-data",
+              "raycast",
               "support"
-            ]
-          },
-          {
-            "group": "Web Extension",
-            "pages": [
-              "web-extension",
-              "web-extension/get-started",
-              "web-extension/configuration",
-              "web-extension/shortcuts",
-              "web-extension/drive",
-              "web-extension/drive/save-snippets",
-              "web-extension/drive/search-reuse",
-              "web-extension/drive/edit-update",
-              "web-extension/drive/sharing",
-              "web-extension/copilot",
-              "web-extension/copilot/chat",
-              "web-extension/copilot/llm-settings",
-              "web-extension/troubleshooting"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
