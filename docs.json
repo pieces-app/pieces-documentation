@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Pieces Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -12,96 +12,36 @@
     "tabs": [
       {
         "tab": "Documentation",
-        "groups": [
-          {
-            "group": "👋 Meet Pieces",
-            "autogenerate": { "directory": "meet-pieces" }
-          },
-          {
-            "group": "Pieces | Quick Guides",
-            "autogenerate": { "directory": "quick-guides" }
-          },
-          {
-            "group": "Pieces | Suite",
-            "pages": [
-              { "autogenerate": { "directory": "desktop" } },
-              { "autogenerate": { "directory": "core-dependencies" } }
-            ]
-          },
-          {
-            "group": "Pieces | MCP",
-            "autogenerate": { "directory": "mcp" }
-          },
-          {
-            "group": "Pieces | IDEs",
-            "autogenerate": { "directory": "extensions-plugins" }
-          },
-          {
-            "group": "Pieces | Productivity",
-            "pages": [
-              { "autogenerate": { "directory": "cli" } },
-              { "autogenerate": { "directory": "obsidian" } },
-              { "autogenerate": { "directory": "web-extension" } },
-              { "autogenerate": { "directory": "raycast" } }
-            ]
-          },
-          {
-            "group": "Pieces | More",
-            "pages": [
-              { "autogenerate": { "directory": "privacy-security-your-data" } },
-              { "autogenerate": { "directory": "large-language-models" } },
-              { "autogenerate": { "directory": "glossary" } }
-            ]
-          },
-          {
-            "group": "Get Help",
-            "autogenerate": { "directory": "support" }
-          }
-        ]
+        "autogenerate": { "directory": "" }
       }
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
+        { "anchor": "Documentation", "href": "https://mintlify.com/docs", "icon": "book-open-cover" },
+        { "anchor": "Community",     "href": "https://mintlify.com/community",   "icon": "slack"         },
+        { "anchor": "Blog",          "href": "https://mintlify.com/blog",        "icon": "newspaper"     }
       ]
     }
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark":  "/logo/dark.svg"
   },
   "navbar": {
     "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
+      { "label": "Support", "href": "mailto:hi@mintlify.com" }
     ],
     "primary": {
-      "type": "button",
+      "type":  "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href":  "https://dashboard.mintlify.com"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x":       "https://x.com/mintlify",
+      "github":  "https://github.com/mintlify",
+      "linkedin":"https://linkedin.com/company/mintlify"
     }
   }
 }
