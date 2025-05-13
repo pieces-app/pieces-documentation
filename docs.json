@@ -11,6 +11,44 @@
   "icons": {
     "library": "lucide"
   },
+  "tabs": [
+    {
+      "name": "Getting Started",
+      "url": "meet-pieces"
+    },
+    {
+      "name": "Quick Guides",
+      "url": "quick-guides"
+    },
+    {
+      "name": "Desktop App",
+      "url": "desktop"
+    },
+    {
+      "name": "Core Dependencies",
+      "url": "core-dependencies"
+    },
+    {
+      "name": "MCP",
+      "url": "mcp"
+    },
+    {
+      "name": "Extensions & Plugins",
+      "url": "extensions-plugins"
+    },
+    {
+      "name": "Productivity Tools",
+      "url": "obsidian"
+    },
+    {
+      "name": "More",
+      "url": "privacy-security-your-data"
+    }
+  ],
+  "primaryTab": {
+    "name": "Documentation",
+    "isDefaultHidden": false
+  },
   "navigation": {
     "tabs": [
       {
