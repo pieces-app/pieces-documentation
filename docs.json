@@ -11,6 +11,7 @@
   "icons": {
     "library": "lucide"
   },
+
   "navigation": {
     "tabs": [
       {
@@ -400,21 +401,49 @@
       ]
     }
   },
-  "logo": { "light": "/logo/light.svg", "dark": "/logo/dark.svg" },
+
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
 
   "navbar": {
     "links": [
       {
-        "label": "Products",
+        "label": "Meet Pieces",
         "href": "https://docs.pieces.app/meet-pieces"
+      },
+      {
+        "label": "Quick Guides",
+        "href": "https://docs.pieces.app/quick-guides/overview"
+      },
+      {
+        "label": "Desktop App",
+        "href": "https://docs.pieces.app/desktop"
+      },
+      {
+        "label": "Core Dependencies",
+        "href": "https://docs.pieces.app/core-dependencies"
+      },
+      {
+        "label": "MCP",
+        "href": "https://docs.pieces.app/mcp/get-started"
+      },
+      {
+        "label": "Extensions & Plugins",
+        "href": "https://docs.pieces.app/extensions-plugins"
+      },
+      {
+        "label": "Productivity Tools",
+        "href": "https://docs.pieces.app/obsidian"
+      },
+      {
+        "label": "More",
+        "href": "https://docs.pieces.app/privacy-security-your-data"
       },
       {
         "label": "API Reference",
         "href": "https://docs.pieces.app/api-reference"
-      },
-      {
-        "label": "Community",
-        "href": "https://pieces.app/community"
       }
     ],
     "primary": {
