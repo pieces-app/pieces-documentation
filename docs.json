@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Pieces Documentation",
+  "name": "Mint Starter Kit",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,89 +11,46 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Guides",
         "groups": [
           {
-            "group": "",
-            "pages": ["index"]
-          },
-          {
-            "group": "Meet Pieces",
+            "group": "Get Started",
             "pages": [
-              "meet-pieces/index",
-              "meet-pieces/windows-installation-guide"
+              "index",
+              "quickstart",
+              "development"
             ]
           },
           {
-            "group": "Pieces | Quick Guides",
+            "group": "Essentials",
             "pages": [
-              "quick-guides/overview",
-              "quick-guides/using-long-term-memory",
-              "quick-guides/using-pieces-copilot",
-              {
-                "page": "quick-guides/long-term-memory",
-                "pages": [
-                  "quick-guides/long-term-memory/getting-started",
-                  "quick-guides/long-term-memory/best-practices"
-                ]
-              }
+              "core-dependencies/ollama",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
             ]
           },
           {
-            "group": "Pieces | Suite",
+            "group": "Endpoint Examples",
             "pages": [
-              "desktop/index",
-              {
-                "page": "core-dependencies/index",
-                "pages": [
-                  "core-dependencies/ollama/index",
-                  "core-dependencies/on-device-storage/index",
-                  "core-dependencies/pieces-os/index"
-                ]
-              }
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
             ]
-          },
-          {
-            "group": "Pieces | MCP",
-            "pages": [
-              "mcp/introducing-pieces-mcp",
-              "mcp/mcp-prompting",
-              "mcp/mcp-cursor",
-              "mcp/mcp-github-copilot",
-              "mcp/mcp-goose"
-            ]
-          },
-          {
-            "group": "Pieces | IDEs",
-            "pages": [
-              "extensions-plugins/visual-studio-code",
-              "extensions-plugins/jetbrains-plugin",
-              "extensions-plugins/visual-studio-extension",
-              "extensions-plugins/sublime-text-plugin",
-              "extensions-plugins/jupyterlab-extension",
-              "extensions-plugins/neovim-plugin"
-            ]
-          },
-          {
-            "group": "Pieces | Productivity",
-            "pages": [
-              "cli/index",
-              "obsidian/index",
-              "web-extension/index",
-              "raycast/index"
-            ]
-          },
-          {
-            "group": "Pieces | More",
-            "pages": [
-              "privacy-security-your-data/index",
-              "large-language-models/index",
-              "glossary/index"
-            ]
-          },
-          {
-            "group": "Get Help",
-            "pages": ["support/index"]
           }
         ]
       }
