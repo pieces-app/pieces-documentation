@@ -14,20 +14,20 @@
       {
         "tab": "Documentation",
         "groups": [
-          { "group": "👋 Meet Pieces",            "autogenerate": "meet-pieces" },
-          { "group": "Pieces | Quick Guides",     "autogenerate": "quick-guides" },
-          { "group": "Pieces | Suite",            "autogenerate": "desktop" },
-          { "group": "Core Dependencies",         "autogenerate": "core-dependencies" },
-          { "group": "Pieces | MCP",              "autogenerate": "mcp" },
-          { "group": "Extensions & Plugins",      "autogenerate": "extensions-plugins" },
-          { "group": "Glossary",                  "autogenerate": "glossary" },
-          { "group": "Large Language Models",     "autogenerate": "large-language-models" },
-          { "group": "Obsidian",                  "autogenerate": "obsidian" },
-          { "group": "CLI",                       "autogenerate": "cli" },
-          { "group": "Raycast",                   "autogenerate": "raycast" },
-          { "group": "Privacy & Security",        "autogenerate": "privacy-security-your-data" },
-          { "group": "Web Extension",             "autogenerate": "web-extension" },
-          { "group": "Get Help",                  "autogenerate": "support" }
+          { "group": "👋 Meet Pieces",        "autogenerate": "meet-pieces" },
+          { "group": "Quick Guides",          "autogenerate": "quick-guides" },
+          { "group": "Desktop App",           "autogenerate": "desktop" },
+          { "group": "Core Dependencies",     "autogenerate": "core-dependencies" },
+          { "group": "MCP",                   "autogenerate": "mcp" },
+          { "group": "Extensions & Plugins",  "autogenerate": "extensions-plugins" },
+          { "group": "Glossary",              "autogenerate": "glossary" },
+          { "group": "LLM Models",            "autogenerate": "large-language-models" },
+          { "group": "Obsidian Plugin",       "autogenerate": "obsidian" },
+          { "group": "CLI",                   "autogenerate": "cli" },
+          { "group": "Raycast",               "autogenerate": "raycast" },
+          { "group": "Privacy & Security",    "autogenerate": "privacy-security-your-data" },
+          { "group": "Web Extension",         "autogenerate": "web-extension" },
+          { "group": "Get Help",              "autogenerate": "support" }
         ]
       }
     ],
