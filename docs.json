@@ -1,231 +1,227 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
-  "name": "Pieces Documentation",
-  "colors": { "primary": "#16A34A", "light": "#07C983", "dark": "#15803D" },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
-    "href": "https://pieces.app"
-  },
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Documentation",
-        "groups": [
-          {
-            "group": "👋 Meet Pieces",
-            "pages": [
-              "meet-pieces",
-              "meet-pieces/fundamentals",
-              "meet-pieces/linux-installation-guide",
-              "meet-pieces/macos-installation-guide",
-              "meet-pieces/windows-installation-guide"
-            ]
-          },
-          {
-            "group": "Pieces | Quick Guides",
-            "pages": [
-              "quick-guides/overview",
-              "quick-guides/copilot-with-context"
-            ]
-          },
-          {
-            "group": "Pieces | Suite",
-            "pages": [
-              {
-                "group": "Desktop App",
-                "pages": [
-                  "desktop",
-                  "desktop/actions",
-                  "desktop/configuration",
-                  "desktop/configuration/support",
-                  "desktop/drive/enrichment-and-metadata",
-                  "desktop/drive/transforming-code",
-                  "desktop/navigation",
-                  "desktop/onboarding",
-                  "desktop/troubleshooting"
-                ]
-              },
-              {
-                "group": "Core Dependencies",
-                "pages": [
-                  "core-dependencies",
-                  "core-dependencies/pieces-os",
-                  "core-dependencies/pieces-os/quick-menu",
-                  "core-dependencies/ollama"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Pieces | MCP",
-            "pages": [
-              "mcp",
-              "mcp/get-started"
-            ]
-          },
-          {
-            "group": "Pieces | IDEs",
-            "pages": [
-              {
-                "group": "VS Code Extension",
-                "pages": [
-                  "extensions-plugins/visual-studio-code",
-                  "extensions-plugins/visual-studio-code/commands",
-                  "extensions-plugins/visual-studio-code/drive"
-                ]
-              },
-              {
-                "group": "JetBrains Plugin",
-                "pages": [
-                  "extensions-plugins/jetbrains",
-                  "extensions-plugins/jetbrains/commands",
-                  "extensions-plugins/jetbrains/drive/save-snippets"
-                ]
-              },
-              {
-                "group": "Visual Studio Extension",
-                "pages": [
-                  "extensions-plugins/visual-studio",
-                  "extensions-plugins/visual-studio/commands"
-                ]
-              },
-              {
-                "group": "Sublime Text Plugin",
-                "pages": [
-                  "extensions-plugins/sublime",
-                  "extensions-plugins/sublime/commands"
-                ]
-              },
-              {
-                "group": "JupyterLab Extension",
-                "pages": [
-                  "extensions-plugins/jupyterlab",
-                  "extensions-plugins/jupyterlab/commands"
-                ]
-              },
-              {
-                "group": "Neovim Plugin",
-                "pages": [
-                  "extensions-plugins/neovim-plugin"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Pieces | Productivity",
-            "pages": [
-              "obsidian",
-              "obsidian/commands"
-            ]
-          },
-          {
-            "group": "Pieces | More",
-            "groups": [
-              {
-                "group": "Privacy & Security",
-                "pages": [
-                  "privacy-security-your-data",
-                  "privacy-security-your-data/data-storage"
-                ]
-              },
-              {
-                "group": "Compatible LLMs",
-                "pages": [
-                  "large-language-models",
-                  "large-language-models/ollama-models"
-                ]
-              },
-              {
-                "group": "Glossary",
-                "pages": [ "glossary" ]
-              }
-            ]
-          },
-          {
-            "group": "Get Help",
-            "pages": [
-              "support",
-              "support/faq"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "User Routes",
-            "pages": [
-              "api-reference/users",
-              "api-reference/users/create-user",
-              "api-reference/users/get-user"
-            ]
-          },
-          {
-            "group": "Transfer Routes",
-            "pages": [
-              "api-reference/transfers",
-              "api-reference/transfers/create-transfer"
-            ]
-          },
-          {
-            "group": "Flow Routes",
-            "pages": [
-              "api-reference/flows",
-              "api-reference/flows/create-flow"
-            ]
-          },
-          {
-            "group": "Payout Link Routes",
-            "pages": [
-              "api-reference/payout-links",
-              "api-reference/payout-links/create-payout-link"
-            ]
-          },
-          {
-            "group": "Payouts",
-            "pages": [
-              "api-reference/payouts",
-              "api-reference/payouts/create-payout"
-            ]
-          },
-          {
-            "group": "Transaction Routes",
-            "pages": [
-              "api-reference/transactions",
-              "api-reference/transactions/get-transaction"
-            ]
-          }
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "mint",
+    "name": "Pieces Documentation",
+    "colors": { "primary": "#16A34A", "light": "#07C983", "dark": "#15803D" },
+    "favicon": "/favicon.svg",
+  
+    "navigation": {
+      "tabs": [
+        {
+          "tab": "Guides",
+          "groups": [
+            {
+              "group": "👋 Meet Pieces",
+              "pages": [
+                "meet-pieces",
+                "meet-pieces/fundamentals",
+                "meet-pieces/linux-installation-guide",
+                "meet-pieces/macos-installation-guide",
+                "meet-pieces/windows-installation-guide"
+              ]
+            },
+            {
+              "group": "Pieces | Quick Guides",
+              "pages": [
+                "quick-guides/overview",
+                "quick-guides/copilot-with-context"
+              ]
+            },
+            {
+              "group": "Pieces | Suite",
+              "pages": [
+                {
+                  "group": "Desktop App",
+                  "pages": [
+                    "desktop",
+                    "desktop/actions",
+                    "desktop/configuration",
+                    "desktop/configuration/support",
+                    "desktop/drive/enrichment-and-metadata",
+                    "desktop/drive/transforming-code",
+                    "desktop/navigation",
+                    "desktop/onboarding",
+                    "desktop/troubleshooting"
+                  ]
+                },
+                {
+                  "group": "Core Dependencies",
+                  "pages": [
+                    "core-dependencies",
+                    "core-dependencies/pieces-os",
+                    "core-dependencies/pieces-os/quick-menu",
+                    "core-dependencies/ollama"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Pieces | MCP",
+              "pages": [
+                "mcp",
+                "mcp/get-started"
+              ]
+            },
+            {
+              "group": "Pieces | IDEs",
+              "groups": [
+                {
+                  "group": "VS Code Extension",
+                  "pages": [
+                    "extensions-plugins/visual-studio-code",
+                    "extensions-plugins/visual-studio-code/commands",
+                    "extensions-plugins/visual-studio-code/drive"
+                  ]
+                },
+                {
+                  "group": "JetBrains Plugin",
+                  "pages": [
+                    "extensions-plugins/jetbrains",
+                    "extensions-plugins/jetbrains/commands",
+                    "extensions-plugins/jetbrains/drive/save-snippets"
+                  ]
+                },
+                {
+                  "group": "Visual Studio Extension",
+                  "pages": [
+                    "extensions-plugins/visual-studio",
+                    "extensions-plugins/visual-studio/commands"
+                  ]
+                },
+                {
+                  "group": "Sublime Text Plugin",
+                  "pages": [
+                    "extensions-plugins/sublime",
+                    "extensions-plugins/sublime/commands"
+                  ]
+                },
+                {
+                  "group": "JupyterLab Extension",
+                  "pages": [
+                    "extensions-plugins/jupyterlab",
+                    "extensions-plugins/jupyterlab/commands"
+                  ]
+                },
+                {
+                  "group": "Neovim Plugin",
+                  "pages": [
+                    "extensions-plugins/neovim-plugin"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Pieces | Productivity",
+              "pages": [
+                "obsidian",
+                "obsidian/commands"
+              ]
+            },
+            {
+              "group": "Pieces | More",
+              "groups": [
+                {
+                  "group": "Privacy & Security",
+                  "pages": [
+                    "privacy-security-your-data",
+                    "privacy-security-your-data/data-storage"
+                  ]
+                },
+                {
+                  "group": "Compatible LLMs",
+                  "pages": [
+                    "large-language-models",
+                    "large-language-models/ollama-models"
+                  ]
+                },
+                {
+                  "group": "Glossary",
+                  "pages": [ "glossary" ]
+                }
+              ]
+            },
+            {
+              "group": "Get Help",
+              "pages": [
+                "support",
+                "support/faq"
+              ]
+            }
+          ]
+        },
+        {
+          "tab": "API Reference",
+          "groups": [
+            {
+              "group": "User Routes",
+              "pages": [
+                "api-reference/users",
+                "api-reference/users/create-user",
+                "api-reference/users/get-user"
+              ]
+            },
+            {
+              "group": "Transfer Routes",
+              "pages": [
+                "api-reference/transfers",
+                "api-reference/transfers/create-transfer"
+              ]
+            },
+            {
+              "group": "Flow Routes",
+              "pages": [
+                "api-reference/flows",
+                "api-reference/flows/create-flow"
+              ]
+            },
+            {
+              "group": "Payout Link Routes",
+              "pages": [
+                "api-reference/payout-links",
+                "api-reference/payout-links/create-payout-link"
+              ]
+            },
+            {
+              "group": "Payouts",
+              "pages": [
+                "api-reference/payouts",
+                "api-reference/payouts/create-payout"
+              ]
+            },
+            {
+              "group": "Transaction Routes",
+              "pages": [
+                "api-reference/transactions",
+                "api-reference/transactions/get-transaction"
+              ]
+            }
+          ]
+        }
+      ],
+      "global": {
+        "anchors": [
+          { "anchor": "Documentation", "href": "https://mintlify.com/docs", "icon": "book-open-cover" },
+          { "anchor": "Community",      "href": "https://mintlify.com/community", "icon": "slack" },
+          { "anchor": "Blog",           "href": "https://mintlify.com/blog",      "icon": "newspaper" }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        { "anchor": "Documentation", "href": "https://mintlify.com/docs", "icon": "book-open-cover" },
-        { "anchor": "Community",      "href": "https://mintlify.com/community", "icon": "slack" },
-        { "anchor": "Blog",           "href": "https://mintlify.com/blog",      "icon": "newspaper" }
-      ]
-    }
-  },
-
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-
-  "navbar": {
-    "links": [{ "label": "Support", "href": "mailto:hi@mintlify.com" }],
-    "primary": { "type": "button", "label": "Dashboard", "href": "https://dashboard.mintlify.com" }
-  },
-
-  "footer": {
-    "socials": {
-      "x":       "https://x.com/mintlify",
-      "github":  "https://github.com/mintlify",
-      "linkedin":"https://linkedin.com/company/mintlify"
+    },
+  
+    "logo": {
+      "light": "/logo/light.svg",
+      "dark": "/logo/dark.svg"
+    },
+  
+    "navbar": {
+      "links": [{ "label": "Support", "href": "mailto:hi@mintlify.com" }],
+      "primary": { "type": "button", "label": "Dashboard", "href": "https://dashboard.mintlify.com" }
+    },
+  
+    "footer": {
+      "socials": {
+        "x":       "https://x.com/mintlify",
+        "github":  "https://github.com/mintlify",
+        "linkedin":"https://linkedin.com/company/mintlify"
+      }
     }
   }
-}
