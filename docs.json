@@ -14,174 +14,94 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Meet Pieces",
+            "group": "Getting Started",
             "pages": [
               "meet-pieces",
               "meet-pieces/fundamentals",
               "meet-pieces/windows-installation-guide",
               "meet-pieces/macos-installation-guide",
-              "meet-pieces/linux-installation-guide"
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "pages": [
+              "meet-pieces/linux-installation-guide",
               "meet-pieces/troubleshooting",
               "meet-pieces/troubleshooting/cross-platform",
               "meet-pieces/troubleshooting/windows",
               "meet-pieces/troubleshooting/macos",
               "meet-pieces/troubleshooting/linux"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Quick Guides",
-        "groups": [
+          },
           {
-            "group": "Overview",
+            "group": "Quick Guides",
             "pages": [
               "quick-guides/overview",
               "quick-guides/ltm-context",
-              "quick-guides/copilot-with-context"
-            ]
-          },
-          {
-            "group": "Long-Term Memory Prompting",
-            "pages": [
+              "quick-guides/copilot-with-context",
               "quick-guides/ltm-prompting",
               "quick-guides/ltm-prompting/examples",
               "quick-guides/ltm-prompting/tips",
               "quick-guides/ltm-prompting/workstream-activity"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Desktop App",
-        "groups": [
+          },
           {
-            "group": "Getting Started",
+            "group": "Desktop App",
             "pages": [
               "desktop",
               "desktop/download",
-              "desktop/onboarding"
-            ]
-          },
-          {
-            "group": "Navigation",
-            "pages": [
+              "desktop/onboarding",
               "desktop/navigation",
               "desktop/navigation/global-search",
               "desktop/navigation/captured-context",
               "desktop/navigation/workflow-activity",
               "desktop/navigation/snippet-discovery",
               "desktop/navigation/settings",
-              "desktop/navigation/updates"
-            ]
-          },
-          {
-            "group": "Actions",
-            "pages": [
+              "desktop/navigation/updates",
               "desktop/actions",
               "desktop/actions/keyboard-shortcuts",
-              "desktop/actions/power-menu"
-            ]
-          },
-          {
-            "group": "Configuration",
-            "pages": [
+              "desktop/actions/power-menu",
               "desktop/configuration",
               "desktop/configuration/account-and-cloud",
               "desktop/configuration/copilot-and-machine-learning",
               "desktop/configuration/aesthetics-layout",
               "desktop/configuration/additional-settings",
               "desktop/configuration/mcp",
-              "desktop/configuration/support"
-            ]
-          },
-          {
-            "group": "Drive",
-            "pages": [
+              "desktop/configuration/support",
               "desktop/drive",
               "desktop/drive/save-and-organize",
               "desktop/drive/search-and-filter",
               "desktop/drive/enrichment-and-metadata",
               "desktop/drive/transforming-code",
-              "desktop/drive/sharing"
-            ]
-          },
-          {
-            "group": "Copilot",
-            "pages": [
+              "desktop/drive/sharing",
               "desktop/copilot",
               "desktop/copilot/configuration",
               "desktop/copilot/interaction",
               "desktop/copilot/integration",
-              "desktop/copilot/multiple-environments"
-            ]
-          },
-          {
-            "group": "Other",
-            "pages": [
-              "desktop/workstream-activity"
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "pages": [
+              "desktop/copilot/multiple-environments",
+              "desktop/workstream-activity",
               "desktop/troubleshooting",
               "desktop/troubleshooting/cross-platform",
               "desktop/troubleshooting/windows",
               "desktop/troubleshooting/macos",
               "desktop/troubleshooting/linux"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Core Dependencies",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "core-dependencies"
-            ]
           },
           {
-            "group": "Pieces OS",
+            "group": "Core Dependencies",
             "pages": [
+              "core-dependencies",
               "core-dependencies/pieces-os",
               "core-dependencies/pieces-os/manual-installation",
               "core-dependencies/pieces-os/quick-menu",
-              "core-dependencies/pieces-os/troubleshooting"
-            ]
-          },
-          {
-            "group": "Ollama",
-            "pages": [
+              "core-dependencies/pieces-os/troubleshooting",
               "core-dependencies/ollama",
               "core-dependencies/ollama/manual-installation",
               "core-dependencies/ollama/supported-models",
-              "core-dependencies/ollama/troubleshooting"
+              "core-dependencies/ollama/troubleshooting",
+              "core-dependencies/on-device-storage"
             ]
           },
           {
-            "group": "Storage",
-            "pages": [
-              "core-dependencies/on-device-storage"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "MCP",
-        "groups": [
-          {
-            "group": "MCP Integration",
+            "group": "MCP",
             "pages": [
               "mcp/get-started",
               "mcp/prompting",
@@ -189,14 +109,9 @@
               "mcp/github-copilot",
               "mcp/goose"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Extensions & Plugins",
-        "groups": [
+          },
           {
-            "group": "VS Code",
+            "group": "Extensions & Plugins",
             "pages": [
               "extensions-plugins/visual-studio-code",
               "extensions-plugins/visual-studio-code/get-started",
@@ -214,12 +129,7 @@
               "extensions-plugins/visual-studio-code/copilot/refactoring",
               "extensions-plugins/visual-studio-code/copilot/llm-settings",
               "extensions-plugins/visual-studio-code/forks",
-              "extensions-plugins/visual-studio-code/troubleshooting"
-            ]
-          },
-          {
-            "group": "JetBrains",
-            "pages": [
+              "extensions-plugins/visual-studio-code/troubleshooting",
               "extensions-plugins/jetbrains",
               "extensions-plugins/jetbrains/get-started",
               "extensions-plugins/jetbrains/commands",
@@ -235,12 +145,7 @@
               "extensions-plugins/jetbrains/copilot/debugging-errors",
               "extensions-plugins/jetbrains/copilot/refactoring",
               "extensions-plugins/jetbrains/copilot/llm-settings",
-              "extensions-plugins/jetbrains/troubleshooting"
-            ]
-          },
-          {
-            "group": "Visual Studio",
-            "pages": [
+              "extensions-plugins/jetbrains/troubleshooting",
               "extensions-plugins/visual-studio",
               "extensions-plugins/visual-studio/get-started",
               "extensions-plugins/visual-studio/commands",
@@ -255,12 +160,7 @@
               "extensions-plugins/visual-studio/copilot/documenting-code",
               "extensions-plugins/visual-studio/copilot/refactoring",
               "extensions-plugins/visual-studio/copilot/llm-settings",
-              "extensions-plugins/visual-studio/troubleshooting"
-            ]
-          },
-          {
-            "group": "Sublime Text",
-            "pages": [
+              "extensions-plugins/visual-studio/troubleshooting",
               "extensions-plugins/sublime",
               "extensions-plugins/sublime/get-started",
               "extensions-plugins/sublime/commands",
@@ -276,23 +176,13 @@
               "extensions-plugins/sublime/copilot/debugging-errors",
               "extensions-plugins/sublime/copilot/refactoring",
               "extensions-plugins/sublime/copilot/llm-settings",
-              "extensions-plugins/sublime/troubleshooting"
-            ]
-          },
-          {
-            "group": "Other IDEs",
-            "pages": [
+              "extensions-plugins/sublime/troubleshooting",
               "extensions-plugins/jupyterlab",
               "extensions-plugins/neovim-plugin"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Productivity Tools",
-        "groups": [
+          },
           {
-            "group": "Obsidian",
+            "group": "Productivity Tools",
             "pages": [
               "obsidian",
               "obsidian/get-started",
@@ -306,12 +196,7 @@
               "obsidian/copilot",
               "obsidian/copilot/chat",
               "obsidian/copilot/llm-settings",
-              "obsidian/troubleshooting"
-            ]
-          },
-          {
-            "group": "Web Extension",
-            "pages": [
+              "obsidian/troubleshooting",
               "web-extension",
               "web-extension/get-started",
               "web-extension/configuration",
@@ -324,12 +209,7 @@
               "web-extension/copilot",
               "web-extension/copilot/chat",
               "web-extension/copilot/llm-settings",
-              "web-extension/troubleshooting"
-            ]
-          },
-          {
-            "group": "CLI",
-            "pages": [
+              "web-extension/troubleshooting",
               "cli",
               "cli/get-started",
               "cli/commands",
@@ -342,56 +222,50 @@
               "cli/copilot",
               "cli/copilot/chat",
               "cli/copilot/llms-settings",
-              "cli/troubleshooting"
-            ]
-          },
-          {
-            "group": "Raycast",
-            "pages": [
+              "cli/troubleshooting",
               "raycast"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "More",
-        "groups": [
+          },
           {
-            "group": "Resources",
+            "group": "More",
             "pages": [
               "privacy-security-your-data",
-              "glossary"
-            ]
-          },
-          {
-            "group": "Large Language Models",
-            "pages": [
               "large-language-models",
               "large-language-models/local-models",
-              "large-language-models/cloud-models"
-            ]
-          },
-          {
-            "group": "Support",
-            "pages": [
+              "large-language-models/cloud-models",
+              "glossary",
               "support"
             ]
           }
         ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Community",
+          "href": "https://pieces.app/community",
+          "icon": "users"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://pieces.app/blog",
+          "icon": "newspaper"
+        },
+        {
+          "anchor": "Support",
+          "href": "https://support.pieces.app",
+          "icon": "life-ring"
+        }
+      ]
+    }
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Community",
-        "href": "https://pieces.app/community"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Get Started",
