@@ -36,7 +36,7 @@
           {
             "group": "Quick Guides",
             "pages": [
-              "quick-guides/index",
+              "quick-guides/quick-guides-index",
               "quick-guides/ltm-context",
               "quick-guides/copilot-with-context",
               {
