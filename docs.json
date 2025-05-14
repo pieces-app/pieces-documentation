@@ -24,7 +24,7 @@
               {
                 "group": "Troubleshooting",
                 "pages": [
-                  "meet-pieces/troubleshooting/index",
+                  "meet-pieces/troubleshooting/meet-pieces-troubleshooting",
                   "meet-pieces/troubleshooting/cross-platform",
                   "meet-pieces/troubleshooting/macos",
                   "meet-pieces/troubleshooting/windows",
@@ -42,7 +42,7 @@
               {
                 "group": "Long-Term Memory Prompting Guide",
                 "pages": [
-                  "quick-guides/ltm-prompting/index",
+                  "quick-guides/ltm-prompting/ltm-prompting-index",
                   "quick-guides/ltm-prompting/examples",
                   "quick-guides/ltm-prompting/workstream-activity",
                   "quick-guides/ltm-prompting/tips"
@@ -58,11 +58,13 @@
           {
             "group": "Desktop App",
             "pages": [
+              "desktop/desktop-index",
               "desktop/download",
               "desktop/onboarding",
               {
                 "group": "Pieces Copilot",
                 "pages": [
+                  "desktop/copilot/desktop-copilot-index",
                   "desktop/copilot/interaction",
                   "desktop/copilot/integration",
                   "desktop/copilot/configuration",
@@ -72,6 +74,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
+                  "desktop/drive/desktop-drive-index",
                   "desktop/drive/save-and-organize",
                   "desktop/drive/search-and-filter",
                   "desktop/drive/enrichment-and-metadata",
@@ -83,6 +86,7 @@
               {
                 "group": "Navigation",
                 "pages": [
+                  "desktop/navigation/desktop-navigation-overview",
                   "desktop/navigation/settings",
                   "desktop/navigation/captured-context",
                   "desktop/navigation/updates",
@@ -94,6 +98,7 @@
               {
                 "group": "Settings",
                 "pages": [
+                  "desktop/configuration/desktop-configuration-overview",
                   "desktop/configuration/account-and-cloud",
                   "desktop/configuration/copilot-and-machine-learning",
                   "desktop/configuration/mcp",
@@ -105,6 +110,7 @@
               {
                 "group": "Actions & Keyboard Shortcuts",
                 "pages": [
+                  "desktop/actions/desktop-actions-overview",
                   "desktop/actions/power-menu",
                   "desktop/actions/keyboard-shortcuts"
                 ]
@@ -112,6 +118,7 @@
               {
                 "group": "Troubleshooting",
                 "pages": [
+                  "desktop/troubleshooting/desktop-troubleshooting-overview",
                   "desktop/troubleshooting/cross-platform",
                   "desktop/troubleshooting/macos",
                   "desktop/troubleshooting/windows",
@@ -128,13 +135,13 @@
           {
             "group": "Dependencies",
             "pages": [
-              "core-dependencies/index"
+              "core-dependencies/core-dependencies-overview"
             ]
           },
           {
             "group": "PiecesOS",
             "pages": [
-              "core-dependencies/pieces-os/index",
+              "core-dependencies/pieces-os/core-dependencies-pieces-os-overview",
               "core-dependencies/pieces-os/manual-installation",
               "core-dependencies/pieces-os/quick-menu",
               "core-dependencies/pieces-os/troubleshooting"
@@ -143,7 +150,7 @@
           {
             "group": "Ollama",
             "pages": [
-              "core-dependencies/ollama/index",
+              "core-dependencies/ollama/core-dependencies-ollama-overview",
               "core-dependencies/ollama/manual-installation",
               "core-dependencies/ollama/supported-models",
               "core-dependencies/ollama/troubleshooting"
@@ -184,12 +191,12 @@
           {
             "group": "Visual Studio Code Extension",
             "pages": [
-              "extensions-plugins/visual-studio-code/index",
+              "extensions-plugins/visual-studio-code/vsc-overview",
               "extensions-plugins/visual-studio-code/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "extensions-plugins/visual-studio-code/copilot/index",
+                  "extensions-plugins/visual-studio-code/copilot/vsc-copilot-overview",
                   "extensions-plugins/visual-studio-code/copilot/chat",
                   "extensions-plugins/visual-studio-code/copilot/documenting-code",
                   "extensions-plugins/visual-studio-code/copilot/debugging-errors",
@@ -200,7 +207,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "extensions-plugins/visual-studio-code/drive/index",
+                  "extensions-plugins/visual-studio-code/drive/pieces-drive-overview",
                   "extensions-plugins/visual-studio-code/drive/save-snippets",
                   "extensions-plugins/visual-studio-code/drive/search-reuse",
                   "extensions-plugins/visual-studio-code/drive/edit-update",
@@ -219,12 +226,12 @@
           {
             "group": "JetBrains Plugin",
             "pages": [
-              "extensions-plugins/jetbrains/index",
+              "extensions-plugins/jetbrains/jb-overview",
               "extensions-plugins/jetbrains/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "extensions-plugins/jetbrains/copilot/index",
+                  "extensions-plugins/jetbrains/copilot/jb-copilot-overview",
                   "extensions-plugins/jetbrains/copilot/chat",
                   "extensions-plugins/jetbrains/copilot/documenting-code",
                   "extensions-plugins/jetbrains/copilot/debugging-errors",
@@ -235,7 +242,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "extensions-plugins/jetbrains/drive/index",
+                  "extensions-plugins/jetbrains/drive/jb-drive-overview",
                   "extensions-plugins/jetbrains/drive/save-snippets",
                   "extensions-plugins/jetbrains/drive/search-reuse",
                   "extensions-plugins/jetbrains/drive/edit-update",
@@ -250,12 +257,12 @@
           {
             "group": "Visual Studio Extension",
             "pages": [
-              "extensions-plugins/visual-studio/index",
+              "extensions-plugins/visual-studio/vstudio-overview",
               "extensions-plugins/visual-studio/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "extensions-plugins/visual-studio/copilot/index",
+                  "extensions-plugins/visual-studio/copilot/vstudio-copilot-overview",
                   "extensions-plugins/visual-studio/copilot/chat",
                   "extensions-plugins/visual-studio/copilot/documenting-code",
                   "extensions-plugins/visual-studio/copilot/refactoring",
@@ -265,7 +272,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "extensions-plugins/visual-studio/drive/index",
+                  "extensions-plugins/visual-studio/drive/vstudio-drive-overview",
                   "extensions-plugins/visual-studio/drive/save-snippets",
                   "extensions-plugins/visual-studio/drive/search-reuse",
                   "extensions-plugins/visual-studio/drive/edit-update",
@@ -283,12 +290,12 @@
           {
             "group": "Sublime Text Plugin",
             "pages": [
-              "extensions-plugins/sublime/index",
+              "extensions-plugins/sublime/sublime-overview",
               "extensions-plugins/sublime/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "extensions-plugins/sublime/copilot/index",
+                  "extensions-plugins/sublime/copilot/sublime-copilot-overview",
                   "extensions-plugins/sublime/copilot/chat",
                   "extensions-plugins/sublime/copilot/documenting-code",
                   "extensions-plugins/sublime/copilot/debugging-errors",
@@ -299,7 +306,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "extensions-plugins/sublime/drive/index",
+                  "extensions-plugins/sublime/drive/sublime-drive-overview",
                   "extensions-plugins/sublime/drive/save-snippets",
                   "extensions-plugins/sublime/drive/search-reuse",
                   "extensions-plugins/sublime/drive/edit-update",
@@ -335,12 +342,12 @@
           {
             "group": "Obsidian Plugin",
             "pages": [
-              "obsidian/index",
+              "obsidian/obsidian-overview",
               "obsidian/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "obsidian/copilot/index",
+                  "obsidian/copilot/obsidian-copilot-overview",
                   "obsidian/copilot/chat",
                   "obsidian/copilot/llm-settings"
                 ]
@@ -348,7 +355,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "obsidian/drive/index",
+                  "obsidian/drive/obsidian-drive-overview",
                   "obsidian/drive/save-snippets",
                   "obsidian/drive/search-reuse",
                   "obsidian/drive/edit-update",
@@ -363,12 +370,12 @@
           {
             "group": "Web Extension",
             "pages": [
-              "web-extension/index",
+              "web-extension/web-extension-overview",
               "web-extension/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "web-extension/copilot/index",
+                  "web-extension/copilot/web-extension-copilot-overview",
                   "web-extension/copilot/chat",
                   "web-extension/copilot/llm-settings"
                 ]
@@ -376,7 +383,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "web-extension/drive/index",
+                  "web-extension/drive/web-extension-drive-overview",
                   "web-extension/drive/save-snippets",
                   "web-extension/drive/search-reuse",
                   "web-extension/drive/edit-update",
@@ -391,12 +398,12 @@
           {
             "group": "Pieces CLI",
             "pages": [
-              "cli/index",
+              "cli/cli-overview",
               "cli/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "cli/copilot/index",
+                  "cli/copilot/cli-copilot-overview",
                   "cli/copilot/chat",
                   "cli/copilot/llms-settings"
                 ]
@@ -404,7 +411,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "cli/drive/index",
+                  "cli/drive/cli-drive-overview",
                   "cli/drive/saving-materials",
                   "cli/drive/search-and-reuse",
                   "cli/drive/edit-and-update",
@@ -436,7 +443,7 @@
           {
             "group": "Compatible LLMs",
             "pages": [
-              "large-language-models/index",
+              "large-language-models/llms-overview",
               "large-language-models/cloud-models",
               "large-language-models/local-models"
             ]
