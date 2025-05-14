@@ -1,16 +1,18 @@
-***
+---
 
 ## What Is Ollama?
 
-Ollama is an *optional* but powerful dependency that allows PiecesOS to run Large Language Models (LLMs) directly on your device instead of relying on cloud-based AI processing. 
+Ollama is an _optional_ but powerful dependency that allows PiecesOS to run Large Language Models (LLMs) directly on your device instead of relying on cloud-based AI processing. 
 
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/core_dependencies_assets/figma_mockups/ollama_core_dependencies.png" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>
 
 Unlike PiecesOS—which is required for all Pieces functionality—Ollama is only needed if you want to use local AI models with Pieces Copilot.
 
-<Callout type="tip">
-  Using Ollama for local generative AI is *a separate process* from how PiecesOS uses local, in-house LoRA models for processing data with the LTM-2 Engine.
-</Callout>
+<tip>
+  Using Ollama for local generative AI is _a separate process_ from how PiecesOS uses local, in-house LoRA models for processing data with the LTM-2 Engine.
+</tip>
 
 ## Why Use Ollama?
 
@@ -20,13 +22,10 @@ It simplifies model deployment and ensures compatibility with [Pieces for Develo
 
 Additionally, many developers and organizations prefer local LLMs over cloud-hosted models for reasons such as:
 
-* **Stronger data security,** as it keeps proprietary code and sensitive queries 100% local.
-
-* **Faster response times** with no network delays during generative AI processing and local inference.
-
-* **Offline accessibility** for use even when no internet connection is present.
-
-* **Enterprise compliance** so all AI queries remain within company-managed environments.
+- **Stronger data security,** as it keeps proprietary code and sensitive queries 100% local.
+- **Faster response times** with no network delays during generative AI processing and local inference.
+- **Offline accessibility** for use even when no internet connection is present.
+- **Enterprise compliance** so all AI queries remain within company-managed environments.
 
 ### How It Works
 
@@ -34,17 +33,14 @@ Ollama is integrated with PiecesOS to enable local modal inference and generativ
 
 Here’s how Ollama works alongside PiecesOS:
 
-* **Serves on-device LLMs**, reducing cloud dependency and enhancing privacy.
+- **Serves on-device LLMs**, reducing cloud dependency and enhancing privacy.
+- **Automatically detects existing Ollama installations**, so if you’ve already installed it for other purposes, Pieces can use it without requiring a reinstallation.
+- **Supports a curated set of models**, all using `Q4_K_S` quantization for performance optimization.
+- **Ensures compatibility** with PiecesOS through minimum version requirements to avoid stability issues.
 
-* **Automatically detects existing Ollama installations**, so if you’ve already installed it for other purposes, Pieces can use it without requiring a reinstallation.
-
-* **Supports a curated set of models**, all using `Q4_K_S` quantization for performance optimization.
-
-* **Ensures compatibility** with PiecesOS through minimum version requirements to avoid stability issues.
-
-<Callout type="tip">
+<tip>
   Since Ollama is several GBs in size, it is **not installed by default**. Users must opt in during the PiecesOS setup process if they want local model support.
-</Callout>
+</tip>
 
 ### Using Local vs Cloud Models
 
@@ -54,7 +50,7 @@ However, users who prefer on-device AI for speed, privacy, or offline access can
 
 [You can read about the system requirements for Ollama here.](https://docs.pieces.app/products/core-dependencies/ollama/troubleshooting#using-local-models)
 
-***
+---
 
 | **Feature**              | **Cloud AI (Default)**                                                                                      | **Local AI (Ollama)**                                  |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
@@ -65,4 +61,4 @@ However, users who prefer on-device AI for speed, privacy, or offline access can
 | **Storage Requirements** | Minimal outside of the PiecesOS installation                                                                | Several GBs (model storage)                            |
 | **Offline Support**      | No                                                                                                          | Yes                                                    |
 
-***
+---
