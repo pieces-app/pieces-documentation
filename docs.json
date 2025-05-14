@@ -16,6 +16,7 @@
           {
             "group": "Meet Pieces",
             "pages": [
+              "meet-pieces/index",
               "meet-pieces/fundamentals",
               "meet-pieces/windows-installation-guide",
               "meet-pieces/macos-installation-guide",
@@ -23,6 +24,7 @@
               {
                 "group": "Troubleshooting",
                 "pages": [
+                  "meet-pieces/troubleshooting/index",
                   "meet-pieces/troubleshooting/cross-platform",
                   "meet-pieces/troubleshooting/macos",
                   "meet-pieces/troubleshooting/windows",
@@ -40,6 +42,7 @@
               {
                 "group": "Long-Term Memory Prompting Guide",
                 "pages": [
+                  "quick-guides/ltm-prompting/index",
                   "quick-guides/ltm-prompting/examples",
                   "quick-guides/ltm-prompting/workstream-activity",
                   "quick-guides/ltm-prompting/tips"
