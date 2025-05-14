@@ -122,12 +122,7 @@
         "anchor": "Core Dependencies",
         "href": "core-dependencies/index",
         "pages": [
-          {
-            "group": "Core Dependencies",
-            "pages": [
-              "core-dependencies/index"
-            ]
-          },
+          "core-dependencies/index",
           {
             "group": "PiecesOS",
             "pages": [
@@ -222,7 +217,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "extensions-plugins/jetbrains/drive/save-materials",
+                  "extensions-plugins/jetbrains/drive/save-snippets",
                   "extensions-plugins/jetbrains/drive/search-reuse",
                   "extensions-plugins/jetbrains/drive/edit-update",
                   "extensions-plugins/jetbrains/drive/sharing"
@@ -317,19 +312,19 @@
             "pages": [
               "obsidian/get-started",
               {
+                "group": "Pieces Copilot",
+                "pages": [
+                  "obsidian/copilot/chat",
+                  "obsidian/copilot/llm-settings"
+                ]
+              },
+              {
                 "group": "Pieces Drive",
                 "pages": [
                   "obsidian/drive/save-snippets",
                   "obsidian/drive/search-reuse",
                   "obsidian/drive/edit-update",
                   "obsidian/drive/sharing"
-                ]
-              },
-              {
-                "group": "Pieces Copilot",
-                "pages": [
-                  "obsidian/copilot/chat",
-                  "obsidian/copilot/llm-settings"
                 ]
               },
               "obsidian/commands",
@@ -342,19 +337,19 @@
             "pages": [
               "web-extension/get-started",
               {
+                "group": "Pieces Copilot",
+                "pages": [
+                  "web-extension/copilot/chat",
+                  "web-extension/copilot/llm-settings"
+                ]
+              },
+              {
                 "group": "Pieces Drive",
                 "pages": [
                   "web-extension/drive/save-snippets",
                   "web-extension/drive/search-reuse",
                   "web-extension/drive/edit-update",
                   "web-extension/drive/sharing"
-                ]
-              },
-              {
-                "group": "Pieces Copilot",
-                "pages": [
-                  "web-extension/copilot/chat",
-                  "web-extension/copilot/llm-settings"
                 ]
               },
               "web-extension/configuration",
@@ -367,19 +362,19 @@
             "pages": [
               "cli/get-started",
               {
+                "group": "Pieces Copilot",
+                "pages": [
+                  "cli/copilot/chat",
+                  "cli/copilot/llms-settings"
+                ]
+              },
+              {
                 "group": "Pieces Drive",
                 "pages": [
                   "cli/drive/saving-materials",
                   "cli/drive/search-and-reuse",
                   "cli/drive/edit-and-update",
                   "cli/drive/sharing"
-                ]
-              },
-              {
-                "group": "Pieces Copilot",
-                "pages": [
-                  "cli/copilot/chat",
-                  "cli/copilot/llms-settings"
                 ]
               },
               "cli/commands",
