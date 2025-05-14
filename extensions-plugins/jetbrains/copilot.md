@@ -1,0 +1,77 @@
+# Pieces Copilot
+
+With Pieces Copilot in the Pieces for JetBrains Plugin, you can add AI features to any JetBrains IDE, like generating code comments and accessing AI Quick Actions.
+
+## Generative AI Conversations
+
+If you’re unsure how to implement a specific piece of functionality, stuck on a bug, or simply want a useful answer to something within your codebase, you can use the Pieces Copilot to receive context-aware responses to help you move forward.
+
+The Pieces for JetBrains plugin provides several levels of conversation functionality, each of which is fully integrated with Pieces—you can enable the Long Term Memory Engine (LTM-2) for full, streamlined context across your entire workflow, or open a limited context conversation in the IDEs side view.
+
+
+
+## Adding Conversation Context
+
+The Pieces Copilot lets you add specific folders or files to the conversation’s context window—like files from the codebase you’re working in—so that you always have explicit and accurate answers to pressing questions at your fingertips.
+
+
+
+Start by right-clicking some code and select one of the following options from the tool menu:
+
+Ask Copilot About Selection: Includes the active selected code with the Copilot chat.
+
+Ask Copilot About Active File: Includes the entire active file with the Copilot chat for a broader range of context.
+
+
+
+## Pieces Copilot Tools
+
+Discover powerful AI-powered tools and features within the Pieces for JetBrains Plugin.
+
+Effortlessly create meaningful code comments using the Pieces for JetBrains Plugin.
+
+By analyzing your code's structure and purpose, Pieces Copilot generates clear and helpful comments to improve readability and facilitate maintenance.
+
+To add documentation and comments to code, select the code snippet—no matter how long—then right-click, hover on Pieces, and click Comment Selection with Copilot.
+
+
+
+This opens the Pieces Copilot in the JetBrains sidebar, which begins adding documentation to the highlighted snippet, from which you can select the Insert at Cursor option to add the comments to your code.
+
+You can also click Pieces: Comment, an AI Quick Action that lives above accessible functions within your code.
+
+
+
+Use this feature to maintain consistency in documentation and simplify handoffs for collaborative projects.
+
+Detect and address code issues quickly with the Pieces for JetBrains Plugin Code Debugging feature. It pinpoints problems, suggests solutions, and provides detailed context, making bug fixes faster and more intuitive.
+
+The code debugging feature is particularly useful for tackling complex tasks and ensuring code quality across projects.
+
+Using this feature is simple—locate the error in the code, marked by a red underline. Hover over the section to view the quick debug information provided by JetBrains. Then, click on More Actions and select Pieces: Copilot Fix.
+
+
+
+With the Pieces for JetBrains Plugin, enhance your workflow using powerful AI Quick Actions:
+
+Pieces: Explain: Use this AI Quick Action to get an explanation and summary of the function, making it easier to understand and document.
+
+Pieces: Comment: This AI Quick Action adds intelligent code comments to the selected function based on the context of the code itself to ensure accuracy.
+
+
+
+## Selecting Your Pieces Copilot Runtime
+
+Choose between different LLMs directly within JetBrains by accessing the sidebar and selecting your preferred model by clicking the currently utilized LLM under Active Model (Claude 3.5 Sonnet).
+
+Options range from lightweight models for simple queries to advanced models for in-depth analysis, as well as local and cloud-based LLMs.
+
+This flexibility allows you to tailor Pieces Copilot to your specific development needs, whether speed or accuracy.
+
+
+
+Read more about what LLMs are available with the Pieces for JetBrains Plugin.
+
+## Pieces Copilot As a Daily Driver
+
+The Pieces Copilot is a powerful, adaptable tool that grows with you as you use it—so use it!
