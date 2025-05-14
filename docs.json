@@ -11,10 +11,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "👋 Meet Pieces",
         "groups": [
           {
-            "group": "Quick Guides",
+            "group": "Pieces | Quick Guides",
             "pages": [
               "quick-guides/overview",
               "quick-guides/ltm-context",
@@ -31,7 +31,7 @@
             ]
           },
           {
-            "group": "Suite",
+            "group": "Pieces | Suite",
             "pages": [
               {
                 "group": "Desktop App",
@@ -133,32 +133,26 @@
             ]
           },
           {
-            "group": "MCP",
+            "group": "Pieces | MCP",
             "pages": [
               "mcp/get-started",
               "mcp/prompting",
               {
                 "group": "Cursor",
-                "pages": [
-                  "mcp/cursor"
-                ]
+                "pages": ["mcp/cursor"]
               },
               {
                 "group": "GitHub Copilot",
-                "pages": [
-                  "mcp/github-copilot"
-                ]
+                "pages": ["mcp/github-copilot"]
               },
               {
                 "group": "Goose",
-                "pages": [
-                  "mcp/goose"
-                ]
+                "pages": ["mcp/goose"]
               }
             ]
           },
           {
-            "group": "IDEs",
+            "group": "Pieces | IDEs",
             "pages": [
               {
                 "group": "Visual Studio Code Extension",
@@ -170,9 +164,7 @@
                   "extensions-plugins/visual-studio-code/get-started",
                   {
                     "group": "Troubleshooting",
-                    "pages": [
-                      "extensions-plugins/visual-studio-code/troubleshooting"
-                    ]
+                    "pages": ["extensions-plugins/visual-studio-code/troubleshooting"]
                   },
                   {
                     "group": "Copilot",
@@ -291,7 +283,7 @@
             ]
           },
           {
-            "group": "Productivity",
+            "group": "Pieces | Productivity",
             "pages": [
               {
                 "group": "Obsidian Plugin",
@@ -355,15 +347,11 @@
                   "cli/cli",
                   {
                     "group": "Commands",
-                    "pages": [
-                      "cli/commands"
-                    ]
+                    "pages": ["cli/commands"]
                   },
                   {
                     "group": "Configuration",
-                    "pages": [
-                      "cli/configuration"
-                    ]
+                    "pages": ["cli/configuration"]
                   },
                   {
                     "group": "Copilot",
@@ -391,7 +379,7 @@
             ]
           },
           {
-            "group": "More",
+            "group": "Pieces | More",
             "pages": [
               "privacy-security-your-data",
               {
@@ -407,9 +395,7 @@
           },
           {
             "group": "Get Help",
-            "pages": [
-              "support"
-            ]
+            "pages": ["support"]
           }
         ]
       }
