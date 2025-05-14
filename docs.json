@@ -157,7 +157,6 @@
           {
             "group": "Visual Studio Code Extension",
             "pages": [
-              "extensions-plugins/visual-studio-code/index",
               "extensions-plugins/visual-studio-code/commands",
               "extensions-plugins/visual-studio-code/configuration",
               "extensions-plugins/visual-studio-code/forks",
@@ -289,7 +288,6 @@
           {
             "group": "Obsidian Plugin",
             "pages": [
-              "obsidian/index",
               "obsidian/get-started",
               "obsidian/commands",
               "obsidian/configuration",
