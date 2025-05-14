@@ -53,7 +53,7 @@
         ]
       },
       {
-        "anchor": "Pieces | Suite",
+        "anchor": "Desktop App",
         "pages": [
           {
             "group": "Desktop App",
@@ -184,10 +184,12 @@
           {
             "group": "Visual Studio Code Extension",
             "pages": [
+              "extensions-plugins/visual-studio-code/index",
               "extensions-plugins/visual-studio-code/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
+                  "extensions-plugins/visual-studio-code/copilot/index",
                   "extensions-plugins/visual-studio-code/copilot/chat",
                   "extensions-plugins/visual-studio-code/copilot/documenting-code",
                   "extensions-plugins/visual-studio-code/copilot/debugging-errors",
@@ -198,6 +200,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
+                  "extensions-plugins/visual-studio-code/drive/index",
                   "extensions-plugins/visual-studio-code/drive/save-snippets",
                   "extensions-plugins/visual-studio-code/drive/search-reuse",
                   "extensions-plugins/visual-studio-code/drive/edit-update",
@@ -216,10 +219,12 @@
           {
             "group": "JetBrains Plugin",
             "pages": [
+              "extensions-plugins/jetbrains/index",
               "extensions-plugins/jetbrains/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
+                  "extensions-plugins/jetbrains/copilot/index",
                   "extensions-plugins/jetbrains/copilot/chat",
                   "extensions-plugins/jetbrains/copilot/documenting-code",
                   "extensions-plugins/jetbrains/copilot/debugging-errors",
@@ -230,6 +235,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
+                  "extensions-plugins/jetbrains/drive/index",
                   "extensions-plugins/jetbrains/drive/save-snippets",
                   "extensions-plugins/jetbrains/drive/search-reuse",
                   "extensions-plugins/jetbrains/drive/edit-update",
@@ -244,10 +250,12 @@
           {
             "group": "Visual Studio Extension",
             "pages": [
+              "extensions-plugins/visual-studio/index",
               "extensions-plugins/visual-studio/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
+                  "extensions-plugins/visual-studio/copilot/index",
                   "extensions-plugins/visual-studio/copilot/chat",
                   "extensions-plugins/visual-studio/copilot/documenting-code",
                   "extensions-plugins/visual-studio/copilot/refactoring",
@@ -257,6 +265,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
+                  "extensions-plugins/visual-studio/drive/index",
                   "extensions-plugins/visual-studio/drive/save-snippets",
                   "extensions-plugins/visual-studio/drive/search-reuse",
                   "extensions-plugins/visual-studio/drive/edit-update",
@@ -274,10 +283,12 @@
           {
             "group": "Sublime Text Plugin",
             "pages": [
+              "extensions-plugins/sublime/index",
               "extensions-plugins/sublime/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
+                  "extensions-plugins/sublime/copilot/index",
                   "extensions-plugins/sublime/copilot/chat",
                   "extensions-plugins/sublime/copilot/documenting-code",
                   "extensions-plugins/sublime/copilot/debugging-errors",
@@ -288,6 +299,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
+                  "extensions-plugins/sublime/drive/index",
                   "extensions-plugins/sublime/drive/save-snippets",
                   "extensions-plugins/sublime/drive/search-reuse",
                   "extensions-plugins/sublime/drive/edit-update",
@@ -317,16 +329,18 @@
         ]
       },
       {
-        "anchor": "Productivity",
+        "anchor": "Productivity Tools",
         "href": "obsidian/index",
         "pages": [
           {
             "group": "Obsidian Plugin",
             "pages": [
+              "obsidian/index",
               "obsidian/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
+                  "obsidian/copilot/index",
                   "obsidian/copilot/chat",
                   "obsidian/copilot/llm-settings"
                 ]
@@ -334,6 +348,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
+                  "obsidian/drive/index",
                   "obsidian/drive/save-snippets",
                   "obsidian/drive/search-reuse",
                   "obsidian/drive/edit-update",
@@ -348,10 +363,12 @@
           {
             "group": "Web Extension",
             "pages": [
+              "web-extension/index",
               "web-extension/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
+                  "web-extension/copilot/index",
                   "web-extension/copilot/chat",
                   "web-extension/copilot/llm-settings"
                 ]
@@ -359,6 +376,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
+                  "web-extension/drive/index",
                   "web-extension/drive/save-snippets",
                   "web-extension/drive/search-reuse",
                   "web-extension/drive/edit-update",
@@ -377,6 +395,7 @@
               {
                 "group": "Pieces Copilot",
                 "pages": [
+                  "cli/copilot/index",
                   "cli/copilot/chat",
                   "cli/copilot/llms-settings"
                 ]
@@ -384,6 +403,7 @@
               {
                 "group": "Pieces Drive",
                 "pages": [
+                  "cli/drive/index",
                   "cli/drive/saving-materials",
                   "cli/drive/search-and-reuse",
                   "cli/drive/edit-and-update",
