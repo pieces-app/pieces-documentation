@@ -122,12 +122,7 @@
         "anchor": "Core Dependencies",
         "href": "core-dependencies/index",
         "pages": [
-          {
-            "group": "Core Dependencies",
-            "pages": [
-              "core-dependencies/index"
-            ]
-          },
+          "core-dependencies/index",
           {
             "group": "PiecesOS",
             "pages": [
