@@ -121,12 +121,7 @@
       {
         "anchor": "Core Dependencies",
         "pages": [
-          {
-            "group": "Core Dependencies",
-            "pages": [
-              "core-dependencies/index"
-            ]
-          },
+          "core-dependencies/index",
           {
             "group": "PiecesOS",
             "pages": [
@@ -145,12 +140,7 @@
               "core-dependencies/ollama/troubleshooting"
             ]
           },
-          {
-            "group": "On-Device Storage",
-            "pages": [
-              "core-dependencies/on-device-storage"
-            ]
-          }
+          "core-dependencies/on-device-storage"
         ]
       },
       {
