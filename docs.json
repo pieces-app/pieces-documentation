@@ -123,7 +123,9 @@
         "pages": [
           {
             "group": "Core Dependencies",
-            "pages": ["core-dependencies/index"]
+            "pages": [
+              "core-dependencies/index"
+            ]
           },
           {
             "group": "PiecesOS",
@@ -145,7 +147,9 @@
           },
           {
             "group": "On-Device Storage",
-            "pages": ["core-dependencies/on-device-storage"]
+            "pages": [
+              "core-dependencies/on-device-storage"
+            ]
           }
         ]
       },
