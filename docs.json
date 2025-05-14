@@ -10,93 +10,247 @@
   "navigation": {
     "anchors": [
       {
-        "anchor": "Desktop App",
-        "href": "desktop/index",
+        "anchor": "Cli",
+        "href": "cli",
         "pages": [
-          "desktop/download",
-          "desktop/onboarding",
-          {
-            "group": "Pieces Copilot",
-            "pages": [
-              "desktop/copilot/index",
-              "desktop/copilot/configuration",
-              "desktop/copilot/integration",
-              "desktop/copilot/interaction",
-              "desktop/copilot/multiple-environments"
-            ]
-          },
-          {
-            "group": "Pieces Drive",
-            "pages": [
-              "desktop/drive/index",
-              "desktop/drive/enrichment-and-metadata",
-              "desktop/drive/save-and-organize",
-              "desktop/drive/search-and-filter",
-              "desktop/drive/sharing",
-              "desktop/drive/transforming-code"
-            ]
-          },
-          {
-            "group": "Workstream Activity",
-            "pages": ["desktop/workstream-activity"]
-          },
-          {
-            "group": "Navigation",
-            "pages": [
-              "desktop/navigation/index",
-              "desktop/navigation/captured-context",
-              "desktop/navigation/global-search",
-              "desktop/navigation/settings",
-              "desktop/navigation/snippet-discovery",
-              "desktop/navigation/updates",
-              "desktop/navigation/workflow-activity"
-            ]
-          },
-          {
-            "group": "Settings",
-            "pages": [
-              "desktop/configuration/account-and-cloud",
-              "desktop/configuration/additional-settings",
-              "desktop/configuration/aesthetics-layout",
-              "desktop/configuration/copilot-and-machine-learning",
-              "desktop/configuration/mcp",
-              "desktop/configuration/support"
-            ]
-          },
-          {
-            "group": "Actions & Keyboard Shortcuts",
-            "pages": [
-              "desktop/actions/index",
-              "desktop/actions/keyboard-shortcuts",
-              "desktop/actions/power-menu"
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "desktop/troubleshooting/index",
-              "desktop/troubleshooting/cross-platform",
-              "desktop/troubleshooting/linux",
-              "desktop/troubleshooting/macos",
-              "desktop/troubleshooting/windows"
-            ]
-          }
+          "cli/commands",
+          "cli/configuration",
+          "cli/copilot",
+          "cli/copilot/chat",
+          "cli/copilot/llms-settings",
+          "cli/drive",
+          "cli/drive/edit-and-update",
+          "cli/drive/search-and-reuse",
+          "cli/drive/sharing",
+          "cli/drive/saving-materials",
+          "cli/get-started",
+          "cli/troubleshooting"
         ]
       },
       {
         "anchor": "Core Dependencies",
-        "href": "core-dependencies/index",
+        "href": "core-dependencies",
         "pages": [
-          "core-dependencies/index",
-          {
-            "group": "PiecesOS",
-            "pages": ["core-dependencies/pieces-os/index"]
-          },
-          {
-            "group": "Ollama",
-            "pages": ["core-dependencies/ollama/index"]
-          },
-          "core-dependencies/on-device-storage"
+          "core-dependencies/on-device-storage",
+          "core-dependencies/ollama",
+          "core-dependencies/ollama/manual-installation",
+          "core-dependencies/ollama/supported-models",
+          "core-dependencies/ollama/troubleshooting",
+          "core-dependencies/pieces-os",
+          "core-dependencies/pieces-os/manual-installation",
+          "core-dependencies/pieces-os/quick-menu",
+          "core-dependencies/pieces-os/troubleshooting"
+        ]
+      },
+      {
+        "anchor": "Desktop",
+        "href": "desktop",
+        "pages": [
+          "desktop/actions",
+          "desktop/actions/keyboard-shortcuts",
+          "desktop/actions/power-menu",
+          "desktop/configuration",
+          "desktop/configuration/account-and-cloud",
+          "desktop/configuration/additional-settings",
+          "desktop/configuration/aesthetics-layout",
+          "desktop/configuration/copilot-and-machine-learning",
+          "desktop/configuration/mcp",
+          "desktop/configuration/support",
+          "desktop/copilot",
+          "desktop/copilot/configuration",
+          "desktop/copilot/interaction",
+          "desktop/copilot/integration",
+          "desktop/copilot/multiple-environments",
+          "desktop/download",
+          "desktop/navigation",
+          "desktop/navigation/captured-context",
+          "desktop/navigation/global-search",
+          "desktop/navigation/settings",
+          "desktop/navigation/snippet-discovery",
+          "desktop/navigation/updates",
+          "desktop/navigation/workflow-activity",
+          "desktop/onboarding",
+          "desktop/troubleshooting",
+          "desktop/troubleshooting/cross-platform",
+          "desktop/troubleshooting/linux",
+          "desktop/troubleshooting/macos",
+          "desktop/troubleshooting/windows",
+          "desktop/workstream-activity",
+          "desktop/drive",
+          "desktop/drive/enrichment-and-metadata",
+          "desktop/drive/save-and-organize",
+          "desktop/drive/search-and-filter",
+          "desktop/drive/sharing",
+          "desktop/drive/transforming-code"
+        ]
+      },
+      {
+        "anchor": "Extensions Plugins",
+        "pages": [
+          "extensions-plugins/jetbrains",
+          "extensions-plugins/jetbrains/commands",
+          "extensions-plugins/jetbrains/configuration",
+          "extensions-plugins/jetbrains/copilot",
+          "extensions-plugins/jetbrains/copilot/chat",
+          "extensions-plugins/jetbrains/copilot/debugging-errors",
+          "extensions-plugins/jetbrains/copilot/documenting-code",
+          "extensions-plugins/jetbrains/copilot/llm-settings",
+          "extensions-plugins/jetbrains/copilot/refactoring",
+          "extensions-plugins/jetbrains/drive",
+          "extensions-plugins/jetbrains/drive/edit-update",
+          "extensions-plugins/jetbrains/drive/save-snippets",
+          "extensions-plugins/jetbrains/drive/search-reuse",
+          "extensions-plugins/jetbrains/drive/sharing",
+          "extensions-plugins/jetbrains/get-started",
+          "extensions-plugins/jetbrains/troubleshooting",
+          "extensions-plugins/jupyterlab",
+          "extensions-plugins/neovim-plugin",
+          "extensions-plugins/sublime",
+          "extensions-plugins/sublime/commands",
+          "extensions-plugins/sublime/configuration",
+          "extensions-plugins/sublime/copilot",
+          "extensions-plugins/sublime/copilot/chat",
+          "extensions-plugins/sublime/copilot/debugging-errors",
+          "extensions-plugins/sublime/copilot/documenting-code",
+          "extensions-plugins/sublime/copilot/llm-settings",
+          "extensions-plugins/sublime/copilot/refactoring",
+          "extensions-plugins/sublime/drive",
+          "extensions-plugins/sublime/drive/edit-update",
+          "extensions-plugins/sublime/drive/save-snippets",
+          "extensions-plugins/sublime/drive/search-reuse",
+          "extensions-plugins/sublime/drive/sharing",
+          "extensions-plugins/sublime/get-started",
+          "extensions-plugins/sublime/troubleshooting",
+          "extensions-plugins/visual-studio",
+          "extensions-plugins/visual-studio/commands",
+          "extensions-plugins/visual-studio/configuration",
+          "extensions-plugins/visual-studio/copilot",
+          "extensions-plugins/visual-studio/copilot/chat",
+          "extensions-plugins/visual-studio/copilot/documenting-code",
+          "extensions-plugins/visual-studio/copilot/llm-settings",
+          "extensions-plugins/visual-studio/copilot/refactoring",
+          "extensions-plugins/visual-studio/copilot/debugging-errors",
+          "extensions-plugins/visual-studio/drive",
+          "extensions-plugins/visual-studio/drive/edit-update",
+          "extensions-plugins/visual-studio/drive/save-snippets",
+          "extensions-plugins/visual-studio/drive/search-reuse",
+          "extensions-plugins/visual-studio/drive/sharing",
+          "extensions-plugins/visual-studio/get-started",
+          "extensions-plugins/visual-studio/troubleshooting",
+          "extensions-plugins/visual-studio/forks",
+          "extensions-plugins/visual-studio-code",
+          "extensions-plugins/visual-studio-code/commands",
+          "extensions-plugins/visual-studio-code/configuration",
+          "extensions-plugins/visual-studio-code/copilot",
+          "extensions-plugins/visual-studio-code/copilot/chat",
+          "extensions-plugins/visual-studio-code/copilot/debugging-errors",
+          "extensions-plugins/visual-studio-code/copilot/documenting-code",
+          "extensions-plugins/visual-studio-code/copilot/llm-settings",
+          "extensions-plugins/visual-studio-code/copilot/refactoring",
+          "extensions-plugins/visual-studio-code/drive",
+          "extensions-plugins/visual-studio-code/drive/edit-update",
+          "extensions-plugins/visual-studio-code/drive/save-snippets",
+          "extensions-plugins/visual-studio-code/drive/search-reuse",
+          "extensions-plugins/visual-studio-code/drive/sharing",
+          "extensions-plugins/visual-studio-code/forks",
+          "extensions-plugins/visual-studio-code/get-started",
+          "extensions-plugins/visual-studio-code/troubleshooting"
+        ]
+      },
+      {
+        "anchor": "Glossary",
+        "href": "glossary"
+      },
+      {
+        "anchor": "Large Language Models",
+        "pages": [
+          "large-language-models/cloud-models",
+          "large-language-models/local-models"
+        ]
+      },
+      {
+        "anchor": "Meet Pieces",
+        "href": "meet-pieces",
+        "pages": [
+          "meet-pieces/fundamentals",
+          "meet-pieces/linux-installation-guide",
+          "meet-pieces/macos-installation-guide",
+          "meet-pieces/windows-installation-guide",
+          "meet-pieces/troubleshooting",
+          "meet-pieces/troubleshooting/cross-platform",
+          "meet-pieces/troubleshooting/linux",
+          "meet-pieces/troubleshooting/macos",
+          "meet-pieces/troubleshooting/windows"
+        ]
+      },
+      {
+        "anchor": "MCP",
+        "pages": [
+          "mcp/cursor",
+          "mcp/get-started",
+          "mcp/github-copilot",
+          "mcp/goose",
+          "mcp/prompting"
+        ]
+      },
+      {
+        "anchor": "Obsidian",
+        "href": "obsidian",
+        "pages": [
+          "obsidian/configuration",
+          "obsidian/copilot",
+          "obsidian/copilot/chat",
+          "obsidian/copilot/llm-settings",
+          "obsidian/commands",
+          "obsidian/drive",
+          "obsidian/drive/edit-update",
+          "obsidian/drive/save-snippets",
+          "obsidian/drive/search-reuse",
+          "obsidian/drive/sharing",
+          "obsidian/get-started",
+          "obsidian/troubleshooting"
+        ]
+      },
+      {
+        "anchor": "Privacy Security Your Data",
+        "href": "privacy-security-your-data"
+      },
+      {
+        "anchor": "Quick Guides",
+        "pages": [
+          "quick-guides/overview",
+          "quick-guides/copilot-with-context",
+          "quick-guides/ltm-context",
+          "quick-guides/ltm-prompting",
+          "quick-guides/ltm-prompting/examples",
+          "quick-guides/ltm-prompting/tips",
+          "quick-guides/ltm-prompting/workstream-activity"
+        ]
+      },
+      {
+        "anchor": "Raycast",
+        "href": "raycast"
+      },
+      {
+        "anchor": "Support",
+        "href": "support"
+      },
+      {
+        "anchor": "Web Extension",
+        "href": "web-extension",
+        "pages": [
+          "web-extension/configuration",
+          "web-extension/copilot",
+          "web-extension/copilot/chat",
+          "web-extension/copilot/llm-settings",
+          "web-extension/drive",
+          "web-extension/drive/edit-update",
+          "web-extension/drive/save-snippets",
+          "web-extension/drive/search-reuse",
+          "web-extension/drive/sharing",
+          "web-extension/get-started",
+          "web-extension/shortcuts",
+          "web-extension/troubleshooting"
         ]
       }
     ]
