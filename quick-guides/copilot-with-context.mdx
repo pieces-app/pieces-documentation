@@ -1,5 +1,4 @@
 ---
-sidebarTitle: "Copilot with Context"
 title: "Using Pieces Copilot with Context"
 description: "Use a combination of Pieces Long-Term Memory, and code context, to get help implementing a feature."
 ---
@@ -8,7 +7,7 @@ description: "Use a combination of Pieces Long-Term Memory, and code context, to
 
 ## Prerequisites
 
-To complete this Quick Guide, you’ll need:
+To complete this Quick Guide, you'll need:
 
 1. **The Pieces Desktop App** installed and actively running on your device.
 2. **Long-Term Memory** enabled in the Pieces Desktop App.
@@ -32,10 +31,7 @@ The first step is to review the issue by letting Pieces capture it, and then ask
   <Step title="Review the GitHub Issue">
     Open the following GitHub issue in your browser. Slowly scroll through the comments on the issue, taking maybe 30 seconds or so to scroll through it.\
     \
-    You can <a target="_blank" href="https://github.com/pieces-app/pieces-certification-course-content/issues/1">
-    use this issue</a>
-
-     as an example.
+    You can [use this issue](https://github.com/pieces-app/pieces-certification-course-content/issues/1) as an example.
   </Step>
   <Step title="Ask Pieces About the Issue">
     In the Pieces Copilot, start a new chat, ensuring the Long-Term Memory (LTM) context is enabled, and use the following prompt:
@@ -48,9 +44,7 @@ The first step is to review the issue by letting Pieces capture it, and then ask
 
 Pieces will respond with a summary of the issue:
 
-<img
-  className="mx-auto"
-/>
+![](https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/summarize_this_issue_demo.png)
 
 ### Clone the Project
 
@@ -58,8 +52,7 @@ This issue refers to a sci-fi store—a small web application written in Python 
 
 <Steps>
   <Step title="Clone the Project Repo">
-    <a target="_blank" href="https://github.com/pieces-app/pieces-certification-course-content">
-    Clone this GitHub repository.</a>
+    [Clone this GitHub repository.](https://github.com/pieces-app/pieces-certification-course-content)
   </Step>
   <Step title="Navigate to the Sci-Fi Store folder">
     Inside the repo is a folder called `scifi_store`.
@@ -72,7 +65,7 @@ This issue refers to a sci-fi store—a small web application written in Python 
 
 The next step is to add the project as context to the Pieces Copilot chat. This lets you link the project to the Long-Term Memory and ask questions about the code.
 
-Adding the project as context to your Pieces Copilot Chat will look a little different depending on whether you’re using the Pieces Desktop App or an IDE with the respective Pieces plugin or extension installed,such as VS Code.
+Adding the project as context to your Pieces Copilot Chat will look a little different depending on whether you're using the Pieces Desktop App or an IDE with the respective Pieces plugin or extension installed,such as VS Code.
 
 <Steps>
   <Step title="via Pieces Desktop App">
@@ -82,16 +75,12 @@ Adding the project as context to your Pieces Copilot Chat will look a little dif
 
     Select the `scifi_store` folder in the repository you cloned in the previous step.
 
-    <img
-      className="mx-auto"
-    />
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/add_as_context_PFD.png)
   </Step>
   <Step title="via VS Code with Pieces Installed">
     From the **Explorer**, right-click on the pane itself (not on a file or folder), and select `Pieces`, then click `Pieces: Add to Copilot Context`.
 
-    <img
-      className="mx-auto"
-    />
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/add_as_context_VSC.png)
   </Step>
 </Steps>
 
@@ -114,14 +103,12 @@ Now that Pieces has the issue from the Long-Term Memory and the project folder a
 
     Review these code changes along with the original codebase.
 
-    <img
-      className="mx-auto"
-    />
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/implem_in_project.png)
   </Step>
 </Steps>
 
 <tip>
-  🎉 Congratulations, you’ve completed the _Using Pieces Copilot with Context_ Quick Guide\! 🎉
+  🎉 Congratulations, you've completed the _Using Pieces Copilot with Context_ Quick Guide\! 🎉
 </tip>
 
 ## Bonus—Try One Prompt
@@ -147,8 +134,6 @@ This was done in 2 stages to illustrate the information from the Pieces Long-Ter
   <Step title="Check the Response">
     The Pieces Copilot will now reason over your project, as well as the GitHub issue, and give you suggestions on how to implement it.
 
-    <img
-      className="mx-auto"
-    />
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/dual_prompt.png)
   </Step>
 </Steps>
