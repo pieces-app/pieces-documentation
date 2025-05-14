@@ -1,13 +1,15 @@
-***
+---
+sidebarTitle: "Copilot with Context"
+---
+
+---
 
 ## Prerequisites
 
 To complete this Quick Guide, you’ll need:
 
 1. **The Pieces Desktop App** installed and actively running on your device.
-
 2. **Long-Term Memory** enabled in the Pieces Desktop App.
-
 3. **Optional**—Pieces installed in a Python IDE, such as the [VS Code Extension](https://docs.pieces.app/products/extensions-plugins/visual-studio-code), or the [JetBrains PyCharm Plugin](https://docs.pieces.app/products/extensions-plugins/jetbrains).
 
 ## In This Quick Guide
@@ -18,7 +20,7 @@ As a developer, a common daily task is reviewing a ticket in a tool like GitHub 
 
 This often involves switching back and forth between the code and the ticket, which can affect your productivity due to constant context switching.
 
-With Pieces, you can use the Long-Term Memory feature to remind you of the ticket details. You can then combine this with your code, allowing Pieces to guide you on implementing the issue, all from within your IDE!
+With Pieces, you can use the Long-Term Memory feature to remind you of the ticket details. You can then combine this with your code, allowing Pieces to guide you on implementing the issue, all from within your IDE\!
 
 ### Review a GitHub Issue
 
@@ -28,9 +30,11 @@ The first step is to review the issue by letting Pieces capture it, and then ask
   <Step title="Review the GitHub Issue">
     Open the following GitHub issue in your browser. Slowly scroll through the comments on the issue, taking maybe 30 seconds or so to scroll through it.\
     \
-    You can <a target="_blank" href="https://github.com/pieces-app/pieces-certification-course-content/issues/1">use this issue</a> as an example.
-  </Step>
+    You can <a target="_blank" href="https://github.com/pieces-app/pieces-certification-course-content/issues/1">
+    use this issue</a>
 
+     as an example.
+  </Step>
   <Step title="Ask Pieces About the Issue">
     In the Pieces Copilot, start a new chat, ensuring the Long-Term Memory (LTM) context is enabled, and use the following prompt:
 
@@ -42,7 +46,9 @@ The first step is to review the issue by letting Pieces capture it, and then ask
 
 Pieces will respond with a summary of the issue:
 
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/summarize_this_issue_demo.png" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>
 
 ### Clone the Project
 
@@ -50,9 +56,9 @@ This issue refers to a sci-fi store—a small web application written in Python 
 
 <Steps>
   <Step title="Clone the Project Repo">
-    <a target="_blank" href="https://github.com/pieces-app/pieces-certification-course-content">Clone this GitHub repository.</a>
+    <a target="_blank" href="https://github.com/pieces-app/pieces-certification-course-content">
+    Clone this GitHub repository.</a>
   </Step>
-
   <Step title="Navigate to the Sci-Fi Store folder">
     Inside the repo is a folder called `scifi_store`.
 
@@ -74,13 +80,16 @@ Adding the project as context to your Pieces Copilot Chat will look a little dif
 
     Select the `scifi_store` folder in the repository you cloned in the previous step.
 
-    <Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/add_as_context_PFD.png" alt="" align="center" fullwidth="true" />
+    <img
+      className="mx-auto"
+    />
   </Step>
-
   <Step title="via VS Code with Pieces Installed">
     From the **Explorer**, right-click on the pane itself (not on a file or folder), and select `Pieces`, then click `Pieces: Add to Copilot Context`.
 
-    <Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/add_as_context_VSC.png" alt="" align="center" fullwidth="true" />
+    <img
+      className="mx-auto"
+    />
   </Step>
 </Steps>
 
@@ -96,7 +105,6 @@ Now that Pieces has the issue from the Long-Term Memory and the project folder a
     How can I implement this issue in this project?
     ```
   </Step>
-
   <Step title="Check the Response">
     The Pieces Copilot will now reason over your project, as well as the GitHub issue you were looking at.
 
@@ -104,29 +112,29 @@ Now that Pieces has the issue from the Long-Term Memory and the project folder a
 
     Review these code changes along with the original codebase.
 
-    <Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/implem_in_project.png" alt="" align="center" fullwidth="true" />
+    <img
+      className="mx-auto"
+    />
   </Step>
 </Steps>
 
-<Callout type="tip">
-  🎉 Congratulations, you’ve completed the *Using Pieces Copilot with Context* Quick Guide! 🎉
-</Callout>
+<tip>
+  🎉 Congratulations, you’ve completed the _Using Pieces Copilot with Context_ Quick Guide\! 🎉
+</tip>
 
 ## Bonus—Try One Prompt
 
 This Quick Guide showed two prompts: one to get the details about the issue and another to learn how to implement it.
 
-This was done in 2 stages to illustrate the information from the Pieces Long-Term Memory, but is *unnecessary*. You can do this in a single prompt!
+This was done in 2 stages to illustrate the information from the Pieces Long-Term Memory, but is _unnecessary_. You can do this in a single prompt\!
 
 <Steps>
   <Step title="Create a New Copilot Chat">
     Create a new Pieces Copilot Chat in the Pieces Desktop App, or in your IDE.
   </Step>
-
   <Step title="Add the Project Folder as Context">
     Add the `scifi_store` project as context to this new Pieces Copilot Chat.
   </Step>
-
   <Step title="Prompt Pieces Copilot">
     Use this single prompt when interacting with Pieces Copilot;
 
@@ -134,10 +142,11 @@ This was done in 2 stages to illustrate the information from the Pieces Long-Ter
     How can I implement the create a sign up page issue I was just reading in this Python project?
     ```
   </Step>
-
   <Step title="Check the Response">
     The Pieces Copilot will now reason over your project, as well as the GitHub issue, and give you suggestions on how to implement it.
 
-    <Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/quick_guides/using_pieces_copilot_with_memory_context/dual_prompt.png" alt="" align="center" fullwidth="true" />
+    <img
+      className="mx-auto"
+    />
   </Step>
 </Steps>
