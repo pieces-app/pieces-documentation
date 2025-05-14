@@ -119,7 +119,7 @@
         ]
       },
       {
-        "anchor": "Core Dependencies",
+        "anchor": "Dependencies",
         "pages": [
           "core-dependencies/index",
           "core-dependencies/on-device-storage"
