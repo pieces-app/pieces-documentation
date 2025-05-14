@@ -8,8 +8,8 @@
     "dark": "#15803D"
   },
   "appearance": {
-    "default": "light",  
-    "strict": true        
+    "default": "light",
+    "strict": true
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -26,7 +26,7 @@
               {
                 "group": "LTM Prompting",
                 "pages": [
-                  "quick-guides/ltm-prompting",
+                  "quick-guides/ltm-prompting/ltm-prompting",
                   "quick-guides/ltm-prompting/examples",
                   "quick-guides/ltm-prompting/tips",
                   "quick-guides/ltm-prompting/workstream-activity"
@@ -44,7 +44,7 @@
                   {
                     "group": "Actions",
                     "pages": [
-                      "desktop/actions",
+                      "desktop/actions/actions",
                       "desktop/actions/keyboard-shortcuts",
                       "desktop/actions/power-menu"
                     ]
@@ -52,7 +52,7 @@
                   {
                     "group": "Configuration",
                     "pages": [
-                      "desktop/configuration",
+                      "desktop/configuration/configuration",
                       "desktop/configuration/account-and-cloud",
                       "desktop/configuration/additional-settings",
                       "desktop/configuration/aesthetics-layout",
@@ -64,7 +64,7 @@
                   {
                     "group": "Copilot",
                     "pages": [
-                      "desktop/copilot",
+                      "desktop/copilot/copilot",
                       "desktop/copilot/configuration",
                       "desktop/copilot/integration",
                       "desktop/copilot/interaction",
@@ -75,7 +75,7 @@
                   {
                     "group": "Drive",
                     "pages": [
-                      "desktop/drive",
+                      "desktop/drive/drive",
                       "desktop/drive/enrichment-and-metadata",
                       "desktop/drive/save-and-organize",
                       "desktop/drive/search-and-filter",
@@ -86,7 +86,7 @@
                   {
                     "group": "Navigation",
                     "pages": [
-                      "desktop/navigation",
+                      "desktop/navigation/navigation",
                       "desktop/navigation/captured-context",
                       "desktop/navigation/global-search",
                       "desktop/navigation/settings",
@@ -99,7 +99,7 @@
                   {
                     "group": "Troubleshooting",
                     "pages": [
-                      "desktop/troubleshooting",
+                      "desktop/troubleshooting/troubleshooting",
                       "desktop/troubleshooting/cross-platform",
                       "desktop/troubleshooting/linux",
                       "desktop/troubleshooting/macos",
@@ -117,7 +117,7 @@
                   {
                     "group": "Ollama",
                     "pages": [
-                      "core-dependencies/ollama",
+                      "core-dependencies/ollama/ollama",
                       "core-dependencies/ollama/manual-installation",
                       "core-dependencies/ollama/supported-models",
                       "core-dependencies/ollama/troubleshooting"
@@ -126,7 +126,7 @@
                   {
                     "group": "Pieces OS",
                     "pages": [
-                      "core-dependencies/pieces-os",
+                      "core-dependencies/pieces-os/pieces-os",
                       "core-dependencies/pieces-os/manual-installation",
                       "core-dependencies/pieces-os/quick-menu",
                       "core-dependencies/pieces-os/troubleshooting"
@@ -161,7 +161,7 @@
               {
                 "group": "Visual Studio Code Extension",
                 "pages": [
-                  "extensions-plugins/visual-studio-code",
+                  "extensions-plugins/visual-studio-code/visual-studio-code",
                   "extensions-plugins/visual-studio-code/commands",
                   "extensions-plugins/visual-studio-code/configuration",
                   "extensions-plugins/visual-studio-code/forks",
@@ -173,7 +173,7 @@
                   {
                     "group": "Copilot",
                     "pages": [
-                      "extensions-plugins/visual-studio-code/copilot",
+                      "extensions-plugins/visual-studio-code/copilot/copilot",
                       "extensions-plugins/visual-studio-code/copilot/chat",
                       "extensions-plugins/visual-studio-code/copilot/debugging-errors",
                       "extensions-plugins/visual-studio-code/copilot/documenting-code",
@@ -184,7 +184,7 @@
                   {
                     "group": "Drive",
                     "pages": [
-                      "extensions-plugins/visual-studio-code/drive",
+                      "extensions-plugins/visual-studio-code/drive/drive",
                       "extensions-plugins/visual-studio-code/drive/edit-update",
                       "extensions-plugins/visual-studio-code/drive/save-snippets",
                       "extensions-plugins/visual-studio-code/drive/search-reuse",
@@ -196,13 +196,13 @@
               {
                 "group": "JetBrains Plugin",
                 "pages": [
-                  "extensions-plugins/jetbrains",
+                  "extensions-plugins/jetbrains/jetbrains",
                   "extensions-plugins/jetbrains/commands",
                   "extensions-plugins/jetbrains/configuration",
                   {
                     "group": "Copilot",
                     "pages": [
-                      "extensions-plugins/jetbrains/copilot",
+                      "extensions-plugins/jetbrains/copilot/copilot",
                       "extensions-plugins/jetbrains/copilot/chat",
                       "extensions-plugins/jetbrains/copilot/debugging-errors",
                       "extensions-plugins/jetbrains/copilot/documenting-code",
@@ -213,7 +213,7 @@
                   {
                     "group": "Drive",
                     "pages": [
-                      "extensions-plugins/jetbrains/drive",
+                      "extensions-plugins/jetbrains/drive/drive",
                       "extensions-plugins/jetbrains/drive/edit-update",
                       "extensions-plugins/jetbrains/drive/save-snippets",
                       "extensions-plugins/jetbrains/drive/search-reuse",
@@ -226,13 +226,13 @@
               {
                 "group": "Visual Studio Extension",
                 "pages": [
-                  "extensions-plugins/visual-studio",
+                  "extensions-plugins/visual-studio/visual-studio",
                   "extensions-plugins/visual-studio/commands",
                   "extensions-plugins/visual-studio/configuration",
                   {
                     "group": "Copilot",
                     "pages": [
-                      "extensions-plugins/visual-studio/copilot",
+                      "extensions-plugins/visual-studio/copilot/copilot",
                       "extensions-plugins/visual-studio/copilot/chat",
                       "extensions-plugins/visual-studio/copilot/documenting-code",
                       "extensions-plugins/visual-studio/copilot/llm-settings",
@@ -242,7 +242,7 @@
                   {
                     "group": "Drive",
                     "pages": [
-                      "extensions-plugins/visual-studio/drive",
+                      "extensions-plugins/visual-studio/drive/drive",
                       "extensions-plugins/visual-studio/drive/edit-update",
                       "extensions-plugins/visual-studio/drive/save-snippets",
                       "extensions-plugins/visual-studio/drive/search-reuse",
@@ -255,13 +255,13 @@
               {
                 "group": "Sublime Text Plugin",
                 "pages": [
-                  "extensions-plugins/sublime",
+                  "extensions-plugins/sublime/sublime",
                   "extensions-plugins/sublime/commands",
                   "extensions-plugins/sublime/configuration",
                   {
                     "group": "Copilot",
                     "pages": [
-                      "extensions-plugins/sublime/copilot",
+                      "extensions-plugins/sublime/copilot/copilot",
                       "extensions-plugins/sublime/copilot/chat",
                       "extensions-plugins/sublime/copilot/debugging-errors",
                       "extensions-plugins/sublime/copilot/documenting-code",
@@ -272,7 +272,7 @@
                   {
                     "group": "Drive",
                     "pages": [
-                      "extensions-plugins/sublime/drive",
+                      "extensions-plugins/sublime/drive/drive",
                       "extensions-plugins/sublime/drive/edit-update",
                       "extensions-plugins/sublime/drive/save-snippets",
                       "extensions-plugins/sublime/drive/search-reuse",
@@ -299,7 +299,7 @@
                   {
                     "group": "Drive",
                     "pages": [
-                      "obsidian/drive",
+                      "obsidian/drive/drive",
                       "obsidian/drive/save-snippets",
                       "obsidian/drive/search-reuse",
                       "obsidian/drive/edit-update",
@@ -309,7 +309,7 @@
                   {
                     "group": "Copilot",
                     "pages": [
-                      "obsidian/copilot",
+                      "obsidian/copilot/copilot",
                       "obsidian/copilot/chat",
                       "obsidian/copilot/llm-settings"
                     ]
@@ -327,7 +327,7 @@
                   {
                     "group": "Drive",
                     "pages": [
-                      "web-extension/drive",
+                      "web-extension/drive/drive",
                       "web-extension/drive/edit-update",
                       "web-extension/drive/save-snippets",
                       "web-extension/drive/search-reuse",
@@ -337,7 +337,7 @@
                   {
                     "group": "Copilot",
                     "pages": [
-                      "web-extension/copilot",
+                      "web-extension/copilot/copilot",
                       "web-extension/copilot/chat",
                       "web-extension/copilot/llm-settings"
                     ]
@@ -360,7 +360,7 @@
                   {
                     "group": "Copilot",
                     "pages": [
-                      "cli/copilot",
+                      "cli/copilot/copilot",
                       "cli/copilot/chat",
                       "cli/copilot/llms-settings"
                     ]
@@ -368,7 +368,7 @@
                   {
                     "group": "Drive",
                     "pages": [
-                      "cli/drive",
+                      "cli/drive/drive",
                       "cli/drive/edit-and-update",
                       "cli/drive/saving-materials",
                       "cli/drive/search-and-reuse",
