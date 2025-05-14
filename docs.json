@@ -16,7 +16,7 @@
           {
             "group": "Meet Pieces",
             "pages": [
-              "meet-pieces/index",
+              "meet-pieces/meet-pieces-index",
               "meet-pieces/fundamentals",
               "meet-pieces/windows-installation-guide",
               "meet-pieces/macos-installation-guide",
