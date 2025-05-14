@@ -391,6 +391,7 @@
           {
             "group": "Pieces CLI",
             "pages": [
+              "cli/index",
               "cli/get-started",
               {
                 "group": "Pieces Copilot",
