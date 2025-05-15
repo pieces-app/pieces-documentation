@@ -70,22 +70,41 @@ Explore the docs
   <IconButton icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raycast/raycast-original.svg" text="Raycast" href="https://www.raycast.com" newTab size="md" />
 </ButtonGroup>
 
-export function TestButton() {
+export function ColorCopyButton() {
+  const [hue, setHue] = useState(180)
+  const [saturation, setSaturation] = useState(50)
+  const [lightness, setLightness] = useState(50)
+  const [baseColor, setBaseColor] = useState(`hsl(${hue}, ${saturation}%, ${lightness}%)`)
+
+  // Recompute baseColor whenever any value changes
+  useEffect(() => {
+    setBaseColor(`hsl(${hue}, ${saturation}%, ${lightness}%)`)
+  }, [hue, saturation, lightness])
+
+  // copy baseColor on click
+  const copyToClipboard = () => {
+    navigator.clipboard
+      .writeText(baseColor)
+      .then(() => alert(`Copied ${baseColor}`))
+      .catch(err => console.error('Copy failed:', err))
+  }
+
   return (
     <button
-      onClick={() => alert('Test button clicked!')}
+      onClick={copyToClipboard}
       style={{
         padding: '0.5rem 1rem',
-        backgroundColor: '#0070f3',
+        backgroundColor: baseColor,
         color: '#fff',
         border: 'none',
         borderRadius: '4px',
-        cursor: 'pointer'
+        cursor: 'pointer',
       }}
+      title={`Copy ${baseColor}`}
     >
-      Test Button
+      Copy Base Color ({baseColor})
     </button>
   )
 }
 
-<TestButton />
+<ColorCopyButton />
