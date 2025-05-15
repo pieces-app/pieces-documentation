@@ -32,7 +32,12 @@
                 ]
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "anchor": "Quick Guides",
+        "pages": [
           {
             "group": "Quick Guides",
             "pages": [
@@ -219,7 +224,9 @@
               "extensions-plugins/visual-studio-code/forks",
               {
                 "group": "Troubleshooting",
-                "pages": ["extensions-plugins/visual-studio-code/troubleshooting"]
+                "pages": [
+                  "extensions-plugins/visual-studio-code/troubleshooting"
+                ]
               }
             ]
           },
@@ -283,7 +290,9 @@
               "extensions-plugins/visual-studio/configuration",
               {
                 "group": "Troubleshooting",
-                "pages": ["extensions-plugins/visual-studio/troubleshooting"]
+                "pages": [
+                  "extensions-plugins/visual-studio/troubleshooting"
+                ]
               }
             ]
           },
@@ -317,7 +326,9 @@
               "extensions-plugins/sublime/configuration",
               {
                 "group": "Troubleshooting",
-                "pages": ["extensions-plugins/sublime/troubleshooting"]
+                "pages": [
+                  "extensions-plugins/sublime/troubleshooting"
+                ]
               }
             ]
           },
