@@ -1,7 +1,8 @@
+// components/CustomButton.tsx
 'use client'
 import React, { useState, useEffect } from 'react'
 
-export const ButtonGroup = ({
+export function ButtonGroup({
   cols = 3,
   gap = 1,
   children,
@@ -9,7 +10,7 @@ export const ButtonGroup = ({
   cols?: number
   gap?: number
   children: React.ReactNode
-}) => {
+}) {
   const [colsCount, setColsCount] = useState(cols)
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export const ButtonGroup = ({
   )
 }
 
-export const IconButton = ({
+export function IconButton({
   icon,
   text,
   href,
@@ -53,24 +54,24 @@ export const IconButton = ({
   href: string
   newTab?: boolean
   size?: 'sm' | 'md' | 'lg'
-}) => {
+}) {
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
     const html = document.documentElement
     const update = () => setIsDark(html.classList.contains('dark'))
     update()
-    const m = new MutationObserver(update)
-    m.observe(html, { attributes: true, attributeFilter: ['class'] })
-    return () => m.disconnect()
+    const mo = new MutationObserver(update)
+    mo.observe(html, { attributes: true, attributeFilter: ['class'] })
+    return () => mo.disconnect()
   }, [])
 
   const bg          = isDark ? '#0e0e0f' : '#ffffff'
-  const lightBorder = '#D1D5DB'     // gray-300
-  const lightHover  = '#4B5563'     // gray-600
+  const lightBorder = '#D1D5DB'
+  const lightHover  = '#4B5563'
   const darkBorder  = 'rgba(255, 236, 209,0.1)'
   const darkHover   = 'rgba(255, 236, 209,1)'
-  const lightArrow  = '#6B7280'     // gray-500
+  const lightArrow  = '#6B7280'
   const darkArrow   = 'rgba(255, 236, 209,0.4)'
 
   const borderColor = isDark ? darkBorder : lightBorder
@@ -84,22 +85,13 @@ export const IconButton = ({
       ? 'px-8 py-7 text-lg'
       : 'px-6 py-5 text-base'
 
-  const classes = [
-    sizeClasses,
-    'icon-btn',
-    'relative flex items-center gap-x-3 w-full',
-    'text-[var(--color-text)]',
-    'rounded-xl not-prose',
-    'group',
-  ].join(' ')
-
   return (
     <>
       <a
         href={href}
         target={newTab ? '_blank' : '_self'}
         rel={newTab ? 'noopener noreferrer' : undefined}
-        className={classes}
+        className={`${sizeClasses} icon-btn relative flex items-center gap-x-3 w-full text-[var(--color-text)] rounded-xl not-prose group`}
         style={{ backgroundColor: bg }}
       >
         <div className="absolute top-5 right-5">
@@ -119,10 +111,7 @@ export const IconButton = ({
             src={icon}
             alt=""
             className="h-full w-full object-contain"
-            style={{
-              filter: 'var(--color-filter)',
-              color: 'var(--color-text)',
-            }}
+            style={{ filter: 'var(--color-filter)', color: 'var(--color-text)' }}
           />
         </div>
 
