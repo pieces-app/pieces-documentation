@@ -173,15 +173,15 @@
         "anchor": "MCP",
         "pages": [
           {
-            "group": "Pieces | MCP",
+            "group": "Model Context Protocol (MCP)",
             "pages": [
-              "mcp/get-started"
+              "mcp/get-started",
+              "mcp/prompting"
             ]
           },
           {
-            "group": "MCP Integrations & Prompting",
+            "group": "Integrations",
             "pages": [
-              "mcp/prompting",
               "mcp/cursor",
               "mcp/github-copilot",
               "mcp/goose"
@@ -386,7 +386,7 @@
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "web-extension/copilot/web-extension-copilot-overview",
+                  "web-extension/copilot/web-extension-chat-overview",
                   "web-extension/copilot/chat",
                   "web-extension/copilot/llm-settings"
                 ]
