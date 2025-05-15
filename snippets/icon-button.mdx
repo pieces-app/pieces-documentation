@@ -1,0 +1,86 @@
+import React, { useState, useEffect } from 'react'
+
+export default function IconButton({
+  icon,
+  text,
+  href,
+  newTab = false,
+  size = 'md',
+}) {
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    const html = document.documentElement
+
+    function update() {
+      setIsDark(html.classList.contains('dark'))
+    }
+
+    update()
+    const observer = new MutationObserver(update)
+    observer.observe(html, { attributes: true, attributeFilter: ['class'] })
+    return () => observer.disconnect()
+  }, [])
+
+  const bgColor      = isDark ? '#0e0e0f'               : '#ffffff'
+  const borderColor  = isDark ? 'rgba(255,236,209,0.1)' : '#D1D5DB'
+  const hoverColor   = isDark ? 'rgba(255,236,209,1)'   : '#4B5563'
+  const arrowColor   = isDark ? 'rgba(255,236,209,0.4)' : '#6B7280'
+  const paddingClass =
+    size === 'sm' ? 'px-4 py-3 text-sm'
+  : size === 'lg' ? 'px-8 py-7 text-lg'
+  :                  'px-6 py-5 text-base'
+
+  function onEnter(e) {
+    e.currentTarget.style.border = `1px solid ${hoverColor}`
+    const svg = e.currentTarget.querySelector('svg')
+    if (svg) svg.style.stroke = hoverColor
+  }
+  function onLeave(e) {
+    e.currentTarget.style.border = `1px solid ${borderColor}`
+    const svg = e.currentTarget.querySelector('svg')
+    if (svg) svg.style.stroke = arrowColor
+  }
+
+  return (
+    <a
+      href={href}
+      target={newTab ? '_blank' : '_self'}
+      rel={newTab ? 'noopener noreferrer' : undefined}
+      className={`${paddingClass} relative flex items-center gap-x-3 w-full rounded-xl not-prose`}
+      style={{
+        backgroundColor: bgColor,
+        border: `1px solid ${borderColor}`,
+        transition: 'border-color 150ms ease-in-out',
+      }}
+      onMouseEnter={onEnter}
+      onMouseLeave={onLeave}
+    >
+      <svg
+        className="w-4 h-4 absolute top-5 right-5"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        style={{
+          stroke: arrowColor,
+          strokeWidth: 2,
+          strokeLinecap: 'round',
+          strokeLinejoin: 'round',
+          transition: 'stroke 150ms ease-in-out',
+        }}
+      >
+        <path d="M7 7h10v10" />
+        <path d="M7 17L17 7" />
+      </svg>
+
+      <img
+        src={icon}
+        alt=""
+        className="h-6 w-6 object-contain"
+        style={{ filter: 'var(--color-filter)' }}
+      />
+      <span className="not-prose font-semibold text-base">{text}</span>
+    </a>
+  )
+}
