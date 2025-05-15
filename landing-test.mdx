@@ -4,20 +4,29 @@ description: "Get started with the Pieces for Developers platform and show you h
 sidebarTitle: "Overview"
 ---
 
-<div style={{ backgroundColor:"#fff",padding:"2rem",borderRadius:"8px",border:"1px solid #eaeaea",boxShadow:"0 1px 3px rgba(0,0,0,0.08)",textAlign:"center",marginBottom:"2rem",color:"#333" }}>
-<h2 style={{ margin:"0 0 1rem",color:"#333" }}>
-Get Up And Running Faster Than Ever
-</h2>
+import dynamic from 'next/dynamic'
 
-<p style={{ margin:"0",fontSize:"1.1rem",lineHeight:"1.5",color:"#333" }}>
-Explore our updated introduction and quickstart installation guides for Pieces for Developers!
-</p>
+const ButtonGroup = dynamic(
+  () => import('/snippets/ButtonGroup.mdx').then((mod) => mod.default),
+  { ssr: false }
+)
+const IconButton = dynamic(
+  () => import('/snippets/IconButton.mdx').then((mod) => mod.default),
+  { ssr: false }
+)
 
-<p style={{ margin:"0" }}>
-<a href="https://docs.pieces.app/products/meet-pieces" style={{ color:"#1b9aaa",textDecoration:"none",fontWeight:"500",display:"inline-block",marginTop:"0.5rem",lineHeight:"1.2",padding:"0" }}>
-🎉 Take me there →
-</a>
-</p>
+<div style={{ backgroundColor: "#fff", padding: "2rem", borderRadius: "8px", border: "1px solid #eaeaea", boxShadow: "0 1px 3px rgba(0,0,0,0.08)", textAlign: "center", marginBottom: "2rem", color: "#333" }}>
+  <h2 style={{ margin: "0 0 1rem", color: "#333" }}>
+    Get Up And Running Faster Than Ever
+  </h2>
+  <p style={{ margin: "0", fontSize: "1.1rem", lineHeight: "1.5", color: "#333" }}>
+    Explore our updated introduction and quickstart installation guides for Pieces for Developers!
+  </p>
+  <p style={{ margin: "0" }}>
+    <a href="https://docs.pieces.app/products/meet-pieces" style={{ color: "#1b9aaa", textDecoration: "none", fontWeight: "500", display: "inline-block", marginTop: "0.5rem", lineHeight: "1.2", padding: "0" }}>
+      🎉 Take me there →
+    </a>
+  </p>
 </div>
 
 <CardGroup cols="2">
@@ -29,80 +38,11 @@ Explore our updated introduction and quickstart installation guides for Pieces f
   </Card>
 </CardGroup>
 
-<h2 style={{ textAlign:"center",margin:"2rem 0",color:"#333" }}>
-Explore the docs
+<h2 style={{ textAlign: "center", margin: "2rem 0", color: "#333" }}>
+  Explore the docs
 </h2>
 
 ## IDEs & Editors
-
-<CardGroup cols={3}>
-  <Card title="VS Code" icon="code" iconType="thin" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="JetBrains" icon="brain" iconType="thin" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="Visual Studio" icon="computer" iconType="thin" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="JupyterLab" icon="planet-ringed" iconType="thin" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="Sublime Text" icon="text-width" iconType="thin" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="Neovim" icon="rectangle-terminal" iconType="thin" horizontal>
-    
-  </Card>
-</CardGroup>
-
-## Web Browsers
-
-<CardGroup cols={3}>
-  <Card title="Google Chrome" icon="G" iconType="light" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="Mozilla Firefox" icon="fire-flame-curved" iconType="light" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="Brave" icon="browsers" iconType="light" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="Opera" icon="book-open-cover" iconType="light" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="Microsoft Edge" icon="corner" iconType="light" horizontal href="https://google.com">
-    
-  </Card>
-</CardGroup>
-
-## Productivity & Communication
-
-<CardGroup cols={3}>
-  <Card title="Pieces CLI" icon="terminal" iconType="light" horizontal href="https://google.com">
-    
-  </Card>
-  <Card title="Raycast" icon="raygun" iconType="light" horizontal href="https://google.com">
-    
-  </Card>
-</CardGroup>
-
-import dynamic from 'next/dynamic';
-
-export const ButtonGroup = dynamic(
-  () =>
-    import('/snippets/ButtonGroup').then((mod) => mod.ButtonGroup),
-  { ssr: false }
-);
-
-export const IconButton = dynamic(
-  () =>
-    import('/snippets/IconButton').then((mod) => mod.IconButton),
-  { ssr: false }
-);
-
-
-
 
 <ButtonGroup cols={3} gap={1}>
   <IconButton
@@ -127,3 +67,20 @@ export const IconButton = dynamic(
     size="md"
   />
 </ButtonGroup>
+
+## Web Browsers
+
+<CardGroup cols={3}>
+  <Card title="Google Chrome" icon="G" iconType="light" horizontal href="https://google.com" />
+  <Card title="Mozilla Firefox" icon="fire-flame-curved" iconType="light" horizontal href="https://google.com" />
+  <Card title="Brave" icon="browsers" iconType="light" horizontal href="https://google.com" />
+  <Card title="Opera" icon="book-open-cover" iconType="light" horizontal href="https://google.com" />
+  <Card title="Microsoft Edge" icon="corner" iconType="light" horizontal href="https://google.com" />
+</CardGroup>
+
+## Productivity & Communication
+
+<CardGroup cols={3}>
+  <Card title="Pieces CLI" icon="terminal" iconType="light" horizontal href="https://google.com" />
+  <Card title="Raycast" icon="raygun" iconType="light" horizontal href="https://google.com" />
+</CardGroup>
