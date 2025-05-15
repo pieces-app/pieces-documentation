@@ -4,36 +4,65 @@ description: "Get started with the Pieces for Developers platform and show you h
 sidebarTitle: "Overview"
 ---
 
-import dynamic from 'next/dynamic'
+import ButtonGroup from '/snippets/ButtonGroup.mdx'
+import IconButton from '/snippets/IconButton.mdx'
 
-const ButtonGroup = dynamic(
-  () => import('/snippets/ButtonGroup.mdx').then((mod) => mod.default),
-  { ssr: false }
-)
-const IconButton = dynamic(
-  () => import('/snippets/IconButton.mdx').then((mod) => mod.default),
-  { ssr: false }
-)
-
-<div style={{ backgroundColor: "#fff", padding: "2rem", borderRadius: "8px", border: "1px solid #eaeaea", boxShadow: "0 1px 3px rgba(0,0,0,0.08)", textAlign: "center", marginBottom: "2rem", color: "#333" }}>
+<div style={{
+  backgroundColor: "#fff",
+  padding: "2rem",
+  borderRadius: "8px",
+  border: "1px solid #eaeaea",
+  boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
+  textAlign: "center",
+  marginBottom: "2rem",
+  color: "#333"
+}}>
   <h2 style={{ margin: "0 0 1rem", color: "#333" }}>
     Get Up And Running Faster Than Ever
   </h2>
-  <p style={{ margin: "0", fontSize: "1.1rem", lineHeight: "1.5", color: "#333" }}>
+  <p style={{
+    margin: "0",
+    fontSize: "1.1rem",
+    lineHeight: "1.5",
+    color: "#333"
+  }}>
     Explore our updated introduction and quickstart installation guides for Pieces for Developers!
   </p>
   <p style={{ margin: "0" }}>
-    <a href="https://docs.pieces.app/products/meet-pieces" style={{ color: "#1b9aaa", textDecoration: "none", fontWeight: "500", display: "inline-block", marginTop: "0.5rem", lineHeight: "1.2", padding: "0" }}>
+    <a
+      href="https://docs.pieces.app/products/meet-pieces"
+      style={{
+        color: "#1b9aaa",
+        textDecoration: "none",
+        fontWeight: "500",
+        display: "inline-block",
+        marginTop: "0.5rem",
+        lineHeight: "1.2",
+        padding: "0"
+      }}
+    >
       🎉 Take me there →
     </a>
   </p>
 </div>
 
 <CardGroup cols="2">
-  <Card title="Desktop App" icon="desktop" iconType="thin" horizontal href="https://old.docs.pieces.app/installation-getting-started/what-am-i-installing">
+  <Card
+    title="Desktop App"
+    icon="desktop"
+    iconType="thin"
+    horizontal
+    href="https://old.docs.pieces.app/installation-getting-started/what-am-i-installing"
+  >
     The Flagship Desktop App for Pieces for Developers
   </Card>
-  <Card title="Pieces OS" icon="solar-system" iconType="thin" horizontal href="https://old.docs.pieces.app/assets/pieces_os_dark_logo.png">
+  <Card
+    title="Pieces OS"
+    icon="solar-system"
+    iconType="thin"
+    horizontal
+    href="https://old.docs.pieces.app/assets/pieces_os_dark_logo.png"
+  >
     The OS-level application that powers Pieces for Developers
   </Card>
 </CardGroup>
@@ -44,7 +73,7 @@ const IconButton = dynamic(
 
 ## IDEs & Editors
 
-<ButtonGroup cols={3} gap={1}>
+<ButtonGroup cols={3} gap={1.5}>
   <IconButton
     icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
     text="VS Code"
@@ -60,9 +89,9 @@ const IconButton = dynamic(
     size="md"
   />
   <IconButton
-    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg"
-    text="Mirco"
-    href="https://www.jetbrains.com"
+    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+    text="Visual Studio"
+    href="https://visualstudio.microsoft.com"
     newTab
     size="md"
   />
@@ -70,17 +99,45 @@ const IconButton = dynamic(
 
 ## Web Browsers
 
-<CardGroup cols={3}>
-  <Card title="Google Chrome" icon="G" iconType="light" horizontal href="https://google.com" />
-  <Card title="Mozilla Firefox" icon="fire-flame-curved" iconType="light" horizontal href="https://google.com" />
-  <Card title="Brave" icon="browsers" iconType="light" horizontal href="https://google.com" />
-  <Card title="Opera" icon="book-open-cover" iconType="light" horizontal href="https://google.com" />
-  <Card title="Microsoft Edge" icon="corner" iconType="light" horizontal href="https://google.com" />
-</CardGroup>
+<ButtonGroup cols={3} gap={1.5}>
+  <IconButton
+    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
+    text="Google Chrome"
+    href="https://www.google.com/chrome/"
+    newTab
+    size="md"
+  />
+  <IconButton
+    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg"
+    text="Mozilla Firefox"
+    href="https://www.mozilla.org/firefox/"
+    newTab
+    size="md"
+  />
+  <IconButton
+    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/brave/brave-plain.svg"
+    text="Brave"
+    href="https://brave.com/"
+    newTab
+    size="md"
+  />
+</ButtonGroup>
 
 ## Productivity & Communication
 
-<CardGroup cols={3}>
-  <Card title="Pieces CLI" icon="terminal" iconType="light" horizontal href="https://google.com" />
-  <Card title="Raycast" icon="raygun" iconType="light" horizontal href="https://google.com" />
-</CardGroup>
+<ButtonGroup cols={3} gap={1.5}>
+  <IconButton
+    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+    text="Pieces CLI"
+    href="https://docs.pieces.app/cli/cli-overview"
+    newTab
+    size="md"
+  />
+  <IconButton
+    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raycast/raycast-original.svg"
+    text="Raycast"
+    href="https://www.raycast.com"
+    newTab
+    size="md"
+  />
+</ButtonGroup>
