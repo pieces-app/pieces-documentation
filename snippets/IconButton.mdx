@@ -1,106 +1,78 @@
----
-snippet: true
----
-
+---  
+snippet: true  
+---  
 import { useState, useEffect } from 'react'
 
-export const IconButton = ({
-  icon,
-  text,
-  href,
-  newTab = false,
-  size = 'md',
-}) => {
+export default function IconButton({
+  icon, text, href, newTab = false, size = 'md'
+}) {
+  const [mounted, setMounted] = useState(false)
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     const html = document.documentElement
     const update = () => setIsDark(html.classList.contains('dark'))
     update()
-    const m = new MutationObserver(update)
-    m.observe(html, { attributes: true, attributeFilter: ['class'] })
-    return () => m.disconnect()
+    const mo = new MutationObserver(update)
+    mo.observe(html, { attributes: true, attributeFilter: ['class'] })
+    return () => mo.disconnect()
   }, [])
 
-  const bg          = isDark ? '#0e0e0f' : '#fff'
-  const lightBorder = '#D1D5DB'
-  const lightHover  = '#4B5563'
-  const darkBorder  = 'rgba(255,236,209,0.1)'
-  const darkHover   = 'rgba(255,236,209,1)'
-  const lightArrow  = '#6B7280'
-  const darkArrow   = 'rgba(255,236,209,0.4)'
+  if (!mounted) return null
 
-  const borderColor = isDark ? darkBorder : lightBorder
-  const hoverColor  = isDark ? darkHover  : lightHover
-  const arrowColor  = isDark ? darkArrow  : lightArrow
+  const bg        = isDark ? '#0e0e0f'             : '#fff'
+  const border    = isDark ? 'rgba(255,236,209,0.1)' : '#D1D5DB'
+  const hoverCol  = isDark ? 'rgba(255,236,209,1)'   : '#4B5563'
+  const arrowCol  = isDark ? 'rgba(255,236,209,0.4)' : '#6B7280'
+  const sizeClass =
+    size === 'sm' ? 'px-4 py-3 text-sm' :
+    size === 'lg' ? 'px-8 py-7 text-lg' :
+                    'px-6 py-5 text-base'
 
-  const sizeClasses =
-    size === 'sm'
-      ? 'px-4 py-3 text-sm'
-      : size === 'lg'
-      ? 'px-8 py-7 text-lg'
-      : 'px-6 py-5 text-base'
+  const handleEnter = e => {
+    e.currentTarget.style.border = `1px solid ${hoverCol}`
+    e.currentTarget.querySelector('svg')?.setAttribute('stroke', hoverCol)
+  }
+  const handleLeave = e => {
+    e.currentTarget.style.border = `1px solid ${border}`
+    e.currentTarget.querySelector('svg')?.setAttribute('stroke', arrowCol)
+  }
 
   return (
-    <>
-      <a
-        href={href}
-        target={newTab ? '_blank' : '_self'}
-        rel={newTab ? 'noopener noreferrer' : undefined}
-        className={`${sizeClasses} icon-btn relative flex items-center gap-x-3 w-full rounded-xl group`}
-        style={{ backgroundColor: bg, border: `1px solid ${borderColor}` }}
-        onMouseEnter={e => {
-          e.currentTarget.style.border = `1px solid ${hoverColor}`
-          e.currentTarget.querySelector('.arrow-icon')?.setAttribute('stroke', hoverColor)
-        }}
-        onMouseLeave={e => {
-          e.currentTarget.style.border = `1px solid ${borderColor}`
-          e.currentTarget.querySelector('.arrow-icon')?.setAttribute('stroke', arrowColor)
-        }}
-      >
-        <div className="absolute top-5 right-5">
-          <svg
-            className="w-4 h-4 arrow-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke={arrowColor}
-            strokeWidth={2}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M7 7h10v10" />
-            <path d="M7 17L17 7" />
-          </svg>
-        </div>
-        <div className="h-6 w-6">
-          <img
-            src={icon}
-            alt=""
-            className="h-full w-full object-contain"
-            style={{ filter: 'var(--color-filter)', color: 'var(--color-text)' }}
-          />
-        </div>
-        <span className="not-prose font-semibold text-base">{text}</span>
-      </a>
-
-      <style jsx>{`
-        .icon-btn {
-          --btn-border: ${borderColor};
-          --arrow-stroke: ${arrowColor};
-          transition: border-color 150ms ease-in-out;
-        }
-        .icon-btn:hover {
-          --btn-border: ${hoverColor};
-          --arrow-stroke: ${hoverColor};
-        }
-        .icon-btn .arrow-icon {
-          stroke: var(--arrow-stroke);
-          transition: stroke 150ms ease-in-out;
-        }
-      `}</style>
-    </>
+    <a
+      href={href}
+      target={newTab ? '_blank' : '_self'}
+      rel={newTab ? 'noopener noreferrer' : undefined}
+      className={`${sizeClass} relative flex items-center gap-x-3 w-full rounded-xl group`}
+      style={{
+        backgroundColor: bg,
+        border:             `1px solid ${border}`,
+        transition:         'border-color 150ms ease-in-out',
+      }}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
+      <div className="absolute top-5 right-5">
+        <svg
+          className="w-4 h-4"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke={arrowCol}
+          strokeWidth={2}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          style={{ transition: 'stroke 150ms ease-in-out' }}
+        >
+          <path d="M7 7h10v10" />
+          <path d="M7 17L17 7" />
+        </svg>
+      </div>
+      <div className="h-6 w-6">
+        <img src={icon} alt="" className="h-full w-full object-contain" />
+      </div>
+      <span className="font-semibold text-base">{text}</span>
+    </a>
   )
 }
-
-export default IconButton
