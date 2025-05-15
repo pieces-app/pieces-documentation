@@ -1,5 +1,3 @@
-import { ColorGenerator } from "/snippets/color-generator.mdx"
-
 ---
 title: "Welcome to Pieces for Developers"
 description: "Get started with the Pieces for Developers platform and show you how to best use and optimize your workflow by selecting your favorite IDE, editor, or productivity tool!"
@@ -98,5 +96,30 @@ Explore the docs
   </Card>
 </CardGroup>
 
+import {ButtonGroup} from '/snippets/CustomButton.mdx'
 
-<ColorGenerator />
+<ButtonGroup cols={3} gap={1}>
+  <IconButton
+    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+    text="VS Code"
+    href="https://code.visualstudio.com"
+    newTab={true}
+    size="md"
+  />
+  <IconButton
+    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg"
+    text="JetBrains"
+    href="https://www.jetbrains.com"
+    newTab
+    size="md"
+  />
+  <IconButton
+    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg"
+    text="Mirco"
+    href="https://www.jetbrains.com"
+    newTab
+    size="md"
+  />
+</ButtonGroup>
+
+
