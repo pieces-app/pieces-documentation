@@ -12,33 +12,31 @@ export default function IconButton({
   useEffect(() => {
     if (typeof document === 'undefined') return
     const html = document.documentElement
-
     function update() {
       setIsDark(html.classList.contains('dark'))
     }
-
     update()
-    const observer = new MutationObserver(update)
-    observer.observe(html, { attributes: true, attributeFilter: ['class'] })
-    return () => observer.disconnect()
+    const obs = new MutationObserver(update)
+    obs.observe(html, { attributes: true, attributeFilter: ['class'] })
+    return () => obs.disconnect()
   }, [])
 
-  const bgColor      = isDark ? '#0e0e0f'               : '#ffffff'
-  const borderColor  = isDark ? 'rgba(255,236,209,0.1)' : '#D1D5DB'
-  const hoverColor   = isDark ? 'rgba(255,236,209,1)'   : '#4B5563'
-  const arrowColor   = isDark ? 'rgba(255,236,209,0.4)' : '#6B7280'
-  const paddingClass =
+  const bg         = isDark ? '#0e0e0f'               : '#ffffff'
+  const border     = isDark ? 'rgba(255,236,209,0.1)' : '#D1D5DB'
+  const hover      = isDark ? 'rgba(255,236,209,1)'   : '#4B5563'
+  const arrowColor = isDark ? 'rgba(255,236,209,0.4)' : '#6B7280'
+  const padding    =
     size === 'sm' ? 'px-4 py-3 text-sm'
   : size === 'lg' ? 'px-8 py-7 text-lg'
   :                  'px-6 py-5 text-base'
 
   function onEnter(e) {
-    e.currentTarget.style.border = `1px solid ${hoverColor}`
+    e.currentTarget.style.border = `1px solid ${hover}`
     const svg = e.currentTarget.querySelector('svg')
-    if (svg) svg.style.stroke = hoverColor
+    if (svg) svg.style.stroke = hover
   }
   function onLeave(e) {
-    e.currentTarget.style.border = `1px solid ${borderColor}`
+    e.currentTarget.style.border = `1px solid ${border}`
     const svg = e.currentTarget.querySelector('svg')
     if (svg) svg.style.stroke = arrowColor
   }
@@ -48,10 +46,10 @@ export default function IconButton({
       href={href}
       target={newTab ? '_blank' : '_self'}
       rel={newTab ? 'noopener noreferrer' : undefined}
-      className={`${paddingClass} relative flex items-center gap-x-3 w-full rounded-xl not-prose`}
+      className={`${padding} relative flex items-center gap-x-3 w-full rounded-xl not-prose`}
       style={{
-        backgroundColor: bgColor,
-        border: `1px solid ${borderColor}`,
+        backgroundColor: bg,
+        border: `1px solid ${border}`,
         transition: 'border-color 150ms ease-in-out',
       }}
       onMouseEnter={onEnter}
@@ -73,7 +71,6 @@ export default function IconButton({
         <path d="M7 7h10v10" />
         <path d="M7 17L17 7" />
       </svg>
-
       <img
         src={icon}
         alt=""
