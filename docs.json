@@ -481,7 +481,7 @@
       },
       {
         "anchor": "Get Help",
-        "icon": "info",
+        "icon": "circle-help",
         "href": "support",
         "pages": [
           {
