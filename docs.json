@@ -178,27 +178,6 @@
         ]
       },
       {
-        "anchor": "MCP",
-        "icon": "antenna",
-        "pages": [
-          {
-            "group": "Model Context Protocol (MCP)",
-            "pages": [
-              "mcp/get-started",
-              "mcp/prompting"
-            ]
-          },
-          {
-            "group": "Integrations",
-            "pages": [
-              "mcp/cursor",
-              "mcp/github-copilot",
-              "mcp/goose"
-            ]
-          }
-        ]
-      },
-      {
         "anchor": "IDEs",
         "href": "extensions-plugins/visual-studio-code/index",
         "icon": "shapes",
@@ -449,6 +428,27 @@
             "group": "Raycast",
             "pages": [
               "raycast"
+            ]
+          }
+        ]
+      },
+      {
+        "anchor": "MCP",
+        "icon": "antenna",
+        "pages": [
+          {
+            "group": "Model Context Protocol (MCP)",
+            "pages": [
+              "mcp/get-started",
+              "mcp/prompting"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "mcp/cursor",
+              "mcp/github-copilot",
+              "mcp/goose"
             ]
           }
         ]
