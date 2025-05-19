@@ -1,5 +1,4 @@
-/* target all images in a Card */
-.mint-card img {
+div[data-component="Card"] img {
   width: 80px;
   height: auto;
 }
