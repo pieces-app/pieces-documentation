@@ -12,6 +12,7 @@
     "anchors": [
       {
         "anchor": "Meet Pieces",
+        "icon": "corner-down-right",
         "pages": [
           {
             "group": "Meet Pieces",
