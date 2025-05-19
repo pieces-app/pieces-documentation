@@ -2,3 +2,11 @@ div[data-component="Card"] img {
   width: 80px;
   height: auto;
 }
+
+div[data-component="CardGroup"] {
+  display: grid !important;
+  /* force two columns (falls back to cols prop if you change it) */
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  margin: 2rem 0;
+}

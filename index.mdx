@@ -21,31 +21,35 @@ Let’s answer a few basic questions:
     height="50"
     noZoom={true}
     alt="Acrobat icon"
+    className="mx-auto"
   />
 
   Check out the Pieces for [Adobe Acrobat](/cli/commands) extension.
 </Card>
 
 <Card title="Adobe Acrobat">
-  <div
-    style={{
-      display: 'flex',
-      alignItems: 'center',
-      gap: '0.5rem'
-    }}
-  >
-    <img
-      src="/public/icons/acrobat.png"
-      width="50"
-      height="50"
-      noZoom
-      alt="Acrobat icon"
-    />
-    <span>
-      Check out the Pieces for Adobe Acrobat extension.
-    </span>
+  <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+  <img
+    src="/public/icons/acrobat.png"
+    width="50"
+    height="50"
+    noZoom={true}
+    alt="Acrobat icon"
+  />
+
+  <span>
+  Check out the Pieces for Adobe Acrobat extension.
+
+  </span>
+
   </div>
 </Card>
+
+<CardGroup cols={2}>
+  <Card title="New Card" icon="sparkles">
+    Test
+  </Card>
+</CardGroup>
 
 ### What is Pieces?
 
