@@ -8,28 +8,50 @@ title: "Introducing Pieces for Developers"
 
 This documentation is designed to provide a high-level overview of [Pieces' features and functionalities](https://docs.pieces.app/products/meet-pieces/fundamentals), with a quick-start and troubleshooting guides for [macOS](https://docs.pieces.app/products/meet-pieces/macos-installation-guide), [Windows](https://docs.pieces.app/products/meet-pieces/windows-installation-guide), and [Linux](https://docs.pieces.app/products/meet-pieces/linux-installation-guide) to help you get started with Pieces as quickly as possible.
 
-<CardGroup cols={3}>
-  <Card
-    title="VS Code Extension"
-    icon="vs_code"
-    href="/extensions-plugins/visual-studio-code/vsc-overview"
-    cta="View Documentation"
-    arrow="arrow-up-right"
-  />
-  <Card
-    title="Visual Studio Extension"
-    icon="visual_studio"
-    href="/extensions-plugins/visual-studio/vstudio-overview"
-    cta="View Documentation"
-    arrow="arrow-up-right"
-  />
-  <Card
-    title="Pieces Web Extension"
-    icon="chromium"
-    href="/web-extension/web-extension-overview"
-    cta="View Documentation"
-    arrow="arrow-up-right"
-  />
+<CardGroup cols={2}>
+  <Card title="JetBrains Plugin">
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: '100%',
+        padding: '0 1rem'
+      }}
+    >
+      <img
+        src="/public/icons/jetbrains.png"
+        width="40"
+        height="40"
+        noZoom
+        alt="JetBrains icon"
+      />
+      <span>View Documentation</span>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
+  </Card>
+
+  <Card title="JupyterLab Extension">
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: '100%',
+        padding: '0 1rem'
+      }}
+    >
+      <img
+        src="/public/icons/jupyter_light.png"
+        width="40"
+        height="40"
+        noZoom
+        alt="JupyterLab icon"
+      />
+      {/* omit the span if you just want the arrow */}
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
+  </Card>
 </CardGroup>
 
 <CardGroup>
