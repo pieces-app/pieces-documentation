@@ -1,61 +1,27 @@
-```
-'use client'
-
-import React, {
-  useState,
-  useEffect,
-  useCallback,
-  useMemo,
-  ReactNode,
-  MouseEvent,
-} from 'react'
-
-/**
- * ButtonGroup
- *
- * A responsive grid that adjusts number of columns based on viewport width.
- *
- * Client‐Side Rendering Impact:
- *  - SEO: dynamic column counts won't appear in raw HTML, so search engines may not index perfect layout.
- *  - Initial Load: users may see one-column layout momentarily before JS runs.
- *  - Accessibility: region announces layout changes to screen readers.
- *
- * Performance Best Practices:
- *  - Wrapped updateCols in useCallback to avoid recreating on every render.
- *  - Dependency array only includes `cols`.
- */
-export function ButtonGroup({
-  cols = 3,
-  gap = 1,
-  children,
-}: {
-  cols?: number
-  gap?: number
-  children: ReactNode
-}) {
+export const ButtonGroup = ({ cols = 3, gap = 1, children }) => {
   const [colsCount, setColsCount] = useState(cols)
 
-  const updateCols = useCallback(() => {
-    const w = window.innerWidth
-    if (w < 640) {
-      setColsCount(1)
-    } else if (w < 768) {
-      setColsCount(Math.min(cols, 2))
-    } else {
-      setColsCount(cols)
-    }
-  }, [cols])
-
   useEffect(() => {
+    const updateCols = () => {
+      const w = window.innerWidth
+      if (w < 640) {
+        // mobile: stack
+        setColsCount(1)
+      } else if (w < 768) {
+        // small tablet: up to 2
+        setColsCount(Math.min(cols, 2))
+      } else {
+        // desktop: your passed cols
+        setColsCount(cols)
+      }
+    }
     updateCols()
     window.addEventListener('resize', updateCols)
     return () => window.removeEventListener('resize', updateCols)
-  }, [updateCols])
+  }, [cols])
 
   return (
     <div
-      role="region"
-      aria-live="polite"
       style={{
         display: 'grid',
         gridTemplateColumns: `repeat(${colsCount}, minmax(0, 1fr))`,
@@ -67,88 +33,51 @@ export function ButtonGroup({
   )
 }
 
-/**
- * IconButton
- *
- * A full-width button with an icon, text, responsive hover-border & arrow fade.
- *
- * Client‐Side Rendering Impact:
- *  - SEO: icon/text always in HTML; dynamic border/arrow color applied post-hydration.
- *  - Initial Load: border/arrow may flash initial color.
- *  - Accessibility: uses semantic <a> with visible focus & hover states.
- *
- * Performance Best Practices:
- *  - useMemo for color calculations to avoid re-compute on every render.
- *  - useCallback for event handlers.
- */
-export function IconButton({
+export const IconButton = ({
   icon,
   text,
   href,
   newTab = false,
   size = 'md',
-}: {
-  icon: string
-  text: string
-  href: string
-  newTab?: boolean
-  size?: 'sm' | 'md' | 'lg'
-}) {
+}) => {
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
     const html = document.documentElement
     const update = () => setIsDark(html.classList.contains('dark'))
     update()
-    const mo = new MutationObserver(update)
-    mo.observe(html, { attributes: true, attributeFilter: ['class'] })
-    return () => mo.disconnect()
+    const m = new MutationObserver(update)
+    m.observe(html, { attributes: true, attributeFilter: ['class'] })
+    return () => m.disconnect()
   }, [])
 
-  const [bg, borderColor, hoverColor, arrowColor] = useMemo(() => {
-    const bg = isDark ? '#0e0e0f' : '#ffffff'
-    const lightBorder = '#D1D5DB'
-    const lightHover = '#4B5563'
-    const darkBorder = 'rgba(255, 236, 209, 0.1)'
-    const darkHover = 'rgba(255, 236, 209, 1)'
-    const lightArrow = '#6B7280'
-    const darkArrow = 'rgba(255, 236, 209, 0.4)'
-    return [
-      bg,
-      isDark ? darkBorder : lightBorder,
-      isDark ? darkHover : lightHover,
-      isDark ? darkArrow : lightArrow,
-    ]
-  }, [isDark])
+  const bg          = isDark ? '#0e0e0f' : '#ffffff'
+  const lightBorder = '#D1D5DB'     // gray-300
+  const lightHover  = '#4B5563'     // gray-600
+  const darkBorder  = 'rgba(255, 236, 209,0.1)'
+  const darkHover   = 'rgba(255, 236, 209,1)'
+  const lightArrow  = '#6B7280'     // gray-500
+  const darkArrow   = 'rgba(255, 236, 209,0.4)'
 
-  const sizeClasses = useMemo(() => {
-    switch (size) {
-      case 'sm':
-        return 'px-4 py-3 text-sm'
-      case 'lg':
-        return 'px-8 py-7 text-lg'
-      default:
-        return 'px-6 py-5 text-base'
-    }
-  }, [size])
+  const borderColor = isDark ? darkBorder : lightBorder
+  const hoverColor  = isDark ? darkHover  : lightHover
+  const arrowColor  = isDark ? darkArrow  : lightArrow
 
-  const handleMouseEnter = useCallback(
-    (e: MouseEvent<HTMLAnchorElement>) => {
-      e.currentTarget.style.border = `1px solid ${hoverColor}`
-      const svg = e.currentTarget.querySelector<SVGSVGElement>('.arrow-icon')
-      if (svg) svg.setAttribute('stroke', hoverColor)
-    },
-    [hoverColor]
-  )
+  const sizeClasses =
+    size === 'sm'
+      ? 'px-4 py-3 text-sm'
+      : size === 'lg'
+      ? 'px-8 py-7 text-lg'
+      : 'px-6 py-5 text-base'
 
-  const handleMouseLeave = useCallback(
-    (e: MouseEvent<HTMLAnchorElement>) => {
-      e.currentTarget.style.border = `1px solid ${borderColor}`
-      const svg = e.currentTarget.querySelector<SVGSVGElement>('.arrow-icon')
-      if (svg) svg.setAttribute('stroke', arrowColor)
-    },
-    [borderColor, arrowColor]
-  )
+  const classes = [
+    sizeClasses,
+    'icon-btn',
+    'relative flex items-center gap-x-3 w-full',
+    'text-[var(--color-text)]',
+    'rounded-xl not-prose',
+    'group',
+  ].join(' ')
 
   return (
     <>
@@ -156,10 +85,18 @@ export function IconButton({
         href={href}
         target={newTab ? '_blank' : '_self'}
         rel={newTab ? 'noopener noreferrer' : undefined}
-        className={`${sizeClasses} icon-btn relative flex items-center gap-x-3 w-full text-[var(--color-text)] rounded-xl not-prose group`}
-        style={{ backgroundColor: bg, border: `1px solid ${borderColor}` }}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        className={classes}
+        style={{ backgroundColor: bg }}
+        onMouseEnter={e => {
+          e.currentTarget.style.border = `1px solid ${hoverColor}`
+          const svg = e.currentTarget.querySelector('.arrow-icon')
+          if (svg) svg.setAttribute('stroke', hoverColor)
+        }}
+        onMouseLeave={e => {
+          e.currentTarget.style.border = `1px solid ${borderColor}`
+          const svg = e.currentTarget.querySelector('.arrow-icon')
+          if (svg) svg.setAttribute('stroke', arrowColor)
+        }}
       >
         <div className="absolute top-5 right-5">
           <svg
@@ -182,10 +119,7 @@ export function IconButton({
             src={icon}
             alt=""
             className="h-full w-full object-contain"
-            style={{
-              filter: 'var(--color-filter)',
-              color: 'var(--color-text)',
-            }}
+            style={{ filter: 'var(--color-filter)', color: 'var(--color-text)' }}
           />
         </div>
 
@@ -194,19 +128,23 @@ export function IconButton({
 
       <style jsx>{`
         .icon-btn {
+          --btn-border: ${borderColor};
+          --arrow-stroke: ${arrowColor};
+          border: 1px solid var(--btn-border);
           transition: border-color 150ms ease-in-out;
         }
         .icon-btn:hover {
-          border-color: ${hoverColor} !important;
+          --btn-border: ${hoverColor};
+          --arrow-stroke: ${hoverColor};
         }
         .icon-btn .arrow-icon {
+          stroke: var(--arrow-stroke);
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
           transition: stroke 150ms ease-in-out;
-        }
-        .icon-btn:hover .arrow-icon {
-          stroke: ${hoverColor} !important;
         }
       `}</style>
     </>
   )
 }
-```
