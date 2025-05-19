@@ -1,12 +1,39 @@
 div[data-component="Card"] img {
-  width: 80px;
-  height: auto;
-}
+    width: 80px;
+    height: auto;
+  }
+  
+  div[data-component="CardGroup"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.5rem !important;
+    margin: 2rem 0;
+  }
 
-div[data-component="CardGroup"] {
-  display: grid !important;
-  /* force two columns (falls back to cols prop if you change it) */
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 1.5rem !important;
-  margin: 2rem 0;
-}
+  div[data-component="Card"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 200px; 
+    padding: 1rem;
+  }
+
+  .card-header {
+    min-height: 2rem; 
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card-text {
+    margin-top: 1rem;
+    text-align: center;
+  }
