@@ -201,7 +201,7 @@
       {
         "anchor": "IDEs",
         "href": "extensions-plugins/visual-studio-code/index",
-        "icon": "app-window",
+        "icon": "shapes",
         "pages": [
           {
             "group": "Visual Studio Code Extension",
@@ -358,7 +358,7 @@
       },
       {
         "anchor": "Productivity Tools",
-        "icon": "combine",
+        "icon": "blocks",
         "href": "obsidian/index",
         "pages": [
           {
@@ -455,7 +455,7 @@
       },
       {
         "anchor": "More",
-        "icon": "boxes",
+        "icon": "chevron-right",
         "pages": [
           {
             "group": "Privacy & Security",
