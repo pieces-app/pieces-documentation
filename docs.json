@@ -9,8 +9,12 @@
   },
   "icons": {
     "library": "lucide"
+
   },
   "favicon": "/favicon.svg",
+  "customCss": [
+    "/style.css"
+  ],
   "navigation": {
     "anchors": [
       {
