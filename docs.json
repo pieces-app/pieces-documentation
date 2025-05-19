@@ -16,6 +16,7 @@
         "pages": [
           {
             "group": "Meet Pieces",
+            "icon": "layout-panel-left",
             "pages": [
               "meet-pieces/meet-pieces-index",
               "meet-pieces/fundamentals",
