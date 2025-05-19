@@ -15,7 +15,7 @@
     "anchors": [
       {
         "anchor": "Meet Pieces",
-        "icon": "corner-down-right",
+        "icon": "hand",
         "pages": [
           {
             "group": "Meet Pieces",
@@ -42,6 +42,7 @@
       },
       {
         "anchor": "Quick Guides",
+        "icon": "notebook-text",
         "pages": [
           {
             "group": "Quick Guides",
@@ -64,6 +65,7 @@
       },
       {
         "anchor": "Desktop App",
+        "icon": "tv-minimal",
         "pages": [
           {
             "group": "Desktop App",
@@ -141,6 +143,7 @@
       },
       {
         "anchor": "Dependencies",
+        "icon": "trending-up-down",
         "pages": [
           {
             "group": "Dependencies",
@@ -176,6 +179,7 @@
       },
       {
         "anchor": "MCP",
+        "icon": "antenna",
         "pages": [
           {
             "group": "Model Context Protocol (MCP)",
@@ -197,6 +201,7 @@
       {
         "anchor": "IDEs",
         "href": "extensions-plugins/visual-studio-code/index",
+        "icon": "app-window",
         "pages": [
           {
             "group": "Visual Studio Code Extension",
@@ -353,6 +358,7 @@
       },
       {
         "anchor": "Productivity Tools",
+        "icon": "combine",
         "href": "obsidian/index",
         "pages": [
           {
@@ -449,6 +455,7 @@
       },
       {
         "anchor": "More",
+        "icon": "boxes",
         "pages": [
           {
             "group": "Privacy & Security",
@@ -474,6 +481,7 @@
       },
       {
         "anchor": "Get Help",
+        "icon": "info",
         "href": "support",
         "pages": [
           {
