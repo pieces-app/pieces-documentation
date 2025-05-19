@@ -51,6 +51,37 @@ Let’s answer a few basic questions:
   </Card>
 </CardGroup>
 
+import { CardGroup, Card } from 'mint-ui';
+
+<CardGroup cols={2}>
+  <Card>
+    <img
+      src="/public/icons/acrobat.png"
+      width="50"
+      height="50"
+      noZoom
+      alt="Acrobat icon"
+      className="mx-auto"
+    />
+    Check out the Pieces for [Adobe Acrobat](/cli/commands) extension.
+  </Card>
+
+  <Card title="Adobe Acrobat">
+    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+      <img
+        src="/public/icons/acrobat.png"
+        width="50"
+        height="50"
+        noZoom
+        alt="Acrobat icon"
+      />
+      <span>
+        Check out the Pieces for Adobe Acrobat extension.
+      </span>
+    </div>
+  </Card>
+</CardGroup>
+
 ### What is Pieces?
 
 At its core, Pieces is an all-in-one productivity tool that helps developers work _smarter_, not harder, by anchoring engineers to their workflow with the power of the **Long-Term Memory Engine, Pieces Drive,** and the **Pieces Copilot.**
