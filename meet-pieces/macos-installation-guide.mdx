@@ -15,11 +15,39 @@ description: "The following guide will help you install and run both PiecesOS an
 Click the **buttons below** to download Pieces for your macOS device.
 
 <CardGroup cols={2}>
-  <Card title="Download — PiecesOS & Pieces Desktop App (ARM)" href="https://builds.pieces.app/stages/production/macos_packaging/pkg-arm64/download?download=true&product=DOCUMENTATION_WEBSITE" img="/public/icons/apple.svg">
-    _macOS 13.0 (Ventura) or higher required_
+  <Card title="Download — PiecesOS & Pieces Desktop App (ARM)" href="https://builds.pieces.app/stages/production/macos_packaging/pkg-arm64/download?download=true&product=DOCUMENTATION_WEBSITE">
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/apple.svg"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="Apple icon"
+        />
+        <span>
+          _macOS 13.0 (Ventura) or higher required_
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
-  <Card title="Download — PiecesOS & Desktop App (Intel)" href="https://builds.pieces.app/stages/production/macos_packaging/pkg/download?download=true&product=DOCUMENTATION_WEBSITE" img="/public/icons/intel.webp">
-    _macOS 13.0 (Ventura) or higher required_
+  <Card title="Download — PiecesOS & Desktop App (Intel)" href="https://builds.pieces.app/stages/production/macos_packaging/pkg/download?download=true&product=DOCUMENTATION_WEBSITE">
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/intel.webp"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="Intel icon"
+        />
+        <span>
+          _macOS 13.0 (Ventura) or higher required_
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
 </CardGroup>
 
@@ -42,138 +70,175 @@ Once you’ve downloaded the correct `.pkg` file, it’s time to run the install
 
 ### System Requirements
 
-There are (2)
+There are two requirements for installing Pieces on your macOS device:
 
-requirements for installing Pieces on your macOS device:
+1. **Compatible OS Version**—macOS 13.0 (Ventura) or higher  
+2. **Compatible Installer**—Apple Silicon (ARM) or Intel
 
-1. Compatible OS Version—**macOS 13.0 (Ventura) or higher**
-2. Compatible installer for your device’s architecture—**Apple Silicon (ARM) or Intel**
-
-Click here for a quick guide on [determining your OS type](https://docs.pieces.app/products/meet-pieces/troubleshooting/macos#checking-os-version), and here for [how to check your device’s CPU architecture.](https://docs.pieces.app/products/meet-pieces/troubleshooting/macos#checking-cpu-type)
+[How to check your OS version](https://docs.pieces.app/products/meet-pieces/troubleshooting/macos#checking-os-version) | [How to check CPU architecture](https://docs.pieces.app/products/meet-pieces/troubleshooting/macos#checking-cpu-type)
 
 ---
 
 | **Component**      | **Minimum**                                                                    | **Recommended**                      | **Notes**                                                        |
 | ------------------ | ------------------------------------------------------------------------------ | ------------------------------------ | ---------------------------------------------------------------- |
-| _CPU_              | Any modern CPU                                                                 | Multi-core CPU                       | Avoid dual-core processors—aim for at least a 4-core CPU.        |
-| _RAM (Local Mode)_ | 8 GB total system RAM with 2 GB free                                           | 16 GB total system RAM or more       | Applies when PiecesOS is running locally.                        |
-| _RAM (Cloud Mode)_ | 8 GB total system RAM with 1 GB free                                           | 16 GB total system RAM or more       | Applies when PiecesOS is running in cloud mode.                  |
-| _Disk Space_       | 2 GB minimum (1 GB for PiecesOS \+ 0.5–1 GB for data), with at least 4 GB free | 8 GB with at least 6 GB free or more | Ensure additional free space for data storage and future growth. |
+| _CPU_              | Any modern CPU                                                                 | Multi-core CPU                       | Aim for at least a 4-core CPU.                                  |
+| _RAM (Local Mode)_ | 8 GB total system RAM with 2 GB free                                           | 16 GB total system RAM or more       | When PiecesOS runs locally.                                     |
+| _RAM (Cloud Mode)_ | 8 GB total system RAM with 1 GB free                                           | 16 GB total system RAM or more       | When PiecesOS runs in cloud mode.                               |
+| _Disk Space_       | 2 GB minimum (1 GB for PiecesOS + 0.5–1 GB for data), with at least 4 GB free   | 8 GB (6 GB free) or more             | Leave extra space for data and updates.                         |
 
 ---
 
 ## Alternative Installations
 
-If you cannot use the `.pkg` installer for any reason, you can install PiecesOS and the Pieces Desktop App using standalone `.dmg` files or by using `Homebrew` through your Mac’s terminal.
+If you cannot use the `.pkg` installer, you can install PiecesOS and the Pieces Desktop App via DMG or Homebrew.
 
 ### via DMG (Apple Silicon / M-Series / ARM)
 
-Install both PiecesOS and the Pieces Desktop App **in order** by clicking the download cards below for your ARM device.
-
 <CardGroup cols={2}>
-  <Card title="Download — PiecesOS (DMG / ARM)" href="https://builds.pieces.app/stages/production/os_server/dmg-arm64/download" img="/public/icons/macos.webp">
-    **Step 1:** Download PiecesOS
-
-    ---
-
-    _Required Dependency_
-
-    macOS 13.0 (Ventura) or higher required.
+  <Card title="Download — PiecesOS (DMG / ARM)" href="https://builds.pieces.app/stages/production/os_server/dmg-arm64/download">
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/macos.webp"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="macOS icon"
+        />
+        <span>
+          **Step 1**: Download PiecesOS<br/>
+          _Required Dependency_<br/>
+          macOS 13.0 (Ventura) or higher required.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
-  <Card title="Download — Pieces Desktop App (DMG / ARM)" href="https://builds.pieces.app/stages/production/pieces_for_x/dmg-arm64/download" img="/public/icons/macos.webp">
-    **Step 2:** Download the Desktop App
-
-    ---
-
-    _Recommended Method_
-
-    macOS 13.0 (Ventura) or higher required.
+  <Card title="Download — Pieces Desktop App (DMG / ARM)" href="https://builds.pieces.app/stages/production/pieces_for_x/dmg-arm64/download">
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/macos.webp"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="macOS icon"
+        />
+        <span>
+          **Step 2**: Download the Desktop App<br/>
+          _Recommended Method_<br/>
+          macOS 13.0 (Ventura) or higher required.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
 </CardGroup>
 
 ### via DMG (Intel)
 
-Install both PiecesOS and the Pieces Desktop App **in order** by clicking the download cards below for your Intel device.
-
 <CardGroup cols={2}>
-  <Card title="Download — PiecesOS (DMG / Intel)" href="https://builds.pieces.app/stages/production/os_server/dmg/download" img="/public/icons/macos.webp">
-    **Step 1:** Download PiecesOS
-
-    ---
-
-    _Required Dependency_
-
-    macOS 13.0 (Ventura) or higher required.
+  <Card title="Download — PiecesOS (DMG / Intel)" href="https://builds.pieces.app/stages/production/os_server/dmg/download">
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/macos.webp"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="macOS icon"
+        />
+        <span>
+          **Step 1**: Download PiecesOS<br/>
+          _Required Dependency_<br/>
+          macOS 13.0 (Ventura) or higher required.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
-  <Card title="Download — Pieces Desktop App (DMG / Intel)" href="https://builds.pieces.app/stages/production/pieces_for_x/dmg/download" img="/public/icons/macos.webp">
-    **Step 2:** Download the Desktop App
-
-    ---
-
-    _Recommended Method_
-
-    macOS 13.0 (Ventura) or higher required.
+  <Card title="Download — Pieces Desktop App (DMG / Intel)" href="https://builds.pieces.app/stages/production/pieces_for_x/dmg/download">
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/macos.webp"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="macOS icon"
+        />
+        <span>
+          **Step 2**: Download the Desktop App<br/>
+          _Recommended Method_<br/>
+          macOS 13.0 (Ventura) or higher required.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
 </CardGroup>
 
 ## Install the DMG
 
-After downloading the correct `.dmg` file, it’s time to install the Pieces Desktop App.
+After downloading the correct `.dmg`, it’s time to install.
 
 <Steps>
-  <Step title>
-    Open your **Downloads** folder (or wherever you saved the installer) and look for the `.dmg` file you just downloaded (e.g., `Pieces.dmg`).
+  <Step title="Locate the Installer">
+    Open your **Downloads** folder and find the `.dmg` file (e.g., `Pieces.dmg`).
   </Step>
   <Step title="Mount the DMG">
-    Double-click the `.dmg` file to mount it.
+    Double-click the file to mount it.
   </Step>
-  <Step title="Drag & Drop into Applications">
-    Drag the application icon from the mounted `.dmg` window into your **Applications** folder.
+  <Step title="Drag & Drop">
+    Drag the app icon into your **Applications** folder.
   </Step>
   <Step title="Eject the DMG">
-    Go back to **Finder**, right-click the mounted image, and select **Eject** to unmount it.
+    In Finder, right-click the mounted image and select **Eject**.
   </Step>
 </Steps>
 
 ## Install Using Homebrew
 
-Alternatively, you may opt to install Pieces via Homebrew in your terminal.
-
-<Card title="Installing via Homebrew" img="/public/icons/homebrew.png">
-  You can install PiecesOS manually using Homebrew from your device’s terminal.
-
-  To do so:
-
-  1. Ensure Homebrew is installed on your system.
-  2. Run `brew install --cask pieces` in your terminal and press `return` to install the Pieces `brew` package.
-
-  This command installs both the Pieces Desktop App and PiecesOS cask. If prompted, enter your administrator password.
-
-  3. Wait for installation to complete—Homebrew will download and install the necessary files.
-
-  Once it’s done, you’ll see a message indicating successful installation.
+<Card title="Installing via Homebrew">
+  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+      <img
+        src="/public/icons/homebrew.png"
+        width="40"
+        height="40"
+        noZoom={true}
+        alt="Homebrew icon"
+      />
+      <span>
+        You can install PiecesOS manually using Homebrew:<br/><br/>
+        1. Ensure Homebrew is installed.<br/>
+        2. Run <code>brew install --cask pieces</code> and press Return.<br/><br/>
+        This installs both the Pieces Desktop App and PiecesOS cask. Enter your password if prompted.<br/><br/>
+        Once complete, you’ll see a success message.
+      </span>
+    </div>
+    <Icon icon="arrow-up-right" size={20} />
+  </div>
 </Card>
 
 ## Post-Installation Tips
 
-Read the documentation below for some tips and information to make sure you’re up and running with the latest version(s) of PiecesOS and the Pieces Desktop App, as well as steps to uninstall Pieces software from your Apple device.
+Read on for update checks and uninstall instructions.
 
 ### Updating
 
-The Pieces Desktop App automatically downloads and installs new updates.
-
-You can also manually check for updates to PiecesOS and the Pieces Desktop App by clicking the `Profile` icon nested in the **Search Bar** at the top of your Pieces Desktop App view, then selecting `Check for Desktop App Updates` or `Check for PiecesOS Updates`.
+The Pieces Desktop App auto-updates. To manually check, click the **Profile** icon > **Check for Updates**.
 
 ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/get_started/macos/macos_check_pfd_for_updates_profile_dropdown.gif)
 
 ### Uninstalling
 
-On your macOS device, navigate to **Finder,** then select **Applications.**
-
-Scroll or search until you find both `Pieces` and `PiecesOS.` Right-click on these two applications and select `Move to Trash`.
+1. Open **Finder** > **Applications**  
+2. Find **Pieces** and **PiecesOS**  
+3. Right-click each and choose **Move to Trash**
 
 ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/get_started/macos/macos_how_to_uninstall_pfd.gif)
 
 ## Additional Resources
 
-Click here for additional [documentation on troubleshooting](https://docs.pieces.app/products/meet-pieces/troubleshooting/macos) or reach out to [support.](https://docs.pieces.app/products/support)
+For troubleshooting, see our [macOS troubleshooting guide](https://docs.pieces.app/products/meet-pieces/troubleshooting/macos) or contact [support](https://docs.pieces.app/products/support).
