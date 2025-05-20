@@ -12,58 +12,46 @@ description: "The following guide will help you install and run both PiecesOS an
 
 ## Recommended Installation Method
 
-The recommended installation method on Windows is using the `.appinstaller` files for PiecesOS and the Pieces Desktop App.
-
-Download PiecesOS and the Pieces Desktop App **in order** by clicking the download cards below.
+The recommended installation method on Windows is using the `.appinstaller` files for both PiecesOS and the Pieces Desktop App. Download them **in order** by clicking the cards below.
 
 <CardGroup cols={2}>
   <Card title="Download — PiecesOS" href="/desktop/desktop-index">
-    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
-    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
-    <img
-      src="/public/icons/windows.png"
-      width="40"
-      height="40"
-      noZoom={true}
-      alt="Pieces Desktop App icon"
-    />
-
-    <span>
-    **Step 1**: Download PiecesOS (.appinstaller)
-
-    Required Core Dependency
-
-    Windows 10 (1809) or higher required.
-
-    </span>
-
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/windows.png"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="Pieces Desktop App icon"
+        />
+        <span>
+          **Step 1**: Download PiecesOS (.appinstaller)<br/>
+          Core dependency required.<br/>
+          Windows 10 (1809) or higher required.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
     </div>
-
-    <Icon icon="arrow-up-right" size={20} /></div>
   </Card>
   <Card title="Download — Pieces Desktop App" href="/desktop/desktop-index">
-    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
-    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
-    <img
-      src="/public/icons/windows.png"
-      width="40"
-      height="40"
-      noZoom={true}
-      alt="Pieces Desktop App icon"
-    />
-
-    <span>
-    **Step 2**: Download the Desktop App (.appinstaller)
-
-    Recommended Method
-
-    Windows 10 (1809) or higher required.
-
-    </span>
-
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/windows.png"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="Pieces Desktop App icon"
+        />
+        <span>
+          **Step 2**: Download the Desktop App (.appinstaller)<br/>
+          Recommended method.<br/>
+          Windows 10 (1809) or higher required.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
     </div>
-
-    <Icon icon="arrow-up-right" size={20} /></div>
   </Card>
 </CardGroup>
 
@@ -77,131 +65,160 @@ Now that you have downloaded the `.appinstaller` files, it’s time to install P
 
 <Steps>
   <Step title="Find Saved Location">
-    Open your **Downloads** folder (or wherever you saved the installer) and look for the `.appinstaller` file you just downloaded (e.g., _pieces-os.appinstaller_).
+    Open your **Downloads** folder (or wherever you saved the installer) and locate the `.appinstaller` file you just downloaded (e.g., _pieces-os.appinstaller_).
   </Step>
   <Step title="Open the Installer">
     Double-click the `.appinstaller` file to launch the installation wizard.
   </Step>
 </Steps>
 
-Installing via `.appinstaller` or `.exe` may cause some user prompt windows to open up—read more about them below.
+Installing via `.appinstaller` or `.exe` may open user-prompt windows—read on for details.
 
 ### Updating PiecesOS (AppInstaller)
 
-Note that currently, updating PiecesOS if installed via the `.appinstaller` (currently the _Recommended_ installation method) files requires that you **quit the Pieces Desktop App**, then proceed with updating PiecesOS.
-
-If this fails, make sure that the Pieces Desktop App is fully quit, as well as PiecesOS—then relaunch PiecesOS and proceed to download and install the update.
+If you installed via `.appinstaller` (the _Recommended_ method), quit the Pieces Desktop App before updating PiecesOS. If the update fails, ensure both PiecesOS and the Desktop App are fully closed, then retry.
 
 ### System Requirements
 
-Your Windows device must be running **Windows 10 (1809) or higher.**
-
-Click here for a quick guide on [determining your OS version](https://docs.pieces.app/products/meet-pieces/troubleshooting/windows#checking-windows-version).
+Your Windows device must be running **Windows 10 (1809) or higher**.  
+[Check your Windows version](https://docs.pieces.app/products/meet-pieces/troubleshooting/windows#checking-windows-version).
 
 ---
 
 | **Component**      | **Minimum**                                                                    | **Recommended**                      | **Notes**                                                        |
 | ------------------ | ------------------------------------------------------------------------------ | ------------------------------------ | ---------------------------------------------------------------- |
-| _CPU_              | Any modern CPU                                                                 | Multi-core CPU                       | Avoid dual-core processors—aim for at least a 4-core CPU.        |
-| _RAM (Local Mode)_ | 8 GB total system RAM with 2 GB free                                           | 16 GB total system RAM or more       | Applies when PiecesOS is running locally.                        |
-| _RAM (Cloud Mode)_ | 8 GB total system RAM with 1 GB free                                           | 16 GB total system RAM or more       | Applies when PiecesOS is running in cloud mode.                  |
-| _Disk Space_       | 2 GB minimum (1 GB for PiecesOS \+ 0.5–1 GB for data), with at least 4 GB free | 8 GB with at least 6 GB free or more | Ensure additional free space for data storage and future growth. |
+| _CPU_              | Any modern CPU                                                                 | Multi-core CPU                       | Aim for at least 4 cores.                                        |
+| _RAM (Local Mode)_ | 8 GB total system RAM with 2 GB free                                           | 16 GB total system RAM or more       | When PiecesOS runs locally.                                      |
+| _RAM (Cloud Mode)_ | 8 GB total system RAM with 1 GB free                                           | 16 GB total system RAM or more       | When PiecesOS runs in cloud mode.                                |
+| _Disk Space_       | 2 GB minimum (1 GB for PiecesOS + 0.5–1 GB for data), with at least 4 GB free    | 8 GB (6 GB free) or more             | Leave extra space for data and updates.                          |
 
 ---
 
 ## Alternative Installations
 
-If you prefer an alternative installation method aside from the `.appinstaller` method, you can also use the `exe` installers or `WinGet` commands through your terminal.
+If the `.appinstaller` method isn’t an option, you can use standalone `.exe` installers or WinGet.
 
 ### via EXE
 
-If you cannot use the `.appinstaller` method for any reason, you can also install via standalone `.exe` files.
-
 <CardGroup cols={2}>
-  <Card title="Download — PiecesOS (EXE)" href="https://builds.pieces.app/stages/production/os_server/windows-exe/download?download=true&product=DOCUMENTATION_WEBSITE&_gl=1*h3r9du*_gcl_au*MTIwMTc3MzI1NS4xNzQxMDIwNzMx*_ga*MTE4MjM0Njk4MC4xNzQxMDIwNzMx*_ga_BVYEFRWCYX*MTc0MTc4OTgwNS40LjEuMTc0MTgwMjA0OS41OC4wLjA." img="/public/icons/windows.png">
-    **Step 1:** Download PiecesOS
-
-    _Required Core Dependency_
-
-    Windows 10 (20H0) or higher required.
+  <Card title="Download — PiecesOS (EXE)" href="https://builds.pieces.app/stages/production/os_server/windows-exe/download?download=true&product=DOCUMENTATION_WEBSITE">
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/windows.png"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="Pieces Desktop App icon"
+        />
+        <span>
+          **Step 1**: Download PiecesOS (.exe)<br/>
+          Core dependency required.<br/>
+          Windows 10 (20H0) or higher required.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
-  <Card title="Download — Pieces Desktop App (EXE)" href="https://builds.pieces.app/stages/production/pieces_for_x/windows-exe/download?download=true&product=DOCUMENTATION_WEBSITE&_gl=1*1a9yqbf*_gcl_au*OTQ5NDE1NTA4LjE3Mzk0NjU4MzM.*_ga*MTI0OTgzMTMuMTcyNDA5ODQwNg..*_ga_BVYEFRWCYX*MTc0MDc4MjM4Mi44LjAuMTc0MDc4MjM4Mi42MC4wLjA." img="/public/icons/windows.png">
-    **Step 2:** Download the Desktop App
-
-    _Alternative Method_
-
-    Windows 10 (20H0) or higher required.
+  <Card title="Download — Pieces Desktop App (EXE)" href="https://builds.pieces.app/stages/production/pieces_for_x/windows-exe/download?download=true&product=DOCUMENTATION_WEBSITE">
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/windows.png"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="Pieces Desktop App icon"
+        />
+        <span>
+          **Step 2**: Download the Desktop App (.exe)<br/>
+          Alternative method.<br/>
+          Windows 10 (20H0) or higher required.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
 </CardGroup>
 
 <Steps>
   <Step title="Find Saved Location">
-    Open your **Downloads** folder (or wherever you saved the file) and look for the `.appinstaller` file you just downloaded (e.g., _pieces-desktop.appinstaller_).
+    Open your **Downloads** folder (or chosen save location) and locate the downloaded file (e.g., _pieces-desktop.exe_).
   </Step>
   <Step title="Open the Installer">
-    Double-click the `.appinstaller` file to launch the Windows installation prompt.
+    Double-click the `.exe` file to launch the Windows installer.
   </Step>
 </Steps>
 
 ### via WinGet
 
-WinGet will allow you to easily install Pieces without having to leave the terminal
-
 <CardGroup cols={2}>
   <Card title="WinGet — PiecesOS" img="/public/icons/wingetblue.webp">
-    **Step 1:** Install PiecesOS
-
-    1. Launch a Windows Terminal, Command Prompt, or PowerShell as administrator.
-    2. Next, install PiecesOS by typing `winget install “Pieces OS”` and pressing `enter`.
-
-    You may be prompted to enter `Y` or `N` to agree or disagree the terms of use when installing the Pieces Desktop App—type and enter `Y` to proceed with the installation.
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/wingetblue.webp"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="Pieces Desktop App icon"
+        />
+        <span>
+          **Step 1**: Install PiecesOS<br/>
+          1. Open PowerShell or Command Prompt as administrator.<br/>
+          2. Run <code>winget install "Pieces OS"</code> and press Enter.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
   <Card title="WinGet — Pieces for Developers" img="/public/icons/wingetblue.webp">
-    **Step 2:** Install the Desktop App
-
-    1. Use the same Windows Terminal, Command Prompt, or PowerShell window as before—or launch a new window.
-    2. Then, type `winget install “Pieces for Developers”` and press `enter`.
-
-    You will be promoted to agree or disagree to the terms of use a second time, so enter `Y` to proceed with the installation.
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <img
+          src="/public/icons/wingetblue.webp"
+          width="40"
+          height="40"
+          noZoom={true}
+          alt="Pieces Desktop App icon"
+        />
+        <span>
+          **Step 2**: Install the Desktop App<br/>
+          Run <code>winget install "Pieces for Developers"</code> and press Enter.
+        </span>
+      </div>
+      <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
 </CardGroup>
 
 ## On-Screen Prompts
 
-There are a series of on-screen prompts to navigate through when installing the Pieces Desktop App and PiecesOS, through either the `.exe` or `.appinstaller` installation methods.
+1. **User Account Control (UAC):** If prompted, click **Yes** to allow changes.  
+2. **Install Location:** Choose your install path (default is recommended), then click **Install**.  
+3. **Additional Tasks:** Optionally select creating a desktop shortcut or auto-starting the app.  
+4. **Ready to Install:** Click **Install**.  
+5. **Completion:** Once finished, click **Finish**.
 
-1. **User Account Control (UAC):** If prompted by Windows’ User Account Control, click `Yes` to allow the installer to make changes.
-2. **Install Location:** Choose where to install Pieces (default location is recommended) and click `Install`.
-3. **Select Additional Tasks:** Check `Create a desktop shortcut` or `Automatically start Pieces for Developers` if preferred.
-4. **Ready to Install:** Click `Install`**.**
-5. **Installation Progress & Completion:** Wait for the installation to complete. Once finished, you’ll see a confirmation message. Click `Finish` to close the installer.
+---
 
 ## Enterprise & Advanced Security Considerations
 
-Some Windows systems—particularly those in enterprise environments or with advanced security settings—may require using an `.exe` package (default installer) instead of an `.appinstaller` package (AppInstaller) for compatibility reasons.
-
-If you find that your environment is restrictive or that the `.appinstaller` package doesn’t work properly, consider using the `.exe` version or an alternative method.
+If `.appinstaller` isn’t supported in your environment, use the `.exe` installers or WinGet for compatibility.
 
 ## Post-Installation Tips
 
-Read the documentation below for some tips and information to make sure you’re up and running with the latest version(s) of PiecesOS and the Pieces Desktop App, as well as steps to uninstall Pieces software from your Windows device.
-
-### Updating
-
-The Pieces Desktop App **automatically downloads and installs new updates.**
-
-You can also manually check for updates to PiecesOS and the Pieces Desktop App by clicking the `Profile` nested in the **Search Bar** at the top of your Pieces Desktop App view, then selecting `Check for Desktop App Updates` or `Check for PiecesOS Updates`.
+- The Desktop App auto-updates.  
+- To manually check for updates, open the **Profile** menu and select **Check for Updates**.
 
 ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/get_started/windows/windows_check_pfd_for_updates.gif)
 
 ### Uninstalling
 
-Open **Settings,** then find **Apps** and search `Pieces.`
-
-Two applications will appear after you enter the search query—**Pieces Desktop** and **PiecesOS.** Click the three dots to the right of the application title, and click `Uninstall`.
-
-![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/get_started/windows/uninstalling_on_windows.gif)
+1. Open **Settings** > **Apps**.  
+2. Search for **Pieces**.  
+3. Click the three dots next to **Pieces Desktop** or **PiecesOS**, then choose **Uninstall**.
 
 ## Additional Resources
 
-Click here for additional [documentation on troubleshooting](https://docs.pieces.app/products/meet-pieces/troubleshooting) or reach out to [support.](https://docs.pieces.app/products/support)
+For more troubleshooting, see our [troubleshooting guide](https://docs.pieces.app/products/meet-pieces/troubleshooting) or contact [support](https://docs.pieces.app/products/support).
