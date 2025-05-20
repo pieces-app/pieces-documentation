@@ -57,3 +57,7 @@ div[data-component="Card"] img {
 .page-index div[class*="flex"][class*="items-center"][class*="gap-x-4"] {
   display: none !important;
 }
+
+.page-index header[role="banner"] {
+  display: none !important;
+}
