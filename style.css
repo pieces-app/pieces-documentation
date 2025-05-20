@@ -87,3 +87,7 @@ body[data-route="/"] .navbar {
 body[data-route="/"] #navbar {
   display: none !important;
 }
+
+#navbar {
+  display: none;
+}
