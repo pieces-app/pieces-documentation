@@ -6,26 +6,24 @@ sidebarTitle: " "
 ---
 
 <style jsx global>{`
-  /* Ensure header text is the color you prefer */
-  .mdx-content h1,
-  .mdx-content h2,
-  .mdx-content h3,
-  .mdx-content h4,
-  .mdx-content h5,
-  .mdx-content h6 {
-    color: #111827 !important;  /* Adjust this to your desired light mode header color */
+  /* Light mode headings */
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    color: #111827 !important;
   }
 
-  /* Dark mode overrides, set to a lighter color for readability */
-  @media (prefers-color-scheme: dark) {
-    .mdx-content h1,
-    .mdx-content h2,
-    .mdx-content h3,
-    .mdx-content h4,
-    .mdx-content h5,
-    .mdx-content h6 {
-      color: #f9fafb !important;  /* Use a bright color instead of dark navy */
-    }
+  /* Dark mode headings */
+  html.dark .prose h1,
+  html.dark .prose h2,
+  html.dark .prose h3,
+  html.dark .prose h4,
+  html.dark .prose h5,
+  html.dark .prose h6 {
+    color: #f9fafb !important;
   }
 `}</style>
 
