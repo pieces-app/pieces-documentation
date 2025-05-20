@@ -14,7 +14,7 @@
   },
   "favicon": "/favicon.svg",
   "customCss": [
-    "/style.css"
+    "/public/style.css"
   ],
   "navigation": {
     "anchors": [

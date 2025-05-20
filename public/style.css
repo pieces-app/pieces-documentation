@@ -83,3 +83,15 @@ body[data-route="/"] .mint-container {
 body[data-route="/"] .nav-logo {
   display: none !important;
 }
+
+/* hide the backdrop span that paints the white background */
+body[data-route="/"] span.fixed.inset-0.bg-background-light,
+body[data-route="/"] span.fixed.inset-0.dark\:bg-background-dark {
+  display: none !important;
+}
+
+/* hide the sticky nav row itself */
+body[data-route="/"] .sticky.inset-x-0.top-0,
+body[data-route="/"] div.h-full.relative.flex-1.flex.items-center.gap-x-4.min-w-0.px-4.border-none {
+  display: none !important;
+}
