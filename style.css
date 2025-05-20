@@ -89,5 +89,15 @@ body[data-route="/"] #navbar {
 }
 
 #navbar {
-  display: none;
+  display: none !important;
+}
+
+span.fixed.inset-0.bg-background-light,
+span.fixed.inset-0.dark\:bg-background-dark {
+  display: none !important;
+}
+
+.almond-layout {
+  position: static !important;
+  top: auto !important;
 }
