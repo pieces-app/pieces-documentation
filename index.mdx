@@ -1,344 +1,281 @@
 ---
-title: "Introducing Pieces for Developers"
+title: "Pieces for Developers Documentation"
+description: "Browse documentation for the Pieces Desktop App, Core Dependencies, all Pieces plugins and extensions for your favorite IDEs and productivity tools, read quick guides on setting up Model Context Protocol (MCP) servers, and much more."
 ---
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1734014941536/9c298363-d6b4-4e4a-9965-72db0fa59bc6.png?auto=compress,format&format=webp&q=75)
+---
 
-## Introducing Pieces for Developers
+![Pieces for Developers Product Overview Banner](https://cdn.hashnode.com/res/hashnode/image/upload/v1734014941536/9c298363-d6b4-4e4a-9965-72db0fa59bc6.png?auto=compress,format&format=webp&q=75)
 
-This documentation is designed to provide a high-level overview of [Pieces' features and functionalities](https://docs.pieces.app/products/meet-pieces/fundamentals), with a quick-start and troubleshooting guides for [macOS](https://docs.pieces.app/products/meet-pieces/macos-installation-guide), [Windows](https://docs.pieces.app/products/meet-pieces/windows-installation-guide), and [Linux](https://docs.pieces.app/products/meet-pieces/linux-installation-guide) to help you get started with Pieces as quickly as possible.
+---
 
-## Products
+## Pieces Suite
+
+Get started with the Pieces Desktop App or learn more about PiecesOS and Ollama, the two \_core dependencies \_required to unlock full Long-Term Memory Engine (LTM-2.5) and local LLM functionality.
 
 <CardGroup cols={2}>
-  <Card
-    title="Pieces Desktop App"
-    href="/desktop/desktop-index"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/pieces_filled.svg"
-          width="40"
-          height="40"
-          noZoom
-          alt="Pieces Desktop App icon"
-        />
-        <span>Get started with the Pieces Desktop App.</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
-    </div>
-  </Card>
+  <Card title="Pieces Desktop App" href="/desktop/desktop-index">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/pieces_filled.svg"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="Pieces Desktop App icon"
+    />
 
-  <Card
-    title="Core Dependencies"
-    href="/core-dependencies/core-dependencies-overview"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/pieces_os_light.svg"
-          width="40"
-          height="40"
-          noZoom
-          alt="Core Dependencies icon"
-        />
-        <span>Learn more about Pieces Core Dependencies.</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
+    <span>
+    Get started with the Pieces Desktop App.
+
+    </span>
+
     </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
+  </Card>
+  <Card title="Core Dependencies" href="/core-dependencies/core-dependencies-overview">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/pieces_os_light.svg"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="Core Dependencies icon"
+    />
+
+    <span>
+    Learn more about Pieces Core Dependencies.
+
+    </span>
+
+    </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
   </Card>
 </CardGroup>
 
 ## IDEs & Editors
 
 <CardGroup cols={2}>
-  <Card
-    title="VS Code Extension"
-    href="/extensions-plugins/visual-studio-code/vsc-overview"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/vs_code.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="VS Code icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
-    </div>
-  </Card>
+  <Card title="VS Code Extension" href="/extensions-plugins/visual-studio-code/vsc-overview">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/vs_code.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="VS Code icon"
+    />
 
-  <Card
-    title="Visual Studio Extension"
-    href="/extensions-plugins/visual-studio/vstudio-overview"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/visual_studio.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="Visual Studio icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
+    <span>
+    View Documentation
+
+    </span>
+
     </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
+  </Card>
+  <Card title="Visual Studio Extension" href="/extensions-plugins/visual-studio/vstudio-overview">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/visual_studio.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="Visual Studio icon"
+    />
+
+    <span>
+    View Documentation
+
+    </span>
+
+    </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
   </Card>
 </CardGroup>
 
 <CardGroup cols={2}>
-  <Card
-    title="Pieces Web Extension"
-    href="/web-extension/web-extension-overview"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/chromium.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="Pieces Web icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
-    </div>
-  </Card>
+  <Card title="Pieces Web Extension" href="/web-extension/web-extension-overview">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/chromium.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="Pieces Web icon"
+    />
 
-  <Card
-    title="JetBrains Plugin"
-    href="/extensions-plugins/jetbrains/jb-overview"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/jetbrains.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="JetBrains icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
+    <span>
+    View Documentation
+
+    </span>
+
     </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
+  </Card>
+  <Card title="JetBrains Plugin" href="/extensions-plugins/jetbrains/jb-overview">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/jetbrains.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="JetBrains icon"
+    />
+
+    <span>
+    View Documentation
+
+    </span>
+
+    </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
   </Card>
 </CardGroup>
 
 <CardGroup cols={2}>
-  <Card
-    title="JupyterLab Extension"
-    href="/extensions-plugins/jupyterlab"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/new_jupyter.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="JupyterLab icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
-    </div>
-  </Card>
+  <Card title="JupyterLab Extension" href="/extensions-plugins/jupyterlab">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/new_jupyter.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="JupyterLab icon"
+    />
 
-  <Card
-    title="Sublime Text Plugin"
-    href="/extensions-plugins/sublime/sublime-overview"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/sublime.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="Sublime Text icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
+    <span>
+    View Documentation
+
+    </span>
+
     </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
+  </Card>
+  <Card title="Sublime Text Plugin" href="/extensions-plugins/sublime/sublime-overview">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/sublime.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="Sublime Text icon"
+    />
+
+    <span>
+    View Documentation
+
+    </span>
+
+    </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
   </Card>
 </CardGroup>
 
 ## Productivity Tools
 
 <CardGroup cols={2}>
-  <Card
-    title="Neovim Plugin"
-    href="/extensions-plugins/neovim-plugin"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/new_neovim.svg.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="Neovim icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
-    </div>
-  </Card>
+  <Card title="Neovim Plugin" href="/extensions-plugins/neovim-plugin">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/new_neovim.svg.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="Neovim icon"
+    />
 
-  <Card
-    title="Obsidian Plugin"
-    href="/obsidian/obsidian-overview"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/obsidian.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="Obsidian icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
+    <span>
+    View Documentation
+
+    </span>
+
     </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
+  </Card>
+  <Card title="Obsidian Plugin" href="/obsidian/obsidian-overview">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/obsidian.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="Obsidian icon"
+    />
+
+    <span>
+    View Documentation
+
+    </span>
+
+    </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
   </Card>
 </CardGroup>
 
 <CardGroup cols={2}>
-  <Card
-    title="Raycast Plugin"
-    href="/raycast"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/new_raycast.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="Raycast icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
-    </div>
-  </Card>
+  <Card title="Raycast Plugin" href="/raycast">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/new_raycast.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="Raycast icon"
+    />
 
-  <Card
-    title="Pieces CLI"
-    href="/cli/cli-overview"
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-        <img
-          src="/public/icons/new_cli.png"
-          width="40"
-          height="40"
-          noZoom
-          alt="Pieces CLI icon"
-        />
-        <span>View Documentation</span>
-      </div>
-      <Icon icon="arrow-up-right" size={20} />
+    <span>
+    View Documentation
+
+    </span>
+
     </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
+  </Card>
+  <Card title="Pieces CLI" href="/cli/cli-overview">
+    <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
+    <div style={{ display:"flex",alignItems:"center",gap:"0.5rem" }}>
+    <img
+      src="/public/icons/new_cli.png"
+      width="40"
+      height="40"
+      noZoom={true}
+      alt="Pieces CLI icon"
+    />
+
+    <span>
+    View Documentation
+
+    </span>
+
+    </div>
+
+    <Icon icon="arrow-up-right" size={20} /></div>
   </Card>
 </CardGroup>
 
-Let's answer a few basic questions: 
+Let's answer a few basic questions:
 
 ### What is Pieces?
 
