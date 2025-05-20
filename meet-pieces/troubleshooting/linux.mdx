@@ -15,7 +15,35 @@ You can find detailed instructions on updating PiecesOS and the Pieces Desktop A
 
 Additionally, you can check your system's OS and hardware specifications to ensure they meet the minimum recommended requirements.
 
-<on-device-storage />
+<Tabs>
+  <Tab title="On-Device Storage">
+    All your Pieces data, including snippets, tags, embeddings, LTM-2 memory, settings, logs, and Pieces Copilot history, is securely stored in the `com.pieces.os` and `com.pieces.pfd folders on your device.`
+
+    This gives you _full control_ over backups, sharing, and privacy.
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/privacy_and_security/soc_secure_private.png)
+  </Tab>
+</Tabs>
+
+---
+
+### Database & Log Paths
+
+You can find your database and support logs at the `path` below for your specific platform.
+
+- **macOS**—`~/Library/com.pieces.os/`
+- **Windows**—`C:\Users\<username>\Documents\com.pieces.os\`
+- **Linux**—`~/.local/share/com.pieces.os/`
+
+Don’t forget to switch `username` with our actual system username.
+
+### Logs, Backups & Cloud Functionality
+
+This dedicated [On-Device Storage documentation](https://docs.pieces.app/products/core-dependencies/on-device-storage) provides more information about finding your logs, creating manual backups outside of the Pieces Desktop App, and opting in to cloud-only features[.](https://docs.pieces.app/products/core-dependencies/on-device-storage)
+
+- **Sharing Logs**—Zip the latest 2–3 files from `…/production/support/logs/` and attach them to [your issue or DM.](https://docs.pieces.app/products/support#open-a-github-issue)
+- **Backup & Reset**—Copy `com.pieces.os` to back up your database—or copy zip it, and rename it something other than `production` to reset your database.
+- **Cloud Functionality**—Nothing moves off-device unless you enable Personal Cloud or call a third-party model (e.g. OpenAI).
 
 ## Versions & Updates
 
@@ -63,11 +91,13 @@ If installation or UI issues persist, consider the following:
 
 - **Switch Between X11 and Wayland:** Some applications may work better on one display protocol than the other. Try switching to X11 for compatibility or Wayland for newer features. You can usually select this at the login screen.
 
-<alert>
+<Warning>
   The LTM-2 Engine is designed to work with the X11 Window Manager. Other Window Managers, such as Wayland, are _not compatible._ This means that long-term memory functionality with certain Linux Virtual Machines (VMs) is not possible at this time.
-</alert>
+</Warning>
 
 - **Update your GPU Drivers:** Ensure they are up to date. For NVIDIA, check for proprietary driver updates. AMD and Intel users should verify that their open-source drivers are up to date.
+
+
 - **Optimize Graphics Configurations:** Use tools like `nvidia-settings`, `radeon-profile`, or similar utilities to adjust your GPU settings for better performance and stability.
 
 These adjustments can resolve many graphical and display-related issues you may experience while using Pieces for Developers or PiecesOS.
@@ -114,7 +144,6 @@ If you encounter persistent installation issues, consult online forums or commun
 
 If you’ve updated components, checked hardware, and adjusted configurations without success, restart your machine and try again.
 
-If the problem persists, please open a <a target="_blank" href="https://github.com/pieces-app/support/issues">
-GitHub issue</a>
+for further assistance, or book a call with our engineers.
 
- for further assistance, or book a call with our engineers.
+If the problem persists, please open a [GitHub issue](https://github.com/pieces-app/support/issues) for further assistance, or book a call with our engineers.
