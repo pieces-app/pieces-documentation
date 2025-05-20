@@ -28,19 +28,29 @@ There are several requirements that your Linux device must meet to download and 
   To determine which display manager your Linux device is using, go to **Settings,** then **System,** and **System Details** to see if you are using an X11 or a non-LLVM compatible manager.
 </Tip>
 
-<Card title="Download — Linux" img="/public/icons/linux.png">
-  _Ubuntu 22.04\+ required._
-
-  ---
-
-  Run these commands **in order** to install and properly set up the Pieces Desktop App and it’s core dependencies:
-
-  1. `sudo snap install pieces-os`
-  2. `sudo snap connect pieces-os:process-control :process-control`
-  3. `sudo snap install pieces-for-developers`
-
-  Then, type `pieces-for-developers` to launch the application directly from your terminal.
+<Card title="Download — Linux">
+  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+      <img
+        src="/public/icons/linux.png"
+        width="40"
+        height="40"
+        noZoom={true}
+        alt="Linux icon"
+      />
+      <span>
+        _Ubuntu 22.04+ required._<br/><br/>
+        Run these commands **in order** to install and properly set up the Pieces Desktop App and its core dependencies:<br/><br/>
+        1. <code>sudo snap install pieces-os</code><br/>
+        2. <code>sudo snap connect pieces-os:process-control :process-control</code><br/>
+        3. <code>sudo snap install pieces-for-developers</code><br/><br/>
+        Then, type <code>pieces-for-developers</code> to launch the application directly from your terminal.
+      </span>
+    </div>
+    <Icon icon="arrow-up-right" size={20} />
+  </div>
 </Card>
+
 
 Your Linux device must be running a supported distribution of Ubuntu—**Ubuntu 22\+.**
 
