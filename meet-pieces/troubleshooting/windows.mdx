@@ -13,7 +13,35 @@ description: "Learn about what troubleshooting steps to take if PiecesOS or the 
 
 PiecesOS and the Pieces Desktop App can be downloaded in several ways, and the update process varies based on the method you used, like whether you installed them via WinGet or `.exe` files.
 
-<on-device-storage />
+<Tabs>
+  <Tab title="On-Device Storage">
+    All your Pieces data, including snippets, tags, embeddings, LTM-2 memory, settings, logs, and Pieces Copilot history, is securely stored in the `com.pieces.os` and `com.pieces.pfd folders on your device.`
+
+    This gives you _full control_ over backups, sharing, and privacy.
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/privacy_and_security/soc_secure_private.png)
+  </Tab>
+</Tabs>
+
+---
+
+### Database & Log Paths
+
+You can find your database and support logs at the `path` below for your specific platform.
+
+- **macOS**—`~/Library/com.pieces.os/`
+- **Windows**—`C:\Users\<username>\Documents\com.pieces.os\`
+- **Linux**—`~/.local/share/com.pieces.os/`
+
+Don’t forget to switch `username` with our actual system username.
+
+### Logs, Backups & Cloud Functionality
+
+This dedicated [On-Device Storage documentation](https://docs.pieces.app/products/core-dependencies/on-device-storage) provides more information about finding your logs, creating manual backups outside of the Pieces Desktop App, and opting in to cloud-only features[.](https://docs.pieces.app/products/core-dependencies/on-device-storage)
+
+- **Sharing Logs**—Zip the latest 2–3 files from `…/production/support/logs/` and attach them to [your issue or DM.](https://docs.pieces.app/products/support#open-a-github-issue)
+- **Backup & Reset**—Copy `com.pieces.os` to back up your database—or copy zip it, and rename it something other than `production` to reset your database.
+- **Cloud Functionality**—Nothing moves off-device unless you enable Personal Cloud or call a third-party model (e.g. OpenAI).
 
 ## Manual Installation Methods
 
@@ -24,14 +52,14 @@ If you’re experiencing difficulties with installing PiecesOS or the Pieces Des
 You can download the individual `.exe` files for PiecesOS and the Pieces Desktop App by clicking the download links below.
 
 <CardGroup cols={2}>
-  <Card title="Download — PiecesOS (.EXE)" href="https://builds.pieces.app/stages/production/os_server/windows-exe/download?download=true&product=DOCUMENTATION_WEBSITE">
+  <Card title="Download — PiecesOS (.EXE)" href="https://builds.pieces.app/stages/production/os_server/windows-exe/download?download=true&product=DOCUMENTATION_WEBSITE" img="/public/icons/windows.png">
     **Step 1:** Download PiecesOS (.EXE)
 
     _Required Core Dependency_
 
     Windows 10 (1809) or higher required.
   </Card>
-  <Card title="Download — Pieces Desktop App" href="https://builds.pieces.app/stages/production/pieces_for_x/windows-exe/download?download=true&product=DOCUMENTATION_WEBSITE">
+  <Card title="Download — Pieces Desktop App" href="https://builds.pieces.app/stages/production/pieces_for_x/windows-exe/download?download=true&product=DOCUMENTATION_WEBSITE" img="/public/icons/windows.png">
     **Step 2:** Download Pieces for Developers (.EXE)
 
     _Alternative Method_
@@ -90,11 +118,11 @@ Some users who have enabled Controlled Folder Access (CFA) as a security measure
 
 To work around this issue, you will need to _add the executable path for PiecesOS_ to your allowlist.
 
-<alert>
+<Warning>
   The reason PiecesOS fails to launch when CFA is enabled is that the executable path for the PiecesOS application writes data to your Documents folder.
 
   CFA disables and blocks any request to modify files (in this case, writing & saving data), so PiecesOS is unable to launch itself.
-</alert>
+</Warning>
 
 Keep in mind that this path references the specific PiecesOS version, and so will change over time as long as you continue to update the software.
 
@@ -150,13 +178,14 @@ A new window will open called **About Windows**, which will display your current
 
 ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/windows/checking_windows_ver.gif)
 
-<tip>
+<Tip>
   If this doesn't work, you're likely using a Windows version older than Windows 10.
-</tip>
+</Tip>
 
 ## Restart & Retry
 
-If the problem persists, please open a <a target="_blank" href="https://github.com/pieces-app/support/issues">
-GitHub issue</a>
+If the problem persists, please open a
 
- for further assistance or book a call with our engineers.
+GitHub issue
+
+for further assistance or book a call with our engineers.

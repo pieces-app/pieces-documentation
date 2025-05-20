@@ -13,7 +13,33 @@ description: "Learn about what troubleshooting steps to take if PiecesOS or the 
 
 Find links to detailed sections on specific troubleshooting steps as well as information on choosing between cloud and local models, system requirements, and more.
 
-<on-device-storage />
+<Tabs>
+  <Tab title="On-Device Storage">
+    All your Pieces data, including snippets, tags, embeddings, LTM-2 memory, settings, logs, and Pieces Copilot history, is securely stored in the `com.pieces.os` and `com.pieces.pfd folders on your device.`
+
+    This gives you _full control_ over backups, sharing, and privacy.
+
+    ---
+  </Tab>
+</Tabs>
+
+### Database & Log Paths
+
+You can find your database and support logs at the `path` below for your specific platform.
+
+- **macOS**—`~/Library/com.pieces.os/`
+- **Windows**—`C:\Users\<username>\Documents\com.pieces.os\`
+- **Linux**—`~/.local/share/com.pieces.os/`
+
+Don’t forget to switch `username` with our actual system username.
+
+### Logs, Backups & Cloud Functionality
+
+This dedicated [On-Device Storage documentation](https://docs.pieces.app/products/core-dependencies/on-device-storage) provides more information about finding your logs, creating manual backups outside of the Pieces Desktop App, and opting in to cloud-only features[.](https://docs.pieces.app/products/core-dependencies/on-device-storage)
+
+- **Sharing Logs**—Zip the latest 2–3 files from `…/production/support/logs/` and attach them to [your issue or DM.](https://docs.pieces.app/products/support#open-a-github-issue)
+- **Backup & Reset**—Copy `com.pieces.os` to back up your database—or copy zip it, and rename it something other than `production` to reset your database.
+- **Cloud Functionality**—Nothing moves off-device unless you enable Personal Cloud or call a third-party model (e.g. OpenAI).
 
 ## Versions & Updates
 
@@ -124,7 +150,16 @@ To ensure a stable, responsive experience—make sure your device fits these gen
 
 Your device, regardless of platform, should meet the following basic system specifications for using Pieces for Developers software.
 
-<pos-pfd-system-reqs />
+---
+
+| **Component**      | **Minimum**                                                                    | **Recommended**                      | **Notes**                                                        |
+| :----------------- | :----------------------------------------------------------------------------- | :----------------------------------- | :--------------------------------------------------------------- |
+| _CPU_              | Any modern CPU                                                                 | Multi-core CPU                       | Avoid dual-core processors—aim for at least a 4-core CPU.        |
+| _RAM (Local Mode)_ | 8 GB total system RAM with 2 GB free                                           | 16 GB total system RAM or more       | Applies when PiecesOS is running locally.                        |
+| _RAM (Cloud Mode)_ | 8 GB total system RAM with 1 GB free                                           | 16 GB total system RAM or more       | Applies when PiecesOS is running in cloud mode.                  |
+| _Disk Space_       | 2 GB minimum (1 GB for PiecesOS \+ 0.5–1 GB for data), with at least 4 GB free | 8 GB with at least 6 GB free or more | Ensure additional free space for data storage and future growth. |
+
+---
 
 ### Choosing the Right Model
 
