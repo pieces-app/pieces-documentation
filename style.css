@@ -43,3 +43,8 @@ div[data-component="Card"] img {
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+.page-index header.mint-topbar,
+.page-index .mint-sidebar-title {
+  display: none !important;
+}
