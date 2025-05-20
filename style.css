@@ -44,20 +44,23 @@ div[data-component="Card"] img {
   padding: 0 2rem;
 }
 
-/* Hide Mintlify header shell only on index page */
-.page-index div.flex.items-center.gap-x-4 {
+/* --------------------------------------------------- */
+/* ONLY on the index (home) page                          */
+/* --------------------------------------------------- */
+
+/* 1) Hide the entire white “logo strip” at the very top */
+body[data-route="/"] .fixed.inset-x-0.z-20.bg-background-light,
+body[data-route="/"] .fixed.inset-x-0.z-20.dark\:bg-background-dark {
   display: none !important;
 }
 
-/* Hide fallback mobile sidebar title next to hamburger */
-.page-index .mint-sidebar-title {
+/* 2) Hide the “Pieces for Developers | Documentation” title in the grey nav bar */
+body[data-route="/"] header .font-semibold.text-gray-900.truncate,
+body[data-route="/"] header .dark\:text-gray-200.truncate {
   display: none !important;
 }
 
-.page-index div[class*="flex"][class*="items-center"][class*="gap-x-4"] {
-  display: none !important;
-}
-
-.page-index header[role="banner"] {
-  display: none !important;
+/* 3) (Optional) Pull your content up so there’s no extra gap left behind */
+body[data-route="/"] .mint-container {
+  padding-top: 0 !important;
 }
