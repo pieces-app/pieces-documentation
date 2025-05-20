@@ -44,41 +44,4 @@ div[data-component="Card"] img {
   padding: 0 2rem;
 }
 
-/* --------------------------------------------------- */
-/* ONLY on the index (home) page                          */
-/* --------------------------------------------------- */
-
-/* 1) Hide the entire white “logo strip” at the very top */
-body[data-route="/"] .fixed.inset-x-0.z-20.bg-background-light,
-body[data-route="/"] .fixed.inset-x-0.z-20.dark\:bg-background-dark {
-  display: none !important;
-}
-
-/* 2) Hide the “Pieces for Developers | Documentation” title in the grey nav bar */
-body[data-route="/"] header .font-semibold.text-gray-900.truncate,
-body[data-route="/"] header .dark\:text-gray-200.truncate {
-  display: none !important;
-}
-
-/* 3) (Optional) Pull your content up so there’s no extra gap left behind */
-body[data-route="/"] .mint-container {
-  padding-top: 0 !important;
-}
-
-/*Only test I gonna try teehee*/
-/* 1) Hide the entire top “logo strip” (both light & dark) */
-body[data-route="/"] .fixed.inset-x-0.z-20 {
-  display: none !important;
-}
-
-/* 2) Hide the “Pieces for Developers | Documentation” title in the grey nav bar */
-body[data-route="/"] nav .truncate {
-  display: none !important;
-}
-
-/* 3) Pull your content up so there’s no extra gap left behind */
-body[data-route="/"] .mint-container {
-  padding-top: 0 !important;
-}
-
 
