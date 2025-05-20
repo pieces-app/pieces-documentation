@@ -80,24 +80,18 @@ body[data-route="/"] nav .truncate {
 body[data-route="/"] .mint-container {
   padding-top: 0 !important;
 }
-body[data-route="/"] .navbar {
-  display: none !important;
-}
 
 body[data-route="/"] #navbar {
   display: none !important;
 }
 
-#navbar {
+body[data-route="/"] span.fixed.inset-0.bg-background-light,
+body[data-route="/"] span.fixed.inset-0.dark\:bg-background-dark {
   display: none !important;
 }
 
-span.fixed.inset-0.bg-background-light,
-span.fixed.inset-0.dark\:bg-background-dark {
-  display: none !important;
-}
-
-.almond-layout {
+body[data-route="/"] .almond-layout {
   position: static !important;
   top: auto !important;
 }
+
