@@ -80,3 +80,6 @@ body[data-route="/"] nav .truncate {
 body[data-route="/"] .mint-container {
   padding-top: 0 !important;
 }
+body[data-route="/"] .nav-logo {
+  display: none !important;
+}
