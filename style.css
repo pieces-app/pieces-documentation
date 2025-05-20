@@ -83,3 +83,7 @@ body[data-route="/"] .mint-container {
 body[data-route="/"] .navbar {
   display: none !important;
 }
+
+body[data-route="/"] #navbar {
+  display: none !important;
+}
