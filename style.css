@@ -44,7 +44,12 @@ div[data-component="Card"] img {
   padding: 0 2rem;
 }
 
-.page-index header.mint-topbar,
+/* Hide Mintlify header shell only on index page */
+.page-index div.flex.items-center.gap-x-4 {
+  display: none !important;
+}
+
+/* Hide fallback mobile sidebar title next to hamburger */
 .page-index .mint-sidebar-title {
   display: none !important;
 }
