@@ -37,3 +37,9 @@ div[data-component="Card"] img {
     margin-top: 1rem;
     text-align: center;
   }
+
+.custom-width-container {
+  max-width: 1400px; /* this controls the index|landing page width as it is currently set to custom */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
