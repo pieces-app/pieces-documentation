@@ -1,31 +1,4 @@
 ---
-0: "<"
-1: "i"
-2: "m"
-3: "g"
-4: " "
-5: "c"
-6: "l"
-7: "a"
-8: "s"
-9: "s"
-10: "N"
-11: "a"
-12: "m"
-13: "e"
-14: "="
-15: """
-16: "m"
-17: "x"
-18: "-"
-19: "a"
-20: "u"
-21: "t"
-22: "o"
-23: """
-24: " "
-25: "/"
-26: ">"
 ---
 
 ## Get Started
@@ -101,7 +74,7 @@ To set up the Pieces MCP, you can edit the `.json` settings configuration file f
 
 <Steps>
   <Step title="Go to Settings">
-    Navigate to **Cursor Settings**, then to the `MCP` section.
+    Navigate to **Cursor Settings**, then to the `MCP` section.
 
     <img
       className="mx-auto"
@@ -142,11 +115,11 @@ Once integrated, you can utilize [Pieces LTM](https://docs.pieces.app/products/c
   <Step title="Open the Chat Panel">
     Open the right-hand chat panel by toggling it at the top-right corner, or use the shortcut `⌘+i` (macOS) or `ctrl+i` (Windows/Linux).
   </Step>
-  <Step title="Select ‘Cursor Agent’">
+  <Step title="Select 'Cursor Agent'">
     Make sure that you are using the _Cursor Agent_ mode, not _Ask_ or _Manual._ This is required to use the `ask_pieces_ltm` tool to access context from LTM.
   </Step>
   <Step title="Begin Prompting">
-    From this point, you can begin prompting. If PiecesOS was previously installed, try testing out the Pieces MCP integration with a prompt like, “What was I doing for work yesterday?” and click `Use Tool` when prompted.
+    From this point, you can begin prompting. If PiecesOS was previously installed, try testing out the Pieces MCP integration with a prompt like, "What was I doing for work yesterday?" and click `Use Tool` when prompted.
 
     <img
       className="mx-auto"
@@ -164,7 +137,7 @@ If you want to customize the specific output provided by the Cursor chatbot thro
 
 To do this, open up **Cursor Settings,** click `Rules`, then add new _User Rules._
 
-Here’s an example of a straightforward set of rules tailored to a specific use case and work flow:
+Here's an example of a straightforward set of rules tailored to a specific use case and work flow:
 
 <img
   className="mx-auto"
@@ -172,14 +145,14 @@ Here’s an example of a straightforward set of rules tailored to a specific use
 
 ## Troubleshooting
 
-If you’re experiencing issues integrating Pieces MCP with Cursor, follow these troubleshooting steps:
+If you're experiencing issues integrating Pieces MCP with Cursor, follow these troubleshooting steps:
 
 1. **Verify PiecesOS Status**: Ensure [PiecesOS is actively running](https://docs.pieces.app/products/core-dependencies/pieces-os/troubleshooting) on your system. MCP integration requires PiecesOS to be operational.
 2. **Confirm LTM Engine Activation**: Make sure the [Long-Term Memory Engine (LTM-2) is enabled in PiecesOS](https://docs.pieces.app/products/core-dependencies/pieces-os/quick-menu#ltm-2-engine), as this engine aggregates context necessary for Cursor to retrieve accurate results.
-3. **Single MCP Instance:** Make sure that you aren’t testing multiple instances of the Pieces MCP server in different IDEs. This cross-contamination conflict with the SSE and several MCP instances running on the same port can cause issues in different development environments.
+3. **Single MCP Instance:** Make sure that you aren't testing multiple instances of the Pieces MCP server in different IDEs. This cross-contamination conflict with the SSE and several MCP instances running on the same port can cause issues in different development environments.
 4. **Use Agent Mode in Chat**: Cursor must be in _Agent Mode_, not _Ask Mode_, to access the `ask_pieces_ltm` tool. Switch to Agent Mode to enable full MCP integration.
 5. **Turn Off Auto-Select**: If Cursor is having issues finding the Pieces tool, de-select `auto-select` and select an individual Agent, such as `claude-3.5-sonnet`.
-6. **Check MCP Server Status**: If you’re encountering messages such as “Sorry, I can’t do this,” your MCP server may not be properly configured or running.
+6. **Check MCP Server Status**: If you're encountering messages such as "Sorry, I can't do this," your MCP server may not be properly configured or running.
 7. **Go to** `settings.json` **in Cursor:** Confirm the MCP server status shows "running" (it may say "start" or "pause" otherwise). Restart the server if necessary and inspect terminal outputs for error messages.
 8. **Review Configuration Details**: Double-check the MCP endpoint URL and the port number in Cursor settings to ensure accuracy, You can find the current SSE endpoint URL in the Pieces Desktop App under **Settings** → **Model Context Protocol (MCP)**, or in the PiecesOS Quick Menu. It is usually formatted as:
 
@@ -189,9 +162,9 @@ http://localhost:{port_number}/model_context_protocol/{version}/sse
 
 ### JSON Blob Error in MCP Settings
 
-When you open **Preferences → Settings → MCP**, you may see a raw `.JSON` payload or _“unknown message ID”_ error displayed beneath your enabled Pieces server—even though your tool calls work correctly.
+When you open **Preferences → Settings → MCP**, you may see a raw `.JSON` payload or _"unknown message ID"_ error displayed beneath your enabled Pieces server—even though your tool calls work correctly.
 
-Cursor’s _Settings_ UI currently doesn’t recognize the JSON-RPC success envelope, so it misclassifies the response as an error object and dumps the payload.
+Cursor's _Settings_ UI currently doesn't recognize the JSON-RPC success envelope, so it misclassifies the response as an error object and dumps the payload.
 
 <img
   className="mx-auto"
@@ -205,4 +178,4 @@ This visual artifact is harmless. All genuine LTM responses still arrive properl
 
 ---
 
-You’re now set to enhance your workflow with powerful context retrieval through Pieces MCP integrated seamlessly into Cursor. Happy coding\!
+You're now set to enhance your workflow with powerful context retrieval through Pieces MCP integrated seamlessly into Cursor. Happy coding\!
