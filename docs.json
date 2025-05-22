@@ -343,7 +343,7 @@
       {
         "anchor": "Productivity Tools",
         "icon": "blocks",
-        "href": "productivity/obsidian/index",
+        "href": "productivity/obsidian/obsidian-overview",
         "pages": [
           {
             "group": "Obsidian Plugin",
