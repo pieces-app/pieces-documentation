@@ -343,96 +343,96 @@
       {
         "anchor": "Productivity Tools",
         "icon": "blocks",
-        "href": "obsidian/index",
+        "href": "productivity/obsidian/index",
         "pages": [
           {
             "group": "Obsidian Plugin",
             "pages": [
-              "obsidian/obsidian-overview",
-              "obsidian/get-started",
+              "productivity/obsidian/obsidian-overview",
+              "productivity/obsidian/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "obsidian/copilot/obsidian-copilot-overview",
-                  "obsidian/copilot/chat",
-                  "obsidian/copilot/llm-settings"
+                  "productivity/obsidian/copilot/obsidian-copilot-overview",
+                  "productivity/obsidian/copilot/chat",
+                  "productivity/obsidian/copilot/llm-settings"
                 ]
               },
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "obsidian/drive/obsidian-drive-overview",
-                  "obsidian/drive/save-snippets",
-                  "obsidian/drive/search-reuse",
-                  "obsidian/drive/edit-update",
-                  "obsidian/drive/sharing"
+                  "productivity/obsidian/drive/obsidian-drive-overview",
+                  "productivity/obsidian/drive/save-snippets",
+                  "productivity/obsidian/drive/search-reuse",
+                  "productivity/obsidian/drive/edit-update",
+                  "productivity/obsidian/drive/sharing"
                 ]
               },
-              "obsidian/commands",
-              "obsidian/configuration",
-              "obsidian/troubleshooting"
+              "productivity/obsidian/commands",
+              "productivity/obsidian/configuration",
+              "productivity/obsidian/troubleshooting"
             ]
           },
           {
             "group": "Web Extension",
             "pages": [
-              "web-extension/web-extension-overview",
-              "web-extension/get-started",
+              "productivity/web-extension/web-extension-overview",
+              "productivity/web-extension/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "web-extension/copilot/web-extension-chat-overview",
-                  "web-extension/copilot/chat",
-                  "web-extension/copilot/llm-settings"
+                  "productivity/web-extension/copilot/web-extension-chat-overview",
+                  "productivity/web-extension/copilot/chat",
+                  "productivity/web-extension/copilot/llm-settings"
                 ]
               },
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "web-extension/drive/web-extension-drive-overview",
-                  "web-extension/drive/save-snippets",
-                  "web-extension/drive/search-reuse",
-                  "web-extension/drive/edit-update",
-                  "web-extension/drive/sharing"
+                  "productivity/web-extension/drive/web-extension-drive-overview",
+                  "productivity/web-extension/drive/save-snippets",
+                  "productivity/web-extension/drive/search-reuse",
+                  "productivity/web-extension/drive/edit-update",
+                  "productivity/web-extension/drive/sharing"
                 ]
               },
-              "web-extension/configuration",
-              "web-extension/shortcuts",
-              "web-extension/troubleshooting"
+              "productivity/web-extension/configuration",
+              "productivity/web-extension/shortcuts",
+              "productivity/web-extension/troubleshooting"
             ]
           },
           {
             "group": "Pieces CLI",
             "pages": [
-              "cli/cli-overview",
-              "cli/get-started",
+              "productivity/cli/cli-overview",
+              "productivity/cli/get-started",
               {
                 "group": "Pieces Copilot",
                 "pages": [
-                  "cli/copilot/cli-copilot-overview",
-                  "cli/copilot/chat",
-                  "cli/copilot/llms-settings"
+                  "productivity/cli/copilot/cli-copilot-overview",
+                  "productivity/cli/copilot/chat",
+                  "productivity/cli/copilot/llms-settings"
                 ]
               },
               {
                 "group": "Pieces Drive",
                 "pages": [
-                  "cli/drive/cli-drive-overview",
-                  "cli/drive/saving-materials",
-                  "cli/drive/search-and-reuse",
-                  "cli/drive/edit-and-update",
-                  "cli/drive/sharing"
+                  "productivity/cli/drive/cli-drive-overview",
+                  "productivity/cli/drive/saving-materials",
+                  "productivity/cli/drive/search-and-reuse",
+                  "productivity/cli/drive/edit-and-update",
+                  "productivity/cli/drive/sharing"
                 ]
               },
-              "cli/commands",
-              "cli/configuration",
-              "cli/troubleshooting"
+              "productivity/cli/commands",
+              "productivity/cli/configuration",
+              "productivity/cli/troubleshooting"
             ]
           },
           {
             "group": "Raycast",
             "pages": [
-              "raycast"
+              "productivity/raycast"
             ]
           }
         ]
