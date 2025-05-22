@@ -1,8 +1,13 @@
-***
+---
+sidebarTitle: "Fixes"
+---
+
+---
 
 ## Troubleshooting Pieces for JetBrains
 
-Here are links to support resources, documentation, and our Discord channel for troubleshooting related to the <a target="_blank" href="https://plugins.jetbrains.com/plugin/17328-pieces">Pieces for JetBrains Plugin.</a>
+Here are links to support resources, documentation, and our Discord channel for troubleshooting related to the <a target="_blank" href="https://plugins.jetbrains.com/plugin/17328-pieces">
+Pieces for JetBrains Plugin.</a>
 
 You can also find some specific troubleshooting steps for JCEF-related issues below.
 
@@ -20,9 +25,9 @@ However, not all JetBrains IDEs, including specific versions of **Android Studio
 
 You must switch your Java runtime to a **JCEF-enabled runtime** inside your global IDE settings.
 
-<Callout type="alert">
+<alert>
   This operation will require restarting your IDE, so make sure to save your work before doing so.
-</Callout>
+</alert>
 
 Follow these steps to switch your runtime:
 
@@ -30,23 +35,28 @@ Follow these steps to switch your runtime:
   <Step title="Open Action Search">
     Open the Action Search Dialog using `⌘+shift+a` (macOS) or `ctrl+shift+a` (Windows/Linux).
   </Step>
-
   <Step title="Search for Boot Runtime">
     Search for `Choose Boot Java Runtime for the IDE`.
   </Step>
-
   <Step title="Choose the Latest JCEF Runtime">
     Select the **latest version** from the available JCEF-enabled runtimes.
   </Step>
-
-  <Step title="Restart IDE" />
+  <Step title="Restart IDE">
+    
+  </Step>
 </Steps>
 
 ### Android Studio Hedgehog Compatibility Issues
 
 If you’re using **Android Studio Hedgehog (2023.1.1)**, switching to a JCEF runtime may still result in GPU process errors, which can cause performance instability.
 
-This is a <a target="_blank" href="https://github.com/gitbito/bitoai/issues/174">known issue with this release,</a> affecting Pieces Copilot and other plugins relying on JCEF (such as the <a target="_blank" href="https://github.com/flutter/flutter-intellij/issues/7119">Flutter inspector</a>).
+This is a <a target="_blank" href="https://github.com/gitbito/bitoai/issues/174">
+known issue with this release,</a>
+
+ affecting Pieces Copilot and other plugins relying on JCEF (such as the <a target="_blank" href="https://github.com/flutter/flutter-intellij/issues/7119">
+Flutter inspector</a>
+
+).
 
 ### Recommended Workaround for Hedgehog Users
 
@@ -55,14 +65,15 @@ If you encounter GPU-related errors after switching to a JCEF runtime, consider 
 To downgrade Android Studio, follow these steps:
 
 1. **Uninstall Hedgehog (2023.1.1)** from your device.
-
 2. **Download Giraffe (2022.3.1 Patch 4)** from the Android Studio archives, which you can find here.
-
 3. **Reinstall Android Studio** using the Giraffe version and switch the runtime to JCEF-enabled using the instructions above.
 
 ## Unable to Find the JetBrains Plugin in the JetBrains Marketplace[​](https://docs.pieces.app/extensions-plugins/jetbrains#i-cant-find-the-pieces-jetbrains-plugin-in-the-jetbrains-marketplace)
 
-If you can't find the Pieces for Developers JetBrains Plugin in the JetBrains Marketplace, you can navigate directly to it using <a target="_blank" href="https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets">this link</a>.
+If you can't find the Pieces for Developers JetBrains Plugin in the JetBrains Marketplace, you can navigate directly to it using <a target="_blank" href="https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets">
+this link</a>
+
+.
 
 ## Updating[​](https://docs.pieces.app/extensions-plugins/jetbrains#updating)
 
@@ -88,4 +99,6 @@ These scenarios can occasionally cause the LLM to ‘hang’—to appear as if g
 
 To do so, click the small `Reload Copilot` symbol above the Pieces Copilot chat once it is open.
 
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/jetbrains_plugin_assets/jetbrains_plugin_assets/troubleshooting/reload_copilot.png" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>

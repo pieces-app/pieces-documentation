@@ -1,4 +1,8 @@
-***
+---
+sidebarTitle: "Saving Materials"
+---
+
+---
 
 ## Saving Materials
 
@@ -6,17 +10,12 @@ Save code snippets to the Pieces Drive in two ways: use the right-click menu or 
 
 You can use this feature to save all kinds of proper markdown and code materials, such as:
 
-* API endpoint definitions
-
-* Utility functions or commonly used helper methods
-
-* Predefined templates for organizing notes
-
-* Task Lists
-
-* Code Blocks
-
-* Reusable patterns for internal or external links
+- API endpoint definitions
+- Utility functions or commonly used helper methods
+- Predefined templates for organizing notes
+- Task Lists
+- Code Blocks
+- Reusable patterns for internal or external links
 
 ### via Right-Click Menu
 
@@ -26,17 +25,17 @@ To capture useful code snippets via the right-click menu:
   <Step title="Highlight the Section">
     Select the section you want to save.
   </Step>
-
   <Step title="Right-click on the Highlighted Section">
     Open the context menu by right-clicking on the selected section.
   </Step>
-
   <Step title="Choose Save to Pieces">
     From the menu, select Save to Pieces.
   </Step>
 </Steps>
 
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/obsidian_plugin_assets/using_snippets/saving_snippets/save_to_pieces_rightclick_OBS.png" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>
 
 ### via Embedded Buttons
 
@@ -46,13 +45,14 @@ To save code snippets directly from your notes:
   <Step title="Locate the Code Block">
     Find the code block you want to save within your note.
   </Step>
-
   <Step title="Click the Save Button">
     Use the **Save** button embedded within the code block to save it to Pieces Drive.
   </Step>
 </Steps>
 
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/obsidian_plugin_assets/using_snippets/saving_snippets/snippet_save_to_pieces.png" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>
 
 ### via Copilot Chat
 
@@ -60,7 +60,9 @@ You can take any code block existing in your Copilot Chat and click `Save to Pie
 
 To do so, click the `Save to Pieces` button on any code block within the Copilot Chat view.
 
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/obsidian_plugin_assets/using_snippets/saving_snippets/save_to_pieces_copilot_chat_OBS.png" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>
 
 ## What’s Stored When You Save a Material
 
@@ -68,21 +70,17 @@ When you save a snippet to your Pieces Drive, it’s more than just the code tha
 
 The Pieces Copilot captures:
 
-* `Type`: Categorizes the snippet (e.g., API call, function, class) with it’s code language.
+- `Type`: Categorizes the snippet (e.g., API call, function, class) with it’s code language.
+- `Associated Tags`: Keywords associated with the snippet for easier searching.
+- `Custom Description`**:** Specifies precisely which _lines_ (in numerical form) the snippet is from, as well as the file from which it originated—very useful for mind-mapping.
+- `Smart Description`: AI-generated descriptions that summarize the snippet’s purpose and function.
+- `Suggested Searches`: Related searches that help you discover similar snippets.
+- `Related Links`: References to documentation, code repositories, or other relevant resources.
+- `Related People`: Associated collaborators or contributors.
 
-* `Associated Tags`: Keywords associated with the snippet for easier searching.
-
-* `Custom Description`**:** Specifies precisely which *lines* (in numerical form) the snippet is from, as well as the file from which it originated—very useful for mind-mapping.
-
-* `Smart Description`: AI-generated descriptions that summarize the snippet’s purpose and function.
-
-* `Suggested Searches`: Related searches that help you discover similar snippets.
-
-* `Related Links`: References to documentation, code repositories, or other relevant resources.
-
-* `Related People`: Associated collaborators or contributors.
-
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/obsidian_plugin_assets/using_snippets/saving_snippets/saved_snippet_whats_stored_OBS.png" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>
 
 Additionally, the Pieces Copilot **scans saved snippets for sensitive information**, such as API keys, passwords, or authentication tokens, to ensure no confidential data is accidentally stored.
 

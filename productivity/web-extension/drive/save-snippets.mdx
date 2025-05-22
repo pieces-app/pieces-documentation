@@ -1,4 +1,8 @@
-***
+---
+sidebarTitle: "Saving Materials"
+---
+
+---
 
 ## Saving Materials
 
@@ -6,17 +10,12 @@ You can save code snippets as materials to the Pieces Drive using the right-clic
 
 You can use this feature to save all kinds of useful markdown and code materials, such as:
 
-* API endpoint definitions
-
-* Utility functions or commonly used helper methods
-
-* Predefined templates for organizing notes
-
-* Task Lists
-
-* Code Blocks
-
-* Reusable patterns for internal or external links
+- API endpoint definitions
+- Utility functions or commonly used helper methods
+- Predefined templates for organizing notes
+- Task Lists
+- Code Blocks
+- Reusable patterns for internal or external links
 
 ### via Right-Click Menu
 
@@ -26,15 +25,15 @@ To capture useful code snippets via the right-click menu:
   <Step title="Highlight the Section">
     Select the section you want to save.
   </Step>
-
   <Step title="Right-Click on the Highlighted Section">
     Open the context menu by right-clicking on the selected section.
   </Step>
-
   <Step title="Choose Pieces: Save Selection">
     From the menu, select `Save Selection to Pieces`.
 
-    <Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/web_extension/_MAIN/right_click_hover_save.png" alt="" align="center" fullwidth="true" />
+    <img
+      className="mx-auto"
+    />
   </Step>
 </Steps>
 
@@ -46,11 +45,12 @@ To save code snippets directly from a code block in your browser:
   <Step title="Locate the Code Block">
     Find the code block you want to save within your browser.
   </Step>
-
   <Step title="Click Copy and Save">
     Use the `Copy and Save` button embedded below the code block to save it to Pieces Drive and copy the snippet to your keyboard.
 
-    <Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/web_extension/pieces_drive/saving_materials/hover_copy_save.png" alt="" align="center" fullwidth="true" />
+    <img
+      className="mx-auto"
+    />
   </Step>
 </Steps>
 
@@ -66,7 +66,9 @@ You can take any code block existing in your Copilot Chat and click `Save to Pie
 
 To do so, click the `Save to Pieces` button on any code block within the Copilot Chat view.
 
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/web_extension/pieces_drive/saving_materials/save_to_pieces_chat.png" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>
 
 ## What’s Stored When You Save a Material
 
@@ -74,21 +76,17 @@ When you save a snippet to your Pieces Drive, more than just the code is stored.
 
 The Pieces Copilot captures:
 
-* `Type`: Categorizes the snippet (e.g., API call, function, class) and its programming language.
+- `Type`: Categorizes the snippet (e.g., API call, function, class) and its programming language.
+- `Associated Tags`: Keywords linked to the snippet for easier searching.
+- `Custom Description`: Specifies exactly which _lines_ (in numerical form) the snippet is from and the file it came from—very useful for mind-mapping.
+- `Smart Description`: AI-generated descriptions summarize the snippet’s purpose and function.
+- `Suggested Searches`: Related searches that help you find similar snippets.
+- `Related Links`: References to documentation, code repositories, or other relevant resources.
+- `Related People`: Associated collaborators or contributors.
 
-* `Associated Tags`: Keywords linked to the snippet for easier searching.
-
-* `Custom Description`: Specifies exactly which *lines* (in numerical form) the snippet is from and the file it came from—very useful for mind-mapping.
-
-* `Smart Description`: AI-generated descriptions summarize the snippet’s purpose and function.
-
-* `Suggested Searches`: Related searches that help you find similar snippets.
-
-* `Related Links`: References to documentation, code repositories, or other relevant resources.
-
-* `Related People`: Associated collaborators or contributors.
-
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/web_extension/pieces_drive/_MAIN/saved_media_browser.png" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>
 
 Additionally, the Pieces Copilot **scans saved snippets for sensitive information**, such as API keys, passwords, or authentication tokens, to ensure no confidential data is accidentally stored.
 

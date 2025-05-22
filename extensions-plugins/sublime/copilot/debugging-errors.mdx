@@ -1,4 +1,8 @@
-***
+---
+sidebarTitle: "Debugging Errors"
+---
+
+---
 
 ## Using the Debugging Tool
 
@@ -10,21 +14,23 @@ To use the debugging tool:
   <Step title="Select a Portion of Code">
     Select a portion of problematic code and right-click to open the context menu.
   </Step>
-
   <Step title="Hover over Pieces and Ask Copilot">
     Hover over `Pieces`, then hover over `Ask Copilot`.
   </Step>
-
   <Step title="Fix the Bug in the Code">
     Lastly, select `Fix A Bug` from the menu.
 
-    <Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/sublime_text_plugin_assets/pieces_ai_copilot/debugging_errors/pieces_AI_copilot_debugging_errors_1072024.png" alt="" align="center" fullwidth="true" />
+    <img
+      className="mx-auto"
+    />
   </Step>
 </Steps>
 
 The debugging function within the [Pieces Copilot uses the code's context](https://docs.pieces.app/products/extensions-plugins/sublime/copilot/chat#pieces-ask-about-the-current-file) and semantics to find and rectify issues.
 
-<Image src="https://storage.googleapis.com/hashnode_product_documentation_assets/sublime_text_plugin_assets/pieces_ai_copilot/debugging_errors/fixing_a_bug.gif" alt="" align="center" fullwidth="true" />
+<img
+  className="mx-auto"
+/>
 
 If you face a specific error during code compilation, paste the error code into the **text input field** at the bottom of Sublime for detailed help, and Pieces Copilot will analyze it using the active LLM, open a Copilot Chat with suggestions, regenerate the code, and offer to insert it at the cursor with new comments.
 
