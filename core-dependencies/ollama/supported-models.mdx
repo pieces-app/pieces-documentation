@@ -1,1 +1,120 @@
-<pieces-local-models />
+---
+title: "Pieces-Compatible Local LLMs"
+description: "Find an up-to-date list of local large language models (LLMs) that are compatible with Pieces for Developers software & are served and supported through the Ollama client. "
+---
+
+## Available Local LLMs
+
+Find reference information and an up-to-date (January 31st, 2025) of local LLMs available for download that are currently supported by PiecesOS, the Pieces Desktop App, and other Pieces plugins and extensions.
+
+## Supported LLMs
+
+The Pieces for Developers Suite currently supports 41 local models from a range of providers.
+
+---
+
+| **Provider** | **Model Name**               |
+| :----------- | :--------------------------- |
+| _Google_     | Gemma / Code Gemma           |
+| _IBM_        | Granite / Code / Dense / MoE |
+| _Meta_       | LLaMA / CodeLLaMA            |
+| _Mistral_    | Mistral / Mixtral            |
+| _Microsoft_  | Phi                          |
+| _Qwen_       | QwQ / Coder                  |
+| _StarCoder_  | StarCoder                    |
+
+View the tables below for detailed model names, parameters, and the context window size of all usable models.
+
+<Warning>
+  Please note that not all specific models have easily indentifiable **parameter quantities**. Some companies release information on their models, while others do not—as such, the parameters provided in these tables are **estimated parameter ranges** based on leading AI sources, detailed evaluations and assessments, and other available information.
+</Warning>
+
+### Google (Gemma)
+
+---
+
+| **Model Name**      | **Parameters** | **Context Window (Maximum)** |
+| :------------------ | :------------- | :--------------------------- |
+| _Gemma 2 27B_       | 27B            | 8k tokens                    |
+| _Gemma 2 9B_        | 9B             | 8k tokens                    |
+| _Gemma 2 2B_        | 2B             | 8k tokens                    |
+| _Gemma 1.1 7B_      | 7B             | 4k tokens                    |
+| _Gemma 1.1 2B_      | 2B             | 4k tokens                    |
+| _Code Gemma 1.1 7B_ | 7B             | 4k tokens                    |
+
+### IBM (Granite)
+
+---
+
+| **Model Name**         | **Parameters** | **Context Window (Maximum)** |
+| :--------------------- | :------------- | :--------------------------- |
+| _Granite Code 34B_     | 34B            | 8k tokens                    |
+| _Granite Code 20B_     | 20B            | 8k tokens                    |
+| _Granite Code 8B_      | 8B             | 128k tokens                  |
+| _Granite Code 3B 128K_ | 3B             | 128k tokens                  |
+| _Granite Code 3B_      | 3B             | 4k tokens                    |
+| _Granite 3.1 Dense 8B_ | 8B             | 128k tokens                  |
+| _Granite 3.1 Dense 2B_ | 2B             | 128k tokens                  |
+| _Granite 3 MoE 3B_     | 3B             | 128k tokens                  |
+| _Granite 3 MoE 1B_     | 1B             | 128k tokens                  |
+| _Granite 3 Dense 8B_   | 8B             | 128k tokens                  |
+
+### Meta (LLaMA)
+
+---
+
+| **Model Name**  | **Parameters** | **Context Window (Maximum)** |
+| :-------------- | :------------- | :--------------------------- |
+| _LLaMA 3.2 3B_  | 3B             | 128k tokens                  |
+| _LLaMA 3.2 1B_  | 1B             | 8k tokens                    |
+| _LLaMA 3 8B_    | 8B             | 8k tokens                    |
+| _LLaMA 2 13B_   | 13B            | 4lk tokens                   |
+| _LLaMA 2 7B_    | 7B             | 4k tokens                    |
+| _CodeLLaMA 34B_ | 34B            | 100k tokens                  |
+| _CodeLLaMA 13B_ | 13B            | 16k tokens                   |
+| _CodeLLaMA 7B_  | 7B             | 8k tokens                    |
+
+### Mistral (Mixtral)
+
+---
+
+| **Model Name** | **Parameters** | **Context Window (Maximum)** |
+| :------------- | :------------- | :--------------------------- |
+| _Mixtral 8 7B_ | 7B             | 128k tokens                  |
+| _Mistral 7B_   | 7B             | 32.8k tokens                 |
+
+### Microsoft (Phi)
+
+---
+
+| **Model Name**          | **Parameters** | **Context Window** |
+| :---------------------- | :------------- | :----------------- |
+| _Phi-4 14B_             | 14B            | 4k tokens          |
+| _Phi-3.5 Mini 3.8B_     | 3.8B           | 128k tokens        |
+| _Phi-3 Mini 128K_       | 3B             | 128k tokens        |
+| _Phi-3 Mini 4K_         | 3B             | 4k tokens          |
+| _Phi-3 Medium 14B 128K_ | 14B            | 128k tokens        |
+| _Phi-3 Medium 14B 4K_   | 14B            | 4k tokens          |
+| _Phi-2_                 | N/A            | 4k tokens          |
+
+### Qwen (Qwen)
+
+---
+
+| **Model Name**         | **Parameters** | **Context Window** |
+| :--------------------- | :------------- | :----------------- |
+| _Qwen QwQ Preview 32B_ | 32B            | 32k tokens         |
+| _Qwen 2.5 Coder 32B_   | 32B            | 128k tokens        |
+| _Qwen 2.5 Coder 14B_   | 14B            | 32k tokens         |
+| _Qwen 2.5 Coder 7B_    | 7B             | 128k tokens        |
+| _Qwen 2.5 Coder 3B_    | 3B             | 32k tokens         |
+| _Qwen 2.5 Coder 1.5B_  | 1.5B           | 128k tokens        |
+| _Qwen 2.5 Coder 0.5B_  | 0.5B           | 32k tokens         |
+
+### StarCoder (StarCoder)
+
+---
+
+| **Model Name**   | **Parameters** | **Context Window** |
+| :--------------- | :------------- | :----------------- |
+| _StarCode 2 15B_ | 15b            | 16k tokens         |
