@@ -1,5 +1,119 @@
 ---
 sidebarTitle: "Terms"
+title: "Glossary"
+description: "Definitions for product-related features, large-language models (LLMs), user-facing elements, additional terms, and more."
 ---
 
-<glossary-all />
+## Definitions by Group
+
+Explore this comprehensive Pieces glossary covering AI/LLMs, saved material management, advanced settings, and more.
+
+<Warning>
+  This glossary is not complete, and will continue to grow over time. There may be missing terms & definitions in the tables below.
+</Warning>
+
+## 1AI / Model Specific
+
+| **Term**                       | **Definition**                                                                                                                                                                      |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Claude (Anthropic)**         | A family of AI models supported by Pieces via cloud integration, including Claude 3 Sonnet, Opus, and Haiku.                                                                        |
+| **Cloud Model**                | AI models hosted remotely and accessed via the internet. They often feature larger parameter counts or faster inference compared to local models, but require an online connection. |
+| **Blended Mode**               | A Pieces configuration that uses both local and cloud-based models for AI tasks (like snippet enrichment and code generation).                                                      |
+| **Code Gemma**                 | A family of code-focused Gemma LLMs (e.g., “Code Gemma 1.1 7B”) optimized for generating and explaining code within Pieces.                                                         |
+| **GPT-4o / GPT-4 Turbo**       | Cloud-based LLMs from OpenAI, used within Pieces Copilot for advanced code generation and conversation.                                                                             |
+| **Granite (IBM)**              | A set of IBM-developed LLMs (e.g., “Granite Code 34B,” “Granite 3.1 Dense”) that Pieces supports for code generation and text tasks.                                                |
+| **Hard-Reset Active Runtime**  | A Pieces function that fully restarts the currently active AI model runtime (local or cloud) when it becomes unresponsive, ensuring Copilot availability.                           |
+| **LLM (Large Language Model)** | A type of AI model trained on massive textual data. In Pieces, LLMs generate or refine code, answer questions, and enrich snippets based on user context.                           |
+| **LLM Runtime Modal**          | The interface in Pieces for managing, switching, and resetting the active language model or runtime environment (e.g., local vs. cloud).                                            |
+| **Local Model**                | AI models that run entirely on the user’s machine, offering offline support and enhanced data privacy but requiring sufficient local hardware resources.                            |
+| **Local Mode**                 | A Pieces setting that forces all AI processing (Copilot, snippet enrichment) to run on-device, ensuring offline functionality and stricter data privacy.                            |
+| **Mistral / Mixtral**          | A provider releasing various LLMs (e.g., “Mixtral 8 7B”). Pieces can integrate these models for local or cloud inference.                                                           |
+| **Microsoft (Phi)**            | Microsoft’s family of LLMs (e.g., Phi-4 14B, Phi-3.5 Mini), which Pieces supports for text and code generation tasks, either locally via Ollama or via cloud.                       |
+| **Meta (LLaMA, CodeLLaMA)**    | LLMs from Meta, including LLaMA for general text and CodeLLaMA for code-focused tasks. Pieces supports these if Ollama is installed, offering local or blended inference options.   |
+| **ML Processing**              | A Pieces-wide configuration determining whether snippet analysis and Copilot requests should use local, cloud, or blended AI resources.                                             |
+| **Neural Code Search (NCS)**   | An AI-based semantic search feature in Pieces that locates relevant snippets even if the user’s text doesn’t exactly match the snippet’s contents.                                  |
+| **Ollama**                     | An optional wrapper for running LLMs locally (based on llama.cpp). It allows offline inference and greater data privacy when using Pieces Copilot or snippet enrichment.            |
+| **Parameter Count**            | Refers to the size of an AI model (e.g., 7B, 13B). Larger parameter counts can yield more sophisticated results but demand more computational resources.                            |
+| **Qwen (QwQ, Coder)**          | A family of language and code-focused LLMs from Qwen, integrated into Pieces for code generation, refactoring, and other AI-driven tasks.                                           |
+| **StarCoder**                  | A series of coding-focused LLMs (e.g., “StarCoder 2 15B”) supported by Pieces for developer-centric tasks such as code generation, explanation, and debugging.                      |
+
+## UI / UX or Visual Terms
+
+| **Term**                        | **Definition**                                                                                                                                                                                                  |
+| :------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Accent Color**                | A customizable highlight color for Copilot chat bubbles, button accents, and other UI elements in Pieces.                                                                                                       |
+| **Active Model**                | The currently selected LLM used by Pieces Copilot. It’s displayed in the lower-left corner and can be changed via a modal.                                                                                      |
+| **Add Materials Button**        | A button in Pieces Drive that opens a modal to import code files, create new snippets, or add references and resources.                                                                                         |
+| **Chat Options Menu**           | A vertical ellipsis menu in Copilot chats that lets you pin, delete, or refresh the current chat.                                                                                                               |
+| **Default Layout**              | The initial UI configuration shown when you open the Pieces Desktop App (e.g., starting in Pieces Drive vs. Copilot).                                                                                           |
+| **Default List View Sort**      | A Pieces Drive setting dictating how saved materials are sorted by default in list view (e.g., by most recent, alphabetical, or by language).                                                                   |
+| **Default Toolbar**             | A customizable toolbar visible when saving or viewing new snippets, letting users pick frequently used actions (e.g., annotate, share, reclassify) without extra clicks.                                        |
+| **Focus Mode**                  | A view that hides side panels and UI distractions, allowing you to concentrate on Copilot chat or snippet details.                                                                                              |
+| **Keyboard Shortcuts**          | Configurable key bindings that allow quick actions in Pieces, such as saving snippets, toggling memory, or generating shareable links.                                                                          |
+| **Message Icon**                | A button inside Copilot that lets you attach files, folders, or saved materials to your current chat for context.                                                                                               |
+| **Metrics Summary**             | A UI setting controlling how snippet metadata summaries (like tags, language, or usage stats) appear in the Gallery View—such as “always show,” “on hover,” or “smart.”                                         |
+| **Pinned Chat**                 | A chat session pinned to the top of the Copilot sidebar to keep it readily accessible, even as you create new chats.                                                                                            |
+| **Power Menu Actions**          | A context-aware set of commands shown in the Pieces “Power Menu,” including options like “Analyze with Copilot,” “Create New Material,” or “Check for Updates,” adapting based on your current view or snippet. |
+| **Power Menu Hotkey**           | A shortcut that opens the dynamic Pieces command palette (“Power Menu”) to quickly navigate features or perform actions.                                                                                        |
+| **Power Tips**                  | An optional UI element that displays advanced usage hints and best practices for new or existing Pieces features.                                                                                               |
+| **Quick Actions Menu**          | A small dropdown near the Copilot chat input containing shortcuts to add snippet references, toggle memory usage, or adjust chat context.                                                                       |
+| **Quick Menu (Three-Dot Menu)** | A contextual dropdown UI element that appears on snippets or items in Pieces Drive, providing actions such as duplicate, reclassify, manage tags, or share.                                                     |
+| **Quick Menu**                  | A system tray (Windows) or menu bar (macOS) icon that offers high-level PiecesOS status and quick access to certain features without fully opening the Pieces Desktop App.                                      |
+| **Saved Materials List**        | The left panel in Pieces Drive that displays all saved snippets, screenshots, links, and other developer resources.                                                                                             |
+| **Sidebar Chat History**        | The left-hand navigation in Pieces Copilot that shows past chat sessions chronologically, enabling quick reference and switching.                                                                               |
+| **Theme Toggle**                | A control allowing you to switch between light and dark themes in the Pieces Desktop App.                                                                                                                       |
+
+## Settings, Toggles, and Views
+
+| **Term**                             | **Definition**                                                                                                                                                                   |
+| :----------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Account & Integrations**           | A settings section where you manage your Pieces account, link external services (e.g., GitHub, Google), and configure any additional plugin integrations.                        |
+| **Backup & Restore Data**            | The process of creating manual snapshots (backups) of your Pieces content and preferences, and restoring them if needed for data recovery or syncing.                            |
+| **Backup Manager**                   | A dedicated modal in the Pieces Desktop App for creating, viewing, restoring, or deleting manual backups of your Drive, Copilot history, and user settings.                      |
+| **Cloud Syncing**                    | The automatic process of syncing snippets and app preferences to your Personal Cloud instance, enabling access from multiple devices and secure backups.                         |
+| **Disconnect Cloud**                 | A modal or option (marked by a slashed cloud icon) to disable cloud syncing and revert Pieces to local-only usage.                                                               |
+| **Enrichment Mode**                  | A setting controlling how saved materials are enriched—whether they use local, cloud, or blended AI resources to generate tags, annotations, and references.                     |
+| **Enrichment Level**                 | Determines the depth of automatic metadata generation for snippets (minimal, standard, or detailed), affecting how many tags, hints, or references are added.                    |
+| **Manual Entry (Sensitive Info)**    | A toggle that lets you explicitly mark a snippet as containing sensitive data—like passwords, API tokens, or user info—so that it’s masked or flagged.                           |
+| **Optimize for Speed / Readability** | An option to transform snippets for either faster performance or clearer, more maintainable code.                                                                                |
+| **Optimize Memory Usage**            | A toggle or slider in Settings → Machine Learning that reduces CPU and RAM consumption by limiting how aggressively local AI processes capture context.                          |
+| **Personal Domain**                  | A user-specific subdomain (e.g., \<username\>.[pieces.cloud](http://pieces.cloud)) for sharing snippets via publicly accessible links, controllable in Account & Cloud settings. |
+| **Reclassify**                       | An action that lets you change the auto-detected language or category of a saved snippet if Pieces initially mislabels it.                                                       |
+| **Templatize**                       | A feature allowing you to convert an existing snippet into a reusable code template for repeated use in future projects.                                                         |
+
+## Advanced & Enterprise Concepts
+
+| **Term**                 | **Definition**                                                                                                                                                    |
+| :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Auth0 Integration**    | Pieces integrates with Auth0 for secure user authentication and permission management, especially in enterprise deployments.                                      |
+| **Cloud Integration**    | An optional feature set that grants real-time data sync, cloud-based model inference, and external backups through the Pieces Personal Cloud or enterprise cloud. |
+| **Data Isolation**       | Each user’s data is stored in a private instance or database, safeguarding user privacy and ensuring no cross-contamination between accounts.                     |
+| **Early Access Program** | An opt-in program that grants users beta or experimental features ahead of public releases, accessible in Desktop App settings.                                   |
+| **Offline Support**      | Pieces offers full functionality without an internet connection by running local inference (via Ollama) and storing all snippet data on-device.                   |
+| **SOC-2 Compliance**     | Pieces adheres to SOC-2 security and privacy standards to protect enterprise data, detailing how user data is securely handled and processed.                     |
+
+## Discovery, Sharing & Filtering
+
+| **Term**                       | **Definition**                                                                                                                                                                           |
+| :----------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Search Pieces Drive**        | A command or right-click option that opens a search interface to locate stored materials using metadata (tags, language, people, etc.) as well as full-text or AI-based semantic search. |
+| **Filter by Language/Tag**     | The ability to limit visible snippets in Pieces Drive to a specific programming language or tag, helping you find relevant code faster.                                                  |
+| **Refresh Link / Revoke Link** | Tools for re-generating or invalidating an existing snippet’s shareable link, improving security or version control by ensuring old links are no longer valid if revoked.                |
+
+## Additional Terms
+
+| **Term**                      | **Definition**                                                                                                                                                                        |
+| :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Auto-Generated Hints**      | Short suggestions automatically appended to new snippets, indicating best practices or potential improvements (e.g., “You might add error handling here.”).                           |
+| **Auto-Generated People**     | Metadata labeling contributors (by name, handle, or email) discovered during snippet creation—useful for tracking code ownership or relevant experts.                                 |
+| **Auto-Generated Websites**   | Relevant webpage references (like Stack Overflow or documentation) automatically associated with newly saved snippets, aiding quick reference and further reading.                    |
+| **Azure Data Studio Plugin**  | A Pieces extension for Microsoft Azure Data Studio that streamlines database-centric snippet saving, Copilot code generation, and data workflows.                                     |
+| **JupyterLab Plugin**         | An integration that allows you to manage, save, and share code snippets directly from Jupyter notebooks, plus access Copilot features for data science tasks.                         |
+| **Neovim Plugin**             | A Pieces plugin for Neovim, providing local snippet management, code transformations, and Copilot interactions without leaving the terminal-based workflow.                           |
+| **Obsidian Plugin**           | Lets you save and enrich code snippets, notes, or references directly within Obsidian vaults, making it easy to connect your knowledge-base items with Pieces.                        |
+| **Pieces CLI**                | A command-line interface for operating Pieces features (e.g., snippet creation, local inference, or batch tagging) without opening the Desktop App.                                   |
+| **Power Menu Actions**        | (If not covered in UI/UX) The dynamic list of context-based commands that appears in the Pieces Power Menu, adjusting based on your current snippet, view, or integrated application. |
+| **Raycast Plugin**            | A macOS Raycast integration enabling quick snippet lookup, sharing, and Copilot queries straight from the Raycast command palette.                                                    |
+| **Release Notes**             | A dedicated section in the Pieces Desktop App (or website) that outlines changes in each new version, including new features, improvements, and bug fixes.                            |
+| **Sublime Text Plugin**       | Embeds Pieces Drive and Copilot into Sublime Text, allowing you to save code snippets, transform them, and ask AI questions in real time.                                             |
+| **Visual Studio Code Plugin** | A popular extension for VS Code that adds snippet discovery, AI chat, and context management directly in the editor.                                                                  |
