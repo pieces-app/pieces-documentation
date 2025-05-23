@@ -1,5 +1,9 @@
 ---
+title: "Pieces MCP + Cursor Integration"
+description: "The Pieces MCP integration with Cursor lets you use Pieces Long-Term Memory directly in the Cursor IDE, improving your coding workflow with easy context retrieval."
 ---
+
+![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_cursor/mcp-2.png)
 
 ## Get Started
 
@@ -34,8 +38,6 @@ There are **[2]** primary prerequisites for integrating Pieces with Cursor as an
 
 Follow the instructions below for a detailed guide on setting up and configuring PiecesOS to correctly pass captured workflow context to the Pieces MCP server.
 
-<pos-download-guide />
-
 ### Getting the SSE Endpoint for PiecesOS
 
 To use Pieces MCP with Cursor, you'll first need the Server-Sent Events (SSE) endpoint from PiecesOS:
@@ -52,21 +54,17 @@ To find the current SSE endpoint with the active instance of POS (including the 
 
 There, you can click once to copy the SSE endpoint, which includes the active PiecesOS port number.
 
-<img
-  className="mx-auto"
-/>
+![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_pos_new.png)
 
 You can also do this in the Pieces Desktop App by opening the **Settings** view and clicking **Model Context Protocol (MCP).**
 
-<img
-  className="mx-auto"
-/>
+![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_pfd_new.png)
 
 ## Setting Up Cursor
 
 Read below for steps on setting up the Pieces MCP in your Cursor IDE using the global MCP configuration method—or watch the video below for a tutorial and live demo.
 
-<Embed src="https://www.youtube.com/watch?v=joqJbr9MV8k" />
+<iframe width="734" height="413" src="https://www.youtube.com/embed/joqJbr9MV8k" title="Set Up Pieces MCP (Model Context Protocol) with Cursor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
 
 ### via Global MCP Configuration
 
@@ -76,9 +74,8 @@ To set up the Pieces MCP, you can edit the `.json` settings configuration file f
   <Step title="Go to Settings">
     Navigate to **Cursor Settings**, then to the `MCP` section.
 
-    <img
-      className="mx-auto"
-    />
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_cursor/cursor_no_mcp.png)
+    
   </Step>
   <Step title="Add a New MCP">
     Add a new global MCP server by clicking `Add new global MCP server` and inserting the following `.json` snippet (adjust port if necessary) in the `.json` file that opens:
@@ -98,9 +95,8 @@ To set up the Pieces MCP, you can edit the `.json` settings configuration file f
 
     Make sure to refresh the MCP server window by clicking the **refresh icon** and ensure that there is a _green dot_ indicating that the server is running and functioning without errors.
 
-    <img
-      className="mx-auto"
-    />
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_cursor/cursor_green_dot_mcp.png)
+    
   </Step>
   <Step title="Use Pieces MCP">
     Once the MCP server is set up, make sure to change the chat mode to _Agent_ mode. This should automatically utilize the `ask_pieces_ltm` tool.
@@ -121,9 +117,8 @@ Once integrated, you can utilize [Pieces LTM](https://docs.pieces.app/products/c
   <Step title="Begin Prompting">
     From this point, you can begin prompting. If PiecesOS was previously installed, try testing out the Pieces MCP integration with a prompt like, "What was I doing for work yesterday?" and click `Use Tool` when prompted.
 
-    <img
-      className="mx-auto"
-    />
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_cursor/example_pieces_mcp_cursor.gif)
+    
   </Step>
 </Steps>
 
@@ -139,9 +134,7 @@ To do this, open up **Cursor Settings,** click `Rules`, then add new _User Rules
 
 Here's an example of a straightforward set of rules tailored to a specific use case and work flow:
 
-<img
-  className="mx-auto"
-/>
+![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_cursor/cursor_rules.png)
 
 ## Troubleshooting
 
@@ -166,9 +159,7 @@ When you open **Preferences → Settings → MCP**, you may see a raw `.JSON` pa
 
 Cursor's _Settings_ UI currently doesn't recognize the JSON-RPC success envelope, so it misclassifies the response as an error object and dumps the payload.
 
-<img
-  className="mx-auto"
-/>
+![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_cursor/cursor_error.png)
 
 This visual artifact is harmless. All genuine LTM responses still arrive properly in the Cursor chat window.
 
