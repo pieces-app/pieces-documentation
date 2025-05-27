@@ -25,8 +25,7 @@ There are **[2]** primary prerequisites for integrating Pieces with Goose as an 
     For the MCP server to interact with your workflow context, you must enable the Long-Term Memory Engine (LTM-2) through the Pieces Desktop App or the [PiecesOS Quick Menu](https://docs.pieces.app/products/core-dependencies/pieces-os/quick-menu) in your toolbar.
   </Step>
   <Step title="Install Goose">
-    If you haven't installed Goose yet, follow the <a target="_blank" href="https://block.github.io/goose/docs/getting-started/installation/">
-    
+    If you haven't installed Goose yet, follow the <a href="https://block.github.io/goose/docs/getting-started/installation/">
     installation instructions</a>
 
     .
@@ -41,11 +40,11 @@ Follow the detailed set-up instructions below for a detailed guide on setting up
   <Tab title="macOS">
     **Installing PiecesOS for macOS**
 
-    [Download the standalone PiecesOS file](https://docs.pieces.app/products/core-dependencies/pieces-os/manual-installation#macos) for your macOS system’s ARM or Intel-based architecture to start the installation process.
+    [Download the standalone PiecesOS file](https://docs.pieces.app/products/core-dependencies/pieces-os/manual-installation#macos) for your macOS system's ARM or Intel-based architecture to start the installation process.
 
     _Your device must be updated to macOS 13.0 (Ventura) or higher._
 
-    1. Download the correct PiecesOS file for your system’s architecture.
+    1. Download the correct PiecesOS file for your system's architecture.
     2. From your **Downloads** folder, double-click the installed PiecesOS file to open it.
     3. Drag PiecesOS into the application folder if prompted, then open PiecesOS.
 
@@ -57,7 +56,7 @@ Follow the detailed set-up instructions below for a detailed guide on setting up
 
     Click `Open` to continue with the installation.
 
-    Then, you’ll see a second permissions pop-up message:
+    Then, you'll see a second permissions pop-up message:
 
     > PiecesOS is requesting to bypass the system private window picker and directly access your screen and audio. This will allow PiecesOS to record your screen and system audio, including personal or sensitive information that may be visible or audible.
 
@@ -92,7 +91,7 @@ Follow the detailed set-up instructions below for a detailed guide on setting up
 
     4. Choose your installation location and click `Next`.
     5. Click `Install`, then `Finish` when the progress bar has finished loading.
-    6. Follow the installer’s instructions, selecting a download location and preferred file path as necessary.
+    6. Follow the installer's instructions, selecting a download location and preferred file path as necessary.
 
     PiecesOS will launch when the installation process is completed, and can be found in your Windows _System Tray_ at the bottom left corner of your screen.
 
@@ -107,19 +106,19 @@ Follow the detailed set-up instructions below for a detailed guide on setting up
   <Tab title="Linux">
     **Installing PiecesOS for Linux**
 
-    To download and install PiecesOS _and_ utilize the Long-Term Memory Engine (LTM-2) on your Linux device, you must meet **(4)** requirements.
+    To download and install PiecesOS _and_ utilize the Long-Term Memory Engine (LTM-2) on your Linux device, you must meet **(4)** requirements.
 
     - **Snap Support:** Ensure `snapd` is installed and enabled on your system. Most recent Ubuntu releases include `snapd` by default. If needed, install `snapd` by following the official `snapd` documentation.
-    - **Administrator Access:** You’ll need `sudo` privileges to install `snap` packages.
+    - **Administrator Access:** You'll need `sudo` privileges to install `snap` packages.
     - **Minimum OS Type:** PiecesOS has been tested and developed primarily for Ubuntu 22\+ or later-based distributions, so make sure your system is updated to at least Ubuntu 22\+ or later.
-    - **X11 Window Manager:** Virtual Linux machines or dedicated instances of Linux, even PiecesOS-compatible Ubuntu 22\+ distributions, _must utilize_ **X11** as the proprietary Window Manager. To determine which display manager your Linux device is using, go to **Settings,** then **System,** and **System Details** to see if you are using an X11 or a non-LLVM compatible manager.
+    - **X11 Window Manager:** Virtual Linux machines or dedicated instances of Linux, even PiecesOS-compatible Ubuntu 22\+ distributions, _must utilize_ **X11** as the proprietary Window Manager. To determine which display manager your Linux device is using, go to **Settings,** then **System,** and **System Details** to see if you are using an X11 or a non-LLVM compatible manager.
 
     **_Note:_** _Ubuntu 22\+ using the X11 Window Manager is required_ to install PiecesOS and use LTM.
 
     Run these commands **to install and set up PiecesOS properly**.
 
     1. Open the Command-Line Interface (CLI) using the `ctrl+alt+t` keyboard shortcut.
-    2. Run `sudo snap install pieces-os` to install PiecesOS. You will be prompted to enter your local account’s password.
+    2. Run `sudo snap install pieces-os` to install PiecesOS. You will be prompted to enter your local account's password.
     3. Enter and run `sudo snap connect pieces-os:process-control :process-control` to enable offline and on-device machine learning and large language model (LLM) functionality.
 
     **Note:** Make sure to run the above permissions-related commands. These are required for the [Long-Term Memory Engine (LTM-2)](https://docs.pieces.app/products/core-dependencies/pieces-os#ltm-2) to capture context from your workflow to serve the [Pieces MCP](https://docs.pieces.app/products/mcp/get-started).
@@ -178,10 +177,10 @@ Setting up the Pieces MCP through the Goose Command Line Interface is straightfo
     goose configure
     ```
   </Step>
-  <Step title="Choose ‘Add Extension’">
+  <Step title="Choose 'Add Extension'">
     From the list of available options, choose `Add Extension`.
   </Step>
-  <Step title="Choose ‘Remote Extension’">
+  <Step title="Choose 'Remote Extension'">
     Select `Remote Extension` from the list of extension types.
   </Step>
   <Step title="Give it a Name">
@@ -199,13 +198,13 @@ Setting up the Pieces MCP through the Goose Command Line Interface is straightfo
     </Tip>
   </Step>
   <Step title="Set the Tool Timeout">
-    You’ll be prompted to enter a value for timing out the tool in case of an error or repeated _hangtime_. The default value is `300`—you can enter that value, or another.
+    You'll be prompted to enter a value for timing out the tool in case of an error or repeated _hangtime_. The default value is `300`—you can enter that value, or another.
   </Step>
   <Step title="Optional Configurations">
-    Lastly, you’ll be prompted to add a description or additional environment variables—these are not required. Select `No` to both if you want to proceed.
+    Lastly, you'll be prompted to add a description or additional environment variables—these are not required. Select `No` to both if you want to proceed.
   </Step>
   <Step title="Success!">
-    You’ll now see a message like `Added Pieces Extension` or similar, depending on the name you’ve attributed to the extension. You can use `goose list extensions` to verify and check the list of integrated extensions within Goose.
+    You'll now see a message like `Added Pieces Extension` or similar, depending on the name you've attributed to the extension. You can use `goose list extensions` to verify and check the list of integrated extensions within Goose.
   </Step>
 </Steps>
 
@@ -214,7 +213,7 @@ Setting up the Pieces MCP through the Goose Command Line Interface is straightfo
 
   > Warning: Goose installed, but /Users/you/.local/bin is not in your PATH…
 
-  You can fix this issue by adding `export PATH=”$HOME/.local/bin:$PATH”` to your your `~/.zshrc` or `~/.bashrc`.
+  You can fix this issue by adding `export PATH="$HOME/.local/bin:$PATH"` to your your `~/.zshrc` or `~/.bashrc`.
 
   Then, reload with `source ~/.zshrc` and start a Goose session by using `goose` from anywhere.
 </Card>
@@ -245,11 +244,11 @@ Once the integration is set up, you can start using Pieces Long-Term Memory thro
     ```
 
     <Warning>
-      This prompt is formulated for users already familiar with PiecesOS who use the Long-Term Memory Engine.\
-      \
+      This prompt is formulated for users already familiar with PiecesOS who use the Long-Term Memory Engine.
+
       If you are a first-time user, it is recommended that you launch PiecesOS and enable LTM, then allow some time for data capture before using this prompt for a desirable output.
     </Warning>
-    Here’s a response using that exact same prompt inside of Goose using the Pieces MCP integration:
+    Here's a response using that exact same prompt inside of Goose using the Pieces MCP integration:
 
     ![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/goose_mcp/example_convo_demo_prompt.png)
   </Step>
@@ -270,7 +269,7 @@ To remove the Pieces MCP for Goose, you can follow the same process you otherwis
     Open up your terminal and type `goose configure`, then press `return` (macOS) or `enter` (Windows/Linux).
   </Step>
   <Step title="Extension Toggling">
-    Use your keyboard’s **up** and **down** arrow keys to navigate down to `Toggle Extensions`.
+    Use your keyboard's **up** and **down** arrow keys to navigate down to `Toggle Extensions`.
   </Step>
   <Step title="Un-Toggle your Pieces MCP Server">
     Using arrow keys to navigate the list, press `space` (macOS/Windows/Linux) when the carrot is pointing towards your targeted extension.
@@ -289,25 +288,4 @@ To remove the Pieces MCP for Goose, you can follow the same process you otherwis
 
 If you're experiencing issues integrating Pieces MCP with Goose, follow these troubleshooting steps:
 
-1. **Verify PiecesOS Status:** Ensure [PiecesOS is actively running](https://docs.pieces.app/products/core-dependencies/pieces-os) on your system. MCP integration requires PiecesOS to be operational.
-2. **Confirm LTM Engine Activation:** Make sure the [Long-Term Memory Engine (LTM-2) is enabled in PiecesOS](https://docs.pieces.app/products/core-dependencies/pieces-os/quick-menu#ltm-2-engine), as this engine aggregates context necessary for Goose to retrieve accurate results.
-3. **Single MCP Instance:** Make sure that you aren't testing multiple instances of the Pieces MCP server in different IDEs. This _cross-contamination conflict_ with the SSE and several MCP instances running on the same port can cause issues in different development environments.
-4. **Check MCP Server Status:** If you're encountering messages such as "Sorry, I can't do this," your MCP server may not be properly configured or running.
-5. **Verify Port Configuration:** Double-check the MCP endpoint URL and the port number in your Goose configuration to ensure accuracy. You can find the current SSE endpoint URL in the Pieces Desktop App under **Settings → Model Context Protocol (MCP)**, or in the PiecesOS Quick Menu. It is usually formatted as:
-
-```plaintext
-http://localhost:{port_number}/model_context_protocol/{version}/sse
-```
-
-6. **Mac PATH Issues:** If you're having trouble with Goose CLI on macOS, try manually adding it to your PATH:
-
-```bash
-export PATH="$HOME/.local/bin:$PATH"
-```
-
-7. **Restart Services:** If problems persist, try restarting both PiecesOS and Goose, then reconfigure the extension with the current port number.
-8. **Use the Correct Mode:** You can experience a blockage of LTM data if you are using _any other chat mode_ than **Auto** mode. Make sure to use `goose configure` to change chat modes to avoid issues.
-
----
-
-You're now set to enhance your workflow with powerful context retrieval through Pieces MCP integrated seamlessly into Goose. Happy coding\!
+1. **Verify PiecesOS Status:** Ensure [PiecesOS is actively running](https://docs.pieces.app/products/core-dependencies/pieces-os) on your system
