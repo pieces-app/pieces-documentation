@@ -15,9 +15,9 @@ You can ask questions about additional workflow information, like whether a cowo
 
 Learn how to integrate the Pieces MCP into Cursor by following the steps below.
 
-<info>
+<Info>
   It is imperative that you download and/or update your version of Cursor to the **latest, most up-to-date version** to ensure compatibility with Pieces MCP.
-</info>
+</Info>
 
 ## Prerequisites
 
@@ -38,6 +38,99 @@ There are **[2]** primary prerequisites for integrating Pieces with Cursor as an
 
 Follow the instructions below for a detailed guide on setting up and configuring PiecesOS to correctly pass captured workflow context to the Pieces MCP server.
 
+<Tabs>
+  <Tab title="macOS">
+    **Installing PiecesOS for macOS**
+
+    [Download the standalone PiecesOS file](https://docs.pieces.app/products/core-dependencies/pieces-os/manual-installation#macos) for your macOS system’s ARM or Intel-based architecture to start the installation process.
+
+    _Your device must be updated to macOS 13.0 (Ventura) or higher._
+
+    1. Download the correct PiecesOS file for your system’s architecture.
+    2. From your **Downloads** folder, double-click the installed PiecesOS file to open it.
+    3. Drag PiecesOS into the application folder if prompted, then open PiecesOS.
+
+    **Configuring Permissions**
+
+    There are two permissions prompts that will pop up on your screen when installing PiecesOS.
+
+    > _PiecesOS is an app downloaded from the internet. Are you sure you want to open it?_
+
+    Click `Open` to continue with the installation.
+
+    Then, you’ll see a second permissions pop-up message:
+
+    > PiecesOS is requesting to bypass the system private window picker and directly access your screen and audio. This will allow PiecesOS to record your screen and system audio, including personal or sensitive information that may be visible or audible.
+
+    Click `Allow`.
+
+    These permissions are required for [PiecesOS](https://docs.pieces.app/products/core-dependencies/pieces-os) to power the [Long-Term Memory Engine (LTM-2)](https://docs.pieces.app/products/core-dependencies/pieces-os#ltm-2) and, in turn, capture context from your workflow to provide information to the [Pieces MCP server.](https://docs.pieces.app/products/mcp/get-started)
+
+    PiecesOS will automatically open in your toolbar and pop up a _Notification preferences modal_ in the upper right corner of your screen.
+
+    **Enabling the LTM-2 Engine**
+
+    For the Pieces MCP to function, Long-Term Memory must be enabled.
+
+    To do this, open up the PiecesOS Quick Menu and click `Enable Long-Term Memory Engine`.
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/misc_fragments_media/macos_piecesOS_toolbar.png)
+  </Tab>
+  <Tab title="Windows">
+    **Installing PiecesOS for Windows**
+
+    [Download the standalone PiecesOS file](https://docs.pieces.app/products/core-dependencies/pieces-os/manual-installation#windows) for your Windows machine to start the installation process.
+
+    _Your device must be updated to Windows 10 (20HO) or higher._
+
+    1. Download the file.
+    2. From your **Downloads** folder, double-click the installed PiecesOS file to open it.
+    3. Click `Yes` when the _User Account Control_ modal pops up on your screen to proceed with the installation.
+
+    **Note:** Some users who have enabled Controlled Folder Access (CFA) as a security measure may receive a notification that Pieces is attempting to bypass this security wall.
+
+    PiecesOS uses vision processing to ingest context from foreground applications horizontally. To decide which apps PiecesOS has access to, you can [easily enable and disable specific sources](https://docs.pieces.app/products/core-dependencies/pieces-os/quick-menu#long-term-memory-access-control) from the Long-Term Memory Access Control panel.
+
+    4. Choose your installation location and click `Next`.
+    5. Click `Install`, then `Finish` when the progress bar has finished loading.
+    6. Follow the installer’s instructions, selecting a download location and preferred file path as necessary.
+
+    PiecesOS will launch when the installation process is completed, and can be found in your Windows _System Tray_ at the bottom left corner of your screen.
+
+    **Enabling the LTM-2 Engine**
+
+    For the Pieces MCP to function, Long-Term Memory must be enabled.
+
+    To do this, open up the PiecesOS Quick Menu and click `Enable Long-Term Memory Engine`.
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/misc_fragments_media/windows_piecesOS_toolbar.png)
+  </Tab>
+  <Tab title="Linux">
+    **Installing PiecesOS for Linux**
+
+    To download and install PiecesOS _and_ utilize the Long-Term Memory Engine (LTM-2) on your Linux device, you must meet **(4)** requirements.
+
+    - **Snap Support:** Ensure `snapd` is installed and enabled on your system. Most recent Ubuntu releases include `snapd` by default. If needed, install `snapd` by following the official `snapd` documentation.
+    - **Administrator Access:** You’ll need `sudo` privileges to install `snap` packages.
+    - **Minimum OS Type:** PiecesOS has been tested and developed primarily for Ubuntu 22\+ or later-based distributions, so make sure your system is updated to at least Ubuntu 22\+ or later.
+    - **X11 Window Manager:** Virtual Linux machines or dedicated instances of Linux, even PiecesOS-compatible Ubuntu 22\+ distributions, _must utilize_ **X11** as the proprietary Window Manager. To determine which display manager your Linux device is using, go to **Settings,** then **System,** and **System Details** to see if you are using an X11 or a non-LLVM compatible manager.
+
+    **_Note:_** _Ubuntu 22\+ using the X11 Window Manager is required_ to install PiecesOS and use LTM.
+
+    Run these commands **to install and set up PiecesOS properly**.
+
+    1. Open the Command-Line Interface (CLI) using the `ctrl+alt+t` keyboard shortcut.
+    2. Run `sudo snap install pieces-os` to install PiecesOS. You will be prompted to enter your local account’s password.
+    3. Enter and run `sudo snap connect pieces-os:process-control :process-control` to enable offline and on-device machine learning and large language model (LLM) functionality.
+
+    **Note:** Make sure to run the above permissions-related commands. These are required for the [Long-Term Memory Engine (LTM-2)](https://docs.pieces.app/products/core-dependencies/pieces-os#ltm-2) to capture context from your workflow to serve the [Pieces MCP](https://docs.pieces.app/products/mcp/get-started).
+
+    To launch PiecesOS, type `pieces-os` in your terminal and press `enter`.
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/misc_fragments_media/linux_piecesOS_toolbar.png)
+  </Tab>
+</Tabs>
+
 ### Getting the SSE Endpoint for PiecesOS
 
 To use Pieces MCP with Cursor, you'll first need the Server-Sent Events (SSE) endpoint from PiecesOS:
@@ -46,9 +139,9 @@ To use Pieces MCP with Cursor, you'll first need the Server-Sent Events (SSE) en
 http://localhost:39300/model_context_protocol/2024-11-05/sse
 ```
 
-<alert>
+<Warning>
   Keep in mind that the **specific port** (i.e., `39300`) PiecesOS is running on **may vary**.
-</alert>
+</Warning>
 
 To find the current SSE endpoint with the active instance of POS (including the current port number), open the PiecesOS Quick Menu and expand the **Model Context Protocol (MCP) Servers** tab.
 
@@ -75,7 +168,6 @@ To set up the Pieces MCP, you can edit the `.json` settings configuration file f
     Navigate to **Cursor Settings**, then to the `MCP` section.
 
     ![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_cursor/cursor_no_mcp.png)
-    
   </Step>
   <Step title="Add a New MCP">
     Add a new global MCP server by clicking `Add new global MCP server` and inserting the following `.json` snippet (adjust port if necessary) in the `.json` file that opens:
@@ -96,7 +188,6 @@ To set up the Pieces MCP, you can edit the `.json` settings configuration file f
     Make sure to refresh the MCP server window by clicking the **refresh icon** and ensure that there is a _green dot_ indicating that the server is running and functioning without errors.
 
     ![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_cursor/cursor_green_dot_mcp.png)
-    
   </Step>
   <Step title="Use Pieces MCP">
     Once the MCP server is set up, make sure to change the chat mode to _Agent_ mode. This should automatically utilize the `ask_pieces_ltm` tool.
@@ -118,7 +209,6 @@ Once integrated, you can utilize [Pieces LTM](https://docs.pieces.app/products/c
     From this point, you can begin prompting. If PiecesOS was previously installed, try testing out the Pieces MCP integration with a prompt like, "What was I doing for work yesterday?" and click `Use Tool` when prompted.
 
     ![](https://storage.googleapis.com/hashnode_product_documentation_assets/mcp_documentation/mcp_cursor/example_pieces_mcp_cursor.gif)
-    
   </Step>
 </Steps>
 
@@ -163,9 +253,9 @@ Cursor's _Settings_ UI currently doesn't recognize the JSON-RPC success envelope
 
 This visual artifact is harmless. All genuine LTM responses still arrive properly in the Cursor chat window.
 
-<alert>
+<Warning>
   Ignore any red `.JSON` blobs in the MCP Settings view. The **Chat** pane is the source of truth—if your pieces queries return formatted summaries there, the integration is functioning normally.
-</alert>
+</Warning>
 
 ---
 
