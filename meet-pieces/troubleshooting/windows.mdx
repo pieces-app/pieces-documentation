@@ -1,13 +1,9 @@
 ---
 title: "Issues | Windows"
-description: "Learn about what troubleshooting steps to take if PiecesOS or the Pieces Desktop App isn’t working as expected on your Windows device."
----
-
+description: "Learn about what troubleshooting steps to take if PiecesOS or the Pieces Desktop App isn't working as expected on your Windows device."
 ---
 
 ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/windows/troubleshooting_windows.png)
-
----
 
 ## Installation & Updating Fixes
 
@@ -23,8 +19,6 @@ PiecesOS and the Pieces Desktop App can be downloaded in several ways, and the u
   </Tab>
 </Tabs>
 
----
-
 ### Database & Log Paths
 
 You can find your database and support logs at the paths below for your specific platform:
@@ -37,17 +31,15 @@ Replace `<username>` with your actual Windows user name.
 
 ### Logs, Backups & Cloud Functionality
 
-For more details on logs, backups, and cloud-only features, see our [On-Device Storage documentation](https://docs.pieces.app/products/core-dependencies/on-device-storage). You’ll learn how to:
+For more details on logs, backups, and cloud-only features, see our [On-Device Storage documentation](https://docs.pieces.app/products/core-dependencies/on-device-storage). You'll learn how to:
 
 - Zip and share logs from `…/production/support/logs/` when opening an issue.
 - Back up or reset your database by copying or renaming the `com.pieces.os` folder.
 - Enable or disable cloud functionality.
 
----
-
 ## Manual Installation Methods
 
-If you’re experiencing issues with the installer, you can manually download and install both apps via `.exe` or WinGet.
+If you're experiencing issues with the installer, you can manually download and install both apps via `.exe` or WinGet.
 
 ### via EXE Files
 
@@ -64,17 +56,15 @@ If you’re experiencing issues with the installer, you can manually download an
     />
 
     <span>
-    **Step 1:** Download PiecesOS (.EXE)\
-    
-    _Required Core Dependency_\
-    
+    **Step 1:** Download PiecesOS (.EXE)
+
+    _Required Core Dependency_
+
     Windows 10 (1809) or higher required.
-
     </span>
-
     </div>
-
-    <Icon icon="arrow-up-right" size={20} /></div>
+    <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
   <Card title="Download — Pieces for Developers (.EXE)" href="https://builds.pieces.app/stages/production/pieces_for_x/windows-exe/download?download=true&product=DOCUMENTATION_WEBSITE">
     <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
@@ -88,17 +78,15 @@ If you’re experiencing issues with the installer, you can manually download an
     />
 
     <span>
-    **Step 2:** Download Pieces for Developers (.EXE)\
-    
-    _Alternative Method_\
-    
+    **Step 2:** Download Pieces for Developers (.EXE)
+
+    _Alternative Method_
+
     Windows 10 (1809) or higher required.
-
     </span>
-
     </div>
-
-    <Icon icon="arrow-up-right" size={20} /></div>
+    <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
 </CardGroup>
 
@@ -117,20 +105,13 @@ If you’re experiencing issues with the installer, you can manually download an
     />
 
     <span>
-    **Step 1:** Open PowerShell or Command Prompt \
-    as Administrator.\
-    \
-    
-    **Step 2:** Run <code>
-      winget install "Pieces for Developers"
-    </code>
-     and press Enter.
+    **Step 1:** Open PowerShell or Command Prompt as Administrator.
 
+    **Step 2:** Run <code>winget install "Pieces for Developers"</code> and press Enter.
     </span>
-
     </div>
-
-    <Icon icon="arrow-up-right" size={20} /></div>
+    <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
   <Card title="WinGet — PiecesOS">
     <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",width:"100%" }}>
@@ -144,23 +125,15 @@ If you’re experiencing issues with the installer, you can manually download an
     />
 
     <span>
-    **Step 3:** Run <code>
-      winget install "Pieces OS"
-    </code>
-     and press Enter.\
-    \
-    
+    **Step 3:** Run <code>winget install "Pieces OS"</code> and press Enter.
+
     **Step 4:** Launch via Start Menu → **Pieces Desktop**.
-
     </span>
-
     </div>
-
-    <Icon icon="arrow-up-right" size={20} /></div>
+    <Icon icon="arrow-up-right" size={20} />
+    </div>
   </Card>
 </CardGroup>
-
----
 
 ## Versions & Updates
 
@@ -181,8 +154,6 @@ Keeping both PiecesOS and the Desktop App up-to-date often resolves common issue
 
 ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/windows/windows_check_pfd_for_updates.gif)
 
----
-
 ## Issues Launching PiecesOS
 
 If Controlled Folder Access (CFA) is enabled, PiecesOS may fail to write data and launch. To fix:
@@ -193,8 +164,6 @@ If Controlled Folder Access (CFA) is enabled, PiecesOS may fail to write data an
 <Warning>
   CFA blocks write access to Documents, preventing PiecesOS from launching.
 </Warning>
-
----
 
 ## Common Installation Issues
 
@@ -209,11 +178,9 @@ If Controlled Folder Access (CFA) is enabled, PiecesOS may fail to write data an
 2. Update the **Store** and **App Installer**.
 3. Retry the Pieces installation.
 
----
-
 ## Checking Hardware Specifications
 
-Run **Windows \+ R**, type `dxdiag`, and press Enter to view CPU, RAM, GPU, and VRAM details—essential for troubleshooting local LLM performance.
+Run **Windows + R**, type `dxdiag`, and press Enter to view CPU, RAM, GPU, and VRAM details—essential for troubleshooting local LLM performance.
 
 ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/windows/windows_checking_hardware_specs.gif)
 
@@ -221,15 +188,13 @@ Run **Windows \+ R**, type `dxdiag`, and press Enter to view CPU, RAM, GPU, and 
 
 ### Checking Windows Version
 
-Press **Windows \+ R**, type `winver`, and press Enter. The **About Windows** window shows your OS version.
+Press **Windows + R**, type `winver`, and press Enter. The **About Windows** window shows your OS version.
 
 ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/windows/checking_windows_ver.gif)
 
 <Tip>
-  If `winver` doesn’t open, you’re likely on an unsupported Windows version.
+  If `winver` doesn't open, you're likely on an unsupported Windows version.
 </Tip>
-
----
 
 ## Restart & Retry
 
