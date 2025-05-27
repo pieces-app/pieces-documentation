@@ -1,5 +1,7 @@
 ---
 sidebarTitle: "Where Your Data Lives"
+description: "Everything you save in Pieces lives locally first. Here’s exactly where to find it—and how to share the right files when you need help."
+title: "On-Device Storage"
 ---
 
 ---
@@ -17,9 +19,9 @@ Cloud features are not required, are opt-in only, are isolated per user (`<your-
 
 We never use your data to train third-party models. You can delete your entire database, logs, and backups at any time by removing the `com.pieces.os` folder—more on that below.
 
-<tip>
-  We're **SOC 2 Type II** certified and never use your private data to train models.
-</tip>
+<Tip>
+  We’re **SOC 2 Type II** certified and never use your private data to train models.
+</Tip>
 
 ## Where your Database Lives
 
@@ -31,9 +33,9 @@ Pieces stores all snippet metadata, embeddings, tags, and workflow context captu
 | _Windows_    | `C:/Users/<username>/Documents/com.pieces.os/` |
 | _Linux_      | `/home/<username>/.local/share/com.pieces.os/` |
 
-<tip>
+<Tip>
   Replace `<username>` with your OS account name.
-</tip>
+</Tip>
 
 Inside `com.pieces.os`, you'll see `production`, which contains several folders that store broken down LTM-2 context and the rest of your data.
 
@@ -51,7 +53,10 @@ When you open a GitHub issue or contact **Pieces Support**, attaching the most r
 
 Logs rotate daily and are timestamped (`log-05062025`).
 
-Zip the latest two or three files and drag them into your <a target="_blank" href="https://github.com/pieces-app/support/issues">GitHub issue</a>.
+Zip the latest two or three files and drag them into your <a target="_blank" href="https://github.com/pieces-app/support/issues">
+GitHub issue</a>
+
+.
 
 ## Backup, Restore, or Reset
 
@@ -63,8 +68,8 @@ There are several options to backup, restore or reset your database from within 
 | _Restore Database on a New Machine_                | Install Pieces OS. Replace the newly created `com.pieces.*` folder with your backup. Then, restart Pieces.                                                   |
 | _Start Fresh or Troubleshoot a Corrupted Database_ | Quit Pieces. Rename the `production` folder to something else, then relaunch. Pieces will create a brand-new, empty database (keep the backup just in case). |
 
-## Need Help? <a target="_blank" href="https://docs.pieces.app/extensions-plugins/sublime#get-support-or-share-feedback">Learn more</a>
+## Need Help?[**​**](https://docs.pieces.app/extensions-plugins/sublime#get-support-or-share-feedback)
 
-You can open GitHub issues for PiecesOS, the Pieces Desktop App, or any other Pieces plugin or extension by <a target="_blank" href="https://github.com/pieces-app/support/issues">clicking here</a>.
+You can open GitHub issues for PiecesOS, the Pieces Desktop App, or any other Pieces plugin or extension by [opening an issue in our GitHub repository.](https://github.com/pieces-app/support/issues)
 
-If you would prefer not to use GitHub, you can still <a target="_blank" href="https://getpieces.typeform.com/to/mCjBSIjF#page=docs-support">submit a support request</a>.
+If you would prefer not to use GitHub, you can still [leave feedback or report a bug here.](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-support)

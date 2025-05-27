@@ -1,84 +1,145 @@
+---
+title: "PiecesOS | Troubleshooting"
+description: "Read about what actionable troubleshooting steps to take if PiecesOS isn’t working as expected on your macOS, Windows, or Linux device."
+---
+
 ## Common Installation Issues
 
 Find information on troubleshooting common installation and update issues for PiecesOS.
 
+import OnDeviceStorage from '/snippets/on-device-storage.mdx';
+
+<OnDeviceStorage />
+
 ### Database & Log Paths
 
-You can find your database and support logs at the `path` below for your specific platform.
+You can find your database and support logs at the paths below for your specific platform:
 
 - **macOS**—`~/Library/com.pieces.os/`
 - **Windows**—`C:\Users\<username>\Documents\com.pieces.os\`
 - **Linux**—`~/.local/share/com.pieces.os/`
 
-Don’t forget to switch `username` with our actual system username.
+> Don’t forget to replace `<username>` with your actual system username.
 
 ### Logs, Backups & Cloud Functionality
 
-This dedicated [On-Device Storage documentation](https://docs.pieces.app/products/core-dependencies/on-device-storage) provides more information about finding your logs, creating manual backups outside of the Pieces Desktop App, and opting in to cloud-only features[.](https://docs.pieces.app/products/core-dependencies/on-device-storage)
+For more details on logs, backups, and cloud-only features, see the [On-Device Storage documentation](https://docs.pieces.app/products/core-dependencies/on-device-storage).
 
-- **Sharing Logs**—Zip the latest 2–3 files from `…/production/support/logs/` and attach them to [your issue or DM.](https://docs.pieces.app/products/support#open-a-github-issue)
-- **Backup & Reset**—Copy `com.pieces.os` to back up your database—or copy zip it, and rename it something other than `production` to reset your database.
-- **Cloud Functionality**—Nothing moves off-device unless you enable Personal Cloud or call a third-party model (e.g. OpenAI).
+- **Sharing Logs**—Zip the latest 2–3 files from `…/production/support/logs/` and attach them to [your issue or DM](https://docs.pieces.app/products/support#open-a-github-issue).
+- **Backup & Reset**—Copy the entire `com.pieces.os` folder to back up your database; or zip and rename it (anything other than `production`) to reset your database on next launch.
+- **Cloud Functionality**—Nothing moves off-device unless you explicitly enable Personal Cloud or call a third-party model (e.g. OpenAI).
 
 ### Checking System Specifications
 
-Navigate between the grouped tabs below to find information on several common installation issues users experience when downloading and installing PiecesOS.
-
-### Checking OS Version
-
-Having an out-of-date operating system version can cause a range of installation issues with PiecesOS, including scenarios in which the entire application refuses to run.
+Navigate between the tabs below to verify your hardware meets the requirements for running PiecesOS and any local AI models.
 
 <Tabs>
   <Tab title="macOS">
-    **macOS | Checking OS Version**
+    **macOS | Checking System Specifications**
 
-    Pieces Suite applications require a minimum macOS version of **macOS Ventura.** If you’re experiencing installation issues, you should check your OS version to ensure it’s up-to-date.
+    Apple Silicon (ARM) and Intel devices use different CPU architectures. Installing the wrong build will prevent PiecesOS from running.
 
-    To determine your Apple device’s version of macOS:
+    1. Click the **Apple () icon** in the top-left corner.
+    2. Select **About This Mac**.
+    3. In the **Overview** section, check the first line:
+       - **Apple Silicon / ARM:** e.g. `Apple M3`
+       - **Intel:** e.g. `2.6 GHz Intel Core i7`
 
-    1. Click the **Apple** icon in the top-left corner of your screen
-    2. Select `About This Mac`
-    3. Under your device name (i.e., MacBook Air), look for the last line on the list, titled `macOS`
-
-    The `macOS` line will report what version of macOS installed, e.g., `Sequoia 15.1.1`.
-
-    <img
-      className="mx-auto"
-    />
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/macos/macos_checking_about_mac.gif)
   </Tab>
   <Tab title="Windows">
-    **Windows | Checking OS Version**
+    **Windows | Checking System Specifications**
 
-    Windows users may encounter installation issues for various reasons, such as out-of-date OS components or incomplete dependencies.
+    1. Press the **Windows** key (or click the Windows icon).
+    2. Type `run` and press **Enter**.
+    3. Enter `dxdiag` and click **OK**.
+    4. In the **System** tab, view your processor, core count, and RAM.
+    5. In the **Display** tab, view GPU model and VRAM.
 
-    Before installing PiecesOS, ensure your Windows system is fully updated:
-
-    1. Click the **Start** button, then select `Settings`
-    2. Click `Windows Update`
-    3. Install any pending updates and restart your computer
-
-    <img
-      className="mx-auto"
-    />
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/windows/windows_checking_hardware_specs.gif)
   </Tab>
   <Tab title="Linux">
-    **Linux | Checking OS Version**
+    **Linux | Checking System Specifications**
 
-    If the Pieces Installer is not working as intended, you could have an outdated version of Ubuntu.
+    - **CPU Info:**\
+      lscpu
 
-    The minimum Ubuntu version that Pieces will run on is **Ubuntu 22.04 and above**.
+      ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/linux/lscpu_UBUNTU.png)
+    - **GPU Info:**\
+      lspci | grep -i vga
 
-    To check what version of Ubuntu you’re running:
+      ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/linux/lscpi_UBUNTU.png)
+  </Tab>
+</Tabs>
 
-    - Open **Settings** on Ubuntu
-    - Locate the **System** section at the bottom of the left-hand side menu and click it
-    - Open the **About** section and locate the **Operating System** label
+### Versions & Updates
 
-    This section will will display your Ubuntu version information.
+Out-of-date plugins or PiecesOS versions are a common source of issues. Use the tabs below to learn how to check for and install the latest updates.
 
-    <img
-      className="mx-auto"
-    />
+<Tabs>
+  <Tab title="macOS">
+    **macOS | Updating PiecesOS**
+
+    1. Quit and restart PiecesOS.
+    2. Look for the **Pieces** icon in your menu bar.
+    3. If an update is available, follow the prompt to download and install.
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/macos/macos_checking_piecesos_for_updates.gif)
+  </Tab>
+  <Tab title="Windows">
+    **Windows | Updating PiecesOS**
+
+    1. Click the **P** icon in your taskbar.
+    2. If an update is listed, follow the on-screen instructions to install.
+
+    _`Note: If installed via .appinstaller, fully quit both the Desktop App and PiecesOS before rerunning the installer.`_
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/windows/windows_checking_pieces_os_for_updates.gif)
+  </Tab>
+  <Tab title="Linux">
+    **Linux | Updating PiecesOS**
+
+    PiecesOS is distributed via snaps on Ubuntu-based systems:
+
+    snap info pieces-os\
+    sudo snap refresh
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/linux/snap_refresh_POS.gif)
+  </Tab>
+</Tabs>
+
+### Checking OS Version
+
+An outdated operating system can block installation or prevent PiecesOS from launching. Use the tabs below to verify your OS meets minimum requirements.
+
+<Tabs>
+  <Tab title="macOS">
+    **macOS | Minimum Version**
+
+    Pieces Suite requires **macOS Ventura** or later.
+
+    1. Click **Apple ()** → **About This Mac**.
+    2. Look for the **macOS** line (e.g., `Sequoia 15.1.1`).
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/macos/macos_checking_about_mac.gif)
+  </Tab>
+  <Tab title="Windows">
+    **Windows | Updating OS**
+
+    1. Open **Start** → **Settings** → **Windows Update**.
+    2. Install any pending updates and reboot.
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/windows/checking_windows_ver.gif)
+  </Tab>
+  <Tab title="Linux">
+    **Linux | Minimum Version**
+
+    PiecesOS requires **Ubuntu 22.04** or newer.
+
+    1. Open **Settings** → **System** → **About**.
+    2. Check the **Operating System** label.
+
+    ![](https://storage.googleapis.com/hashnode_product_documentation_assets/meet_pieces_assets/meet_pieces/troubleshooting/linux/settings_about_system.gif)
   </Tab>
 </Tabs>
 
@@ -86,24 +147,22 @@ Having an out-of-date operating system version can cause a range of installation
 
 ### Issues Launching PiecesOS (Windows)
 
-Some users who have enabled Controlled Folder Access (CFA) as a security measure may receive a notification that Pieces is attempting to bypass this security wall.
+Some Windows users with **Controlled Folder Access (CFA)** enabled may see an error when PiecesOS tries to write data.
 
-To work around this issue, you must _add the executable path for PiecesOS_ to your allowlist.
+To resolve:
 
-<alert>
+1. Open **Windows Security** → **Virus & threat protection** → **Manage ransomware protection**.
+2. Under **Controlled folder access**, click **Allow an app through Controlled folder access**.
+3. Add the PiecesOS executable (`com.pieces.os.exe`) to the allowlist.
+
+<Warning>
   PiecesOS fails to launch when CFA is enabled because the executable path for the application writes data to the Documents folder.
 
   CFA disables and blocks any request to modify files (in this case, writing & saving data), so PiecesOS cannot launch itself.
-</alert>
+</Warning>
 
-Keep in mind that this path references the specific PiecesOS version and will change over time as you continue to update the software.
-
-You can also disable CFA as a security measure if you do not require it as part of an enterprise scenario or for any other reason.
-
-To decide which apps PiecesOS has access to, you can [easily enable and disable specific sources from the Long-Term Memory Access Control](https://docs.pieces.app/products/core-dependencies/pieces-os/quick-menu#long-term-memory-access-control) panel.
+You can also disable CFA entirely if it’s not required in your environment. To manage specific app permissions, visit the [Long-Term Memory Access Control panel](https://docs.pieces.app/products/core-dependencies/pieces-os/quick-menu#long-term-memory-access-control).
 
 ## Contact Support
 
-If you’ve ensured your device meets the recommended _and_ minimum specifications, you’ve performed a clean installation, updated your OS, and checked PiecesOS for updates, and you’re still experiencing issues, <a target="_blank" href="https://docs.pieces.app/products/support">
-
-visit our support page for more resources.</a>
+If you’ve checked your hardware, OS version, performed a clean install, and updated PiecesOS—and you’re still having issues—[visit our support page for more resources](https://docs.pieces.app/products/support).
